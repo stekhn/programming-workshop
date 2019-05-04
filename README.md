@@ -71,3 +71,58 @@ Für Journalisten sind jedoch vor allem drei Programmiersprachen relevant:
 
 📖 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
 📖 **GeeksforGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
+
+## Algorithmen
+
+## Code-Editor
+
+## Linter
+
+## HTML
+HTML (Hyper Text Markup Language) ist keine Programmiersprache im engere Sinne, sondern eine Auszeichnungssprache. Es beschreibt und definiert den Inhalt einer Webseite zusammen mit dem grundlegenden Layout der Webseite. HTML besteht aus einer Reihe von Elementen, sogenannte Tags, welche dazu verwenden werden, um bestimmte Inhalte wie beispielsweise Überschriften, Absätze oder Bilder einzubinden.
+
+## CSS
+CSS (Cascading Style Sheets) ist eine Beschreibungssprache, die das Design einer Webseite bestimmt. Während HTML genutzt wird, um die Struktur und Semantik Ihrer Inhalte zu definieren, dient CSS dazu, deren Erscheinung und Layout zu beeinflussen. So lässt sich CSS beispielsweise nutzen, um die Schriftarten, Farben, Größen und räumliche Abstände der Inhalte zu verändern. Außerdem lassen sich Inhalte in mehreren Spalten anzuordnen oder Animationen und andere dekorative Merkmale hinzuzufügen.
+
+## JavaScript
+JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. 
+
+### Variablen
+
+### Funktionen
+
+### Bedingungen
+
+### Schleifen
+
+### Arrays und Objekte
+
+### Selektoren
+
+### Web APIs
+
+### Bibliotheken
+
+### Webseiten veröffentlichen
+
+## Lokaler Webserver
+
+## Github
+
+## Datenformate
+
+## Scraping
+
+## APIs
+
+## Web-Analytics
+
+## Ressourcen
+
+## Wie werde ich besser
+
+## Über den Autor
+
+## Modernes Webdesign
+
+## Agile Methoden und Philosophie
