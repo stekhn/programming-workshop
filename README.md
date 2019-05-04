@@ -1,7 +1,7 @@
 # Programmieren für Journalisten
 Programmiersprachen sind die flexiblesten Werkzeuge, die der Mensch jemals entwickelt hat. Sie helfen uns zeitraubende Aufgaben zu automatisieren und komplexe Probleme zu lösen. Egal ob Smartphone, Waschmaschine oder Ampelanlage, mittlerweile wird unser Leben an vielen Stellen von Software bestimmt. Programmieren zu lernen, hilft dabei eine zunehmend digitale Welt besser zu verstehen.
 
-Gerade für Journalisten ist diese Verständnis zunehmend wichtig um kritisch über Herausforderungen und Probleme zu berichten, die durch die Digitalisierung unserer Gesellschaft entstehen. Außerdem können Journalisten selbst Methoden und Werkzeuge aus der Softwareentwicklung nutzen, um Geschichten in großen Datensätzen finden und interaktiv für die Veröffentlichung online aufzubereiten.
+Gerade für Journalisten ist diese Verständnis zunehmend wichtig, um kritisch über Herausforderungen und Probleme zu berichten, die durch die Digitalisierung unserer Gesellschaft entstehen. Außerdem können Journalisten selbst Methoden und Werkzeuge aus der Softwareentwicklung nutzen, um Geschichten in großen Datensätzen finden und interaktiv für die Veröffentlichung online aufzubereiten.
 
 Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert vor allem Spaß am Lernen und Ausprobieren.
 
@@ -36,3 +36,16 @@ Eher seltener im Medienbereich anzutreffen sind folgende Berufe:
 - **Datenbank-Entwickler** kümmern sich um das Speicher und langfristiges Archivieren von Daten. Dabei geht es viel um Persistenz, Sicherheit und Geschwindigkeit. In kleineren Unternehmen wird dieser Job oftmals durch Backend-Entwickler erledigt.
 - **Embedded-Entwickler**: beschäftigen sich vor allem mit der Entwicklung und Programmierung von (Mikro-)controllern, wie sie im Maschinenbau, der Automobil- oder Flugzeugbauindustrie und in viele anderen Branchen verwenden werden.
 - **Experten-Entwickler** sind beispielsweise Wirtschaftsinformatiker, Bioinformatiker und Geoinformatiker sind in Bereichen tätig, in denen bestimmtes Fachwissen gefragt wird.
+
+## Journalistische Anwendung
+Journalisten verwenden Methoden der Programmierung für unterschiedliche Aufgaben. Meistens geht es jedoch immer darum, entweder Werkzeuge für die Recherche zu entwickeln oder darum eine Geschichte online aufzubereiten.
+
+- **Scraping**: Daten aus dem Internet einmalig oder regelmäßig herunterladen. Datenquellen können Webseiten, Datenbanken, APIs oder etwas RSS-Feeds sein.
+- **Datenanalyse**: Um Analysen nachvollziehbar und reproduzierbar zu gestalten, verwenden Datenjournalisten oft Skripte um (große) Daten zu analysieren.
+- **Recherche-Werkzeuge**: Werkzeuge die bei der eigene Recherche helfen. Beispiel: Eine interne Plattformen zum Durchsuchen, Analysieren und Kommentieren von geleakten Dokumenten. 
+- **Longreads**: Speziell gestaltet Artikel zum Präsentieren einer großen Recherche oder Geschichte (Leuchturmprojekte) außerhalb des normalen Redaktionssystems.
+- **Grafiken**: Manche Grafiken lassen sich leichter programmieren als händisch zu bauen. Beispiel: Eine Symbolkarte mit hundert Orten und jeweils unterschiedlichen Werten.
+- **interaktive Anwendungen**: Alle Formen von Rechnern, Quizzes und Spielen im journalistischen Kontext.
+- **Web-Analytics**: Benutzerverhalten auf einer Webseite zu verstehen, um den Erfolg einer interaktiven Umsetzung zu messen und zu verbessern.
+
+Diese Anwendungsbereiche sind vor allem für Datenjournalisten, Grafiker (Visual Journalism) und Newsroom-Entwickler relevant. Außerdem wird das Thema künstliche Intelligenz (genauer gesagt Maschine Learning) zunehmend wichtig. Methoden aus diesem Bereich können Journalisten dabei helfen, unstrukturierte Daten wie Dokumente, Bilder oder Videos automatisiert zu analysieren, wie in diesen Beispielen: [Illegaler Bernsteinabbau](http://texty.org.ua/d/2018/amber_eng/) oder [Geheime Überwachungsflüge](https://www.buzzfeednews.com/article/peteraldhous/hidden-spy-planes).
