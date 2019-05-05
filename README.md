@@ -138,11 +138,60 @@ Die meisten Elemente benötigen einen schließenden Tag. Ein Beispiel dafür ist
 <p>Mehr Informationen zum Thema HTML gibt es auf der <a href="https://developer.mozilla.org/">MDN-Webseite</a>.</p>
 ```
 
-Der `<a>`-Tag umschließt den Linktext *MDN-Webseite*. Das Attribut `href` gibt an, wohin der Link führen soll. 
+Der `<a>`-Tag umschließt den Linktext *MDN-Webseite*. Das Attribut `href` gibt an, wohin der Link führen soll. Weiter unten gibt es mehr Informationen zur Verwendung von Links. Welche Elemente es gibt und welche Attribute diese besitzen, lässt sich auf den Seiten des Mozilla Developer Networks nachschlagen: 📖 [HTML Element Reference](https://developer.mozilla.org/de/docs/Web/HTML/Element)
 
 ⚠️ *Fehlende schließende Tags sind gerade für Einsteiger eine häufige Fehlerquelle und können das Layout einer Seite zerschießen. Das Problem wird dadurch verstärkt, dass der Browser selbstständig versucht  ungültiges HTML zu reparieren und offene Tags wieder zu schließen. Im Zweifelsfalls hilft es, das eigene HTML auf nicht geschlossenen Tags hin zu überprüfen. Ein gute Code-Editor kann dabei helfen, solche Fehler frühzeitig zu erkennen.*
 
-Welche Attribute ein Element hat, lässt sich auf den Seiten des Mozilla Developer Networks nachschlagen: 📖  [HTML Element Reference](https://developer.mozilla.org/de/docs/Web/HTML/Element)
+### IDs und Klassen
+Es gibt zwei spezielle Attribute die auf jedes Element angewendet werden können: `id` und `class`. IDs und Klassen sind essenzielle Konzepte um Elemente eindeutig identifiziert zu machen. Dies ist vor allem in Verbindung mit CSS und JavaScript relevant, wo man einen bestimmten Style oder eine bestimmte Funktionalität nur auf bestimmte Argumente anwenden möchte. IDs dürfen jeweils nur einmal vergebene werden, Klassen mehrfach. Hier ein Button mit einer ID, der genau eine Aktion auslöst:
+
+```html
+<button id="submit">Abschicken</button>
+```
+
+Im Gegensatz dazu werden Klassen für Elemente verwendet, welche den gleichen Style oder die gleiche Funktion haben sollen:
+
+```html
+<ul>
+  <li class="list-item">Gemüse einkaufen</li>
+  <li class="list-item">Fahrrad reparieren</li>
+  <li class="list-item">Zahnarzttermin vereinbaren</li>
+</ul>
+```
+
+Ein Element kann auch mehrere Klassen haben. In diesem Fall dient beispielsweise die Klasse `list-item` nur dazu das Element zu stylen. Die Klasse `removable` kann hingegen einen funktionelle Aspekt haben, um beispielsweise zu ermöglichen, dass der Listeneintrag gelöscht werden kann:
+
+```html
+<ul>
+  <li class="list-item removable">Gemüse einkaufen</li>
+  <li class="list-item removable">Fahrrad reparieren</li>
+  <li class="list-item removable">Zahnarzttermin vereinbaren</li>
+</ul>
+```
+
+In CSS und JavaScript wählt man IDs jeweils mit einer Raute aus `#id` und Klassen mit einem Punk `.class`.
+
+CSS-Beispiel:
+
+```css
+#submit {
+  background: red;
+}
+
+.list-item {
+  color: green;
+}
+```
+
+Javascript Beispiel:
+
+```javascript
+// Einen Button nach ID auswählen
+document.querySelector('#submit')
+
+// Alle Listeneinträge nach Klasse auswählen
+document.querySelectorAll('.removable')
+```
 
 ### Text
 Gerade für Journalisten sind dies die wohl wichtigten HTML-Elemente. Grundsätzlich besteht 
@@ -424,26 +473,251 @@ Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird 
 
 💡 *Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen angewiesen sind.*
 
-🌍 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))
+🌍 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))   
 📖 **Kulturbanause**: [HTML-Elemente und Semantik](https://blog.kulturbanause.de/2008/01/html-elemente-und-semantik/)
 
 ## CSS
 CSS (Cascading Style Sheets) ist eine Beschreibungssprache, die das Design einer Webseite bestimmt. Während HTML genutzt wird, um die Struktur und Semantik Ihrer Inhalte zu definieren, dient CSS dazu, deren Erscheinung und Layout zu beeinflussen. So lässt sich CSS beispielsweise nutzen, um die Schriftarten, Farben, Größen und räumliche Abstände der Inhalte zu verändern. Außerdem lassen sich Inhalte in mehreren Spalten anzuordnen oder Animationen und andere dekorative Merkmale hinzuzufügen.
 
+### Einbinden
+
 ### Aufbau
+Jede CSS-Regel besteht aus einem (oder mehreren) Selektor und meistens mehreren Eigenschaften und Werten. Der Selektor bestimmt, welche Elemente beeinflusst werden und die Eigenschaften und Werte wie die Elemente aussehen sollen. Ein Beispiel
+
+```css
+p {
+  font-size: 1.2em;
+  color: red;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+```
 
 ### Selektoren
+Selektoren dienen dazu bestimmte Elemente oder Gruppen von Elementen auszuwählen, um sie zu stylen. Ein wichtiges Konzept dabei ist Spezifität. Spezifität bedeutet, dass wenn es mehrere Style-Regeln für ein Element gibt, wird die jeweils spezifiste Regel angewandt. Universalselektor sind am unspezifisten, ID-Selektoren und Inline-Styles am spezifisten und daher am stärkesten. Hier die Selektoren in aufsteigender Spezifität:
 
-- Universelle Selektoren
-- Typselektoren
-- Klassenselektoren
-- Attributselektoren
-- Pseudoklassen
-- ID-Selektoren
-- Inlinestile
+- **Universalselektor**: `*`
+- **Typselektoren**: `element`
+- **Klassenselektoren**: `.class`
+- **Attributselektoren**: [attribute] oder [attribute="value"]
+- **Pseudoklassen**: `element::pseudo`
+- **ID-Selektoren**: `#id`
+- **Inline-Styles**: `<element style>`
+
+Um das ganze noch ein bisschen komplizierter zu machen, kann man Selektoren auch miteinandern kombinieren:
+
+- `A, B`: Es wird A und B selektiert.
+- `A B`: Es wird B (*child*) selektiert, welches in der Hierarchie irgendwo unter A (*parent*) liegt
+
+Eher seltener zum Einsatz kommen diese Selektorkombinationen:
+
+- `A > B`: Es wird B (*direct child*)selektiert, welches in der Hierarche unmittelbar unter A (*parent*) liegt.
+- `A ~ B`: Es wird B (*sibling*) selektiert, welches in der Hierarchie neben A (*sibling*) liegt.
+- `A + B`: Es wird B (*direct sibling*) selektiert, welches in der Hierarchie direkt neben A (*sibling*) liegt.
+ 
+Um die grundlegende Konzepte zu verdeutlichen, erstellen wir drei unterschiedliche Listen. Diese sollen gestylt werden.
+
+```html
+<ul id="todo-list">
+  <li class="list-item">Gemüse einkaufen</li>
+  <li class="list-item">Fahrrad reparieren</li>
+  <li class="list-item">Zahnarzttermin vereinbaren</li>
+</ul>
+
+<ul id="name-list">
+  <li class="list-item">Philipp</li>
+  <li class="list-item">Oskar</li>
+  <li class="list-item">Marlene</li>
+</ul>
+
+<ul>
+  <li>München</li>
+  <li>Hamburg</li>
+  <li>Berlin</li>
+</ul>
+```
+
+Schriftart für die ganze Webseite setzen:
+
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+```
+
+Für alle Listen das Aufzählungszeichen und den Innenabstand ändern:
+
+```css
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 0;
+}
+```
+
+Alle Elemente mit Klasse `.list-item` bekommen einen graue Textfarbe und einen größeren Außenabstand.
+
+```css
+.list-item {
+  margin: 1em 0;
+  color: grey;
+}
+```
+
+Die Liste mit der ID `#todo-list` bekommt einen hellblauen Hintergrund:
+
+```css
+#todo-list {
+  background: aliceblue;
+}
+```
+
+Die Liste mit der ID `#todo-list` bekommt einen hellblauen Hintergrund:
+
+```css
+#name-list {
+  background: antiquewhite;
+}
+```
+
+Die Listeneinträge der ToDo-Liste bekommen eine blaue Textfarbe. Die ursprüngliche Farbe Grau wird automatisch überschrieben. Hier könnte man auch `#todo-list li` schreiben 
+
+```css
+#todo-list .list-item {
+  color: darkblue;
+}
+```
+
+Einträge mit der in der ToDo-Liste mit der Klasse `done` werde grün eingefärbt. Der vorher gesetze Farbwert blau wird nochmals überschrieben. Auch hier könnte man auch `#todo-list li.done` schreiben.
+
+```css
+#todo-list .list-item.done {
+  color: darkgreen;
+}
+```
+
+📖 **MDN** [Combinators and selector lists
+](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
+
+`!important`
+
+### Box-Model
+Das CSS-Boxmodell ist die Grundlage für das Layout im Web. Jedes Element wird als rechteckige Box dargestellt. Jedes Element kann einen Innenabstand (*padding*), einen Rahmen (*border*) und einen Außenabstand (*margin*) haben. Diese Werte ergeben zusammen mit der intrinsischen Höhe/Breite die absolute Höhe/Breite eines Elements:
+
+```         
++-----------------------------------------------------------------+
+|                             margin                              |
+|    +-------------------------------------------------------+    |
+|    |                        border                         |    |
+|    |    +---------------------------------------------+    |    |
+|    |    |                   padding                   |    |    |
+|    |    |    +-----------------------------------+    |    |    |
+|    |    |    |              element              |    |    |    |
+|    |    |    |                                   |    |    |    |
+|    |    |    |                                   |    |    |    |
+```
+
+Als Beispiel dient hier eine Container für eine Infobox:
+
+```html
+<section class="info-box">
+  <p>Eine Absatz mit informativem Inhalt</p>
+</section>
+```
+
+Die Breite des Containers wird auf 100% der Seitenbreite gesetzt. Die Höhe wird nicht gesetzt und daher von der Größe des Inhalts (viel Text, wenig Text) bestimmt. Außerdem bekommt der Container einen Außenabstand, einen farbigen Rand und Außenabstand von jeweils `20px`. 
+
+```css
+.info-box {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  border: 20px solid red;
+}
+```
+
+### Shorthand-Eigenschaften
+Vor allem wenn man mit Größenangaben arbeiten, erleichtern einem sogenannte *Shorthand-Properties* die Arbeit ungemein. Grundsätzlich kann man die Außenabstände eine Containers einfach einzeln angeben:
+
+```css
+.info-box {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+```
+
+Wenn diese Werte aber gleich sind, kann man aber auch folgende Abkürzung verwenden, um die Werte für alle Seiten auf einmal zu setzen:
+
+```css
+.info-box {
+  margin: 20px;
+}
+```
+
+Wenn jedoch der untere und obere Abstand größer sein soll, kann man dies mit folgender Abkürzung erreichen:
+
+```css
+.info-box {
+  margin: 40px 20px;
+}
+```
+
+Wenn der unter Abstand noch größer sein soll, kann man diese mit der dreifachen Shorthand-Property festlegen:
+
+```css
+.info-box {
+  margin: 40px 20px 60px;
+}
+```
+
+Man kann auch alle Abstände mit nur einer Eigenschaft setzten:
+
+```css
+.info-box {
+  margin: 40px 20px 60px 10px;
+}
+```
+
+Für die Eigenschaften `margin` und `padding` gibt es also vier verschieden Shorthand-Properties:
+
+- `margin: (top, right, bottom, left);`
+- `margin: (top, bottom) (right, left);`
+- `margin: top (right, left) bottom;`
+- `margin: top right left bottom;`
+
+Es gibt noch viele weitere CSS-Eigenschaften (`background`, `font`, `box-shadow`), welche bestimmte Shorthand-Properties unterstützen. Gerade am Anfang aber sollte man eher sparsam damit umgehen.
+
+📖 **MDN** [Shorthand Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
+
+### Größenangaben
+In CSS gibt es verschiedene Arten Größenangaben zu definieren. Um Layouts genau umzusetzen und leicht anpassbar zu entwickeln, ist es wichtig die unterschiede zwischen den verschiedenen Einheiten zu verstehen.
+
+- `px`: Pixel ist die einfachste, aber auch unflexibelsten Einheit, welche man meistens eher vermeiden sollte. Diese liegt vor allem daran, dass jeder Benutzer vor einen unterschiedlich großen Bildschirm sitzt und es schwer ist für jede Konstellation die richtige Pixelgröße zu finden.
+- `%`: Prozentangaben sind flexibel und vor allem für Größenangaben bei Bildern, Containern und Spalten geeignet 
+- `em`: Eine beliebte relative Größenangaben die meisten für alles verwendet wird, was irgendwie mit Typografie zusammenhängt: Schriftgröße, Durchschuss, Abstände etc.
+- `rem`: Funktioniert wie `em`, nur dass sich `rem` immer auf die (Schrift-)größe des `<body>`-Elements bezieht, während sich `em` immer auf die (Schrift-)größe des Elternelementes (*parent*) bezieht.
+- `vh` und `vw`: Eine weiter relative Größeangabe, welche sich auf die Höhe des Benutzerbildschirms (`vh`) oder die Breite (`vw`) bezieht. Sehr praktisch für Aufmacherbilder und Container.
+
+Außerdem gibt es die Einheiten `pc` (Pica) und `pt` (Punkt), welche aus den Urzeiten des Schriftsetzenwesens kommen und im modernen Webdesign eigentlich keine Relevanz mehr haben. 
+
+📖 **W3C**: [CSS-Einheiten](https://www.w3.org/Style/Examples/007/units.de.html)
+
+### Farbwerte
+Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten definieren. Hier ist es vor allem nützlich, wenn sich mit der sehr gängigen [hexadezimalen Farbdefinition](https://de.wikipedia.org/wiki/Hexadezimale_Farbdefinition) auseinandern gesetzt hat. Die Beispiele benutzen alle den gleich blauen Farbton:
+
+- `navy`: Es gibt eine Liste an vordefinierten Farbwerten, die alle über ihren jeweiligen Namen verwendet werden können. Sehr praktisch, da einfach im Code zu lesen.
+- `#000080`: Mit der hexadezimalen Farbdefinition lassen sich über 16 Millionen Farben (256^3) darstellen. Die ersten beiden Ziffern geben den Rotwert, die mittleren beiden Ziffern den Grünwert und die letzten beiden Ziffern den Blauwert an. Die Ziffernpaare geben jeweils einen Hexadezimalwert zwischen `00` (0) und `FF` (255) an. Farbwerte bei den alle Ziffernpaare gleich sind lassen sich auf drei Stellen verkürzen, wie bei diesem Türkiston: `#005588` wird zu `#058`. 
+- `rgb(0, 0, 128)`: Die dezimale Farbdefinition funktioniert im Prinzip wie die hexadezimalen Farbdefinition und bestimmt den Rot-, Grün- und Blauanteil einer Farbe von 0 bis 255. Aus dem hexadezimalen Wert `80` wird ind dieser Definition der dezimale Wert `128`.
+- `rgba(0, 0, 128, 0.5)`: Die dezimale Farbdefinition hat noch einen vierten Parameter der die Transparenz einer Farbe bestimmt. `0` ist durchsichtig, `1` ist undurchsichtig.
+
+📖 **MDN** [Farben](https://developer.mozilla.org/de/docs/Web/CSS/Farben)
 
 ## JavaScript
 JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. 
+
+### Einbinden
 
 ### Variablen
 
