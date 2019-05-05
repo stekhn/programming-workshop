@@ -5,6 +5,15 @@ Gerade für Journalisten ist diese Verständnis zunehmend wichtig, um kritisch �
 
 Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert vor allem Spaß am Lernen und Ausprobieren.
 
+## Inhaltsverzeichnis
+
+🌍 Quellenangaben und Verweise
+📖 Weiterführende Literatur
+💡 Tipps und Tricks
+⚠️ Warnungen und Probleme
+🤓 Nerd-Ecke
+💻 Praktische Aufgaben
+
 ## Programmieren lernen
 Es gibt viele Gründe dafür programmieren zu lernen. Der Einstieg ist leicht und die Vorteile vielzählig:
 
@@ -69,8 +78,8 @@ Für Journalisten sind jedoch vor allem drei Programmiersprachen relevant:
 - **Ruby** ist, ähnlich wie Python, für verschieden Aufgaben im Bereich Datenverarbeitung geeignet. Außerdem wir Ruby on Rails gerne für die Entwicklung von großen Web-Anwendungen verwendet. 
 - **R** eignet sich vor allem für statistische Analysen und das Erstellen einfacher Diagramme und Karten.
 
-📖 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
-📖 **GeeksforGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
+🌍 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
+🌍 **GeeksforGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
 
 ## Algorithmen
 
@@ -81,8 +90,260 @@ Für Journalisten sind jedoch vor allem drei Programmiersprachen relevant:
 ## HTML
 HTML (Hyper Text Markup Language) ist keine Programmiersprache im engere Sinne, sondern eine Auszeichnungssprache. Es beschreibt und definiert den Inhalt einer Webseite zusammen mit dem grundlegenden Layout der Webseite. HTML besteht aus einer Reihe von Elementen, sogenannte Tags, welche dazu verwenden werden, um bestimmte Inhalte wie beispielsweise Überschriften, Absätze oder Bilder einzubinden.
 
+### Grundstruktur eine Seite
+Hier ein einfaches Beispiel für die Grundstruktur einer Seite mit Titel, Überschrift und einem Textabsatz:
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Titel der Webseite</title>
+  </head>
+
+  <body>
+    <h1>Überschrift</h1>
+    <p>Paragraph mit normalem Fließtext</p>
+  </body>
+</html>
+```
+Der `<html>`-Tag umschließt alle Inhalte der Seite. Mit dem Attribut `lang` kann zudem die Hauptsprache einer Seite festgelegt werden.
+
+Das `<head>`-Element einer Seite enthält Information zu einer Seite, welche aber nicht unbedingt angezeigt werden. An dieser Stelle werden Meta-Informationen (für Social Media und SEO) eingetragen, Grundeinstellungen festgelegt und Skripte (JavaScript und CSS) eingebunden.
+
+Im `<body>`-Element finden sich die eigentlichen Inhalte einer Seite wie Texte, Bilder oder Videos.
+
+### Elemente
+HTML unterstützt zur Zeit etwa 130 verschiedene Elemente. In der Praxis braucht man aber meistens nur einen kleinen Teil davon. Im Folgenden werden nur eine Handvoll Elemente vorgestellt, die man als Einsteiger braucht um ein einfache Webseite zu bauen.
+
+Grundsätzlich besteht ein Element aus dem Element-Tag und bei bestimmten Elementen zusätzlich noch aus verschiedenen Attributen und Werten. Hier ein Beispiel für ein Bild-Tag <img> mit zwei Attributen `src` und `alt`:
+
+```html
+<img src="image.jpg" alt="Beispielbild">
+```
+
+`src` ist das sogenannte Attribut und `image.jpg` der Wert. Zusammen geben sie an wo sich das Bild befindet, welches eingebunden werden soll. Das Attribut `alt` ist die Bildbeschreibung, welche für die Barrierefreiheit wichtig ist und auch dann angezeigt wird, wenn das Bild nicht geladen werden kann.
+
+`<img>` gehört zu den Elementen, welche keinen schließenden Tag benötigen. Davon gibt es aber sehr wenige. Die wichtigsten sind: `img`, `input`, `br`, `hr`, `meta` und `link`.
+
+Die meisten Elemente benötigen einen schließenden Tag. Ein Beispiel dafür ist das `<a>`-Element, welches für Links (Anchor) verwendet wird. Hier verwenden wir das `<a>`-Element innerhalb eines `<p>`-Paragraphen. Das Verschachteln von unterschiedlichen Elementen ist typisch für HTML:
+
+```html
+<p>Mehr Informationen zum Thema HTML gibt es auf der <a href="https://developer.mozilla.org/">MDN-Webseite</a>.</p>
+```
+
+Der `<a>`-Tag umschließt den Linktext *MDN-Webseite*. Das Attribut `href` gibt an, wohin der Link führen soll. 
+
+⚠️ *Fehlende schließende Tags sind gerade für Einsteiger eine häufige Fehlerquelle und können das Layout einer Seite zerschießen. Das Problem wird dadurch verstärkt, dass der Browser selbstständig versucht  ungültiges HTML zu reparieren und offene Tags wieder zu schließen. Im Zweifelsfalls hilft es, das eigene HTML auf nicht geschlossenen Tags hin zu überprüfen. Ein gute Code-Editor kann dabei helfen, solche Fehler frühzeitig zu erkennen.*
+
+Welche Attribute ein Element hat, lässt sich auf den Seiten des Mozilla Developer Networks nachschlagen: 📖  [HTML Element Reference](https://developer.mozilla.org/de/docs/Web/HTML/Element)
+
+### Text
+Gerade für Journalisten sind dies die wohl wichtigten HTML-Elemente. Grundsätzlich besteht 
+
+- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Überschriften in absteigender Hierarchie und Textgröße. Eine Hauptüberschrift ist meistens `<h1>` oder `h2`, während man für Zwischentitel eher eine `h3` verwenden würden.
+- `<p>`: Ein Textabschnitt und damit wohl das am häufigsten verwenden HTML-Element.
+
+Um innerhalb des Texts bestimmte Abschnitte oder Wörter hervorzuheben, gibt es folgenden Auszeichnungselemente:
+
+- `<strong>` Markiert besonders wichtigen (stark hervorgehobenen) Text und wird meistens fettgedruckt dargestellt.
+- `<em>` Steht für hervorgehobenen Text (*emphasis*) und wird standardmäßig kursiv dargestellt.
+
+Ein Beispiel:
+
+```html
+<h1>Überschrift</h1>
+<p>Paragraph mit normalem Fließtext und einer <strong>Hervorhebung<strong></p>
+```
+
+💡 *Meistens sind drei Überschriftengrößen (`<h1>`, `<h2>`, `<h3>`) völlig ausreichend.*
+
+💡 *Von der Verwendung der alten Texthervorhebungen `<i>` (kursiv), `<b>` (fett) und `<u>` (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen.*
+
+### Links
+Der <a>-Tag	bezeichnet einen Hyperlink , der auf eine andere Seite oder einen Anker innerhalb der Seite verweist, angegeben durch das href-Attribut.
+
+Ein Beispiel für einen Link:
+
+```html
+<p>Mehr Informationen zum Thema HTML gibt es auf der <a href="https://developer.mozilla.org/">MDN-Webseite</a>.</p>
+```
+
+Ein Beispiel für einen Anchor:
+
+```html
+<p>Mehr Informationen zum Thema Anker erfahren unter dem Abschnitt <a href="#anchor">Anker</a>.</p>
+
+<p id="anchor">Anker sind eine großartige Möglichkeit um Inhalte auf einer Seite untereinander zu verlinken.<p>
+```
+
+Anker beziehen sich immer auf das `id`-Attribut eines Elements und beginnen mit einer Raute `#`.
+
+💡 *Oft sieht man auch das Attribut `target="_blank`. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von `target="_blank` angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut `rel="noopener"` setzen.*
+
+📖 **CSS-Tricks**: [When to use target=”_blank”](https://css-tricks.com/use-target_blank/)
+
+### Bilder
+Bilder sind auf einer Webseite mindestens ebenso wichtig wie Texte. In HTML werden Bilder mit den <img>-Element eingebunden. Diese benötigt im Gegensatz zu den meisten anderen Elementen keinen schließenden Tag und sollte immer ein ein `src`- und ein `alt`-Attribut besitzen.
+
+Ein Beispiel:
+
+```html
+<img src="image.jpg" alt="Beispielbild">
+```
+
+💡 *Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.*
+
+📖 **MDN**: [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) 
+
+### Listen
+Grundsätzlich gibt es zwei Arten von Aufzählungen:
+
+- `<ol>`: geordnete Liste, bei der die Einträge eine bestimmte Reihenfolge haben müssen. Hier wird jedem Listeneintrag eine Zahl vorangestellt.
+- `<ul>`: Liste ungeordneter Einträge mit Bullet-Points.
+- `<li>`: Kennzeichnet einen Listeneintrag innerhalb einer Liste
+
+Hier ein Beispiel für eine ungeordnete Liste:
+
+```html
+<ul>
+  <li>Gemüse einkaufen</li>
+  <li>Fahrrad reparieren</li>
+  <li>Zahnarzttermin vereinbaren</li>
+</ul>
+```
+
+💡 *Listen werden auch gerne dafür eingesetzt, um eine Seitennavigation zu bauen. Das Aussehen einer Liste kann dabei durch CSS stark verändert werden.*
+
+### Tabellen
+Tabellen sind nützliche Helfer um Daten und Informationen strukturiert darzustellen. Eine Tabelle besteht immer aus mehreren verschachtelten HTML-Elementen:
+
+- `<table>`: Markiert eine Tabelle, d.h. Daten mit mehr als einer Dimension.
+- `<tr>`: Steht für eine Zeile mit Tabellenzellen.
+- `<td>`: Kennzeichnet eine einzelne Tabellenzelle.
+- `<th>`: Kennzeichnet eine Tabellenzelle mit einer Beschriftung.
+
+Diese zusätzliche Elemente helfen dabei die Tabelle inhaltlich zu strukturieren, sind aber nicht zwingend notwending:
+
+- `<tbody>`: Steht für die Spalten, die die eigentlichen Daten einer Tabelle enthalten.
+- `<thead>`: Markiert die Gruppe der Tabellenzeilen, die die Beschriftungen der Tabellenspalten enthalten.
+- `<tfoot>`: Markiert die Gruppe der Tabellenzeilen, die die Zusammenfassungen der Tabellenspalten enthalten.
+
+Ein Beispiel für eine dreispaltige Tabelle mit vier Zeilen:
+
+```html
+<table>
+  <tr>
+    <th>Vorname</th>
+    <th>Nachname</th>
+    <th>Alter</th>
+  </tr>
+  <tr>
+    <td>Philipp</td>
+    <td>Primus</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Oskar</td>
+    <td>Optimus</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>Marlene</td>
+    <td>Maximus</td>
+    <td>22</td>
+  </tr>
+</table>
+```
+
+Daraus entsteht folgende Tabelle:
+
+| Vorname | Nachname | Alter |
+|---------|----------|-------|
+| Philipp | Primus   | 25    |
+| Oskar   | Optimus  | 27    |
+| Marlene | Maximus  | 22    |
+
+📖 **MDN**: [Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) 
+
+### Formulare
+
+📖 **MDN**: [Form Element](https://developer.mozilla.org/de/docs/Web/HTML/Element/form) 
+
+### iFrames
+
+📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) 
+
+### Abschnitte und Blöcke
+Semantische Abschnitte helfen dabei eine Seite logisch zu strukturieren und Suchmaschinen und Screen-Readern Hinweise darauf zugeben, wie wichtig einzelne Abschnitte sind und welche Funktion sie erfüllen.
+
+- `<header>`: Mit dem `<header>`-Element wir der Kopfbereich eines Sinnabschnitts ausgezeichnet. Er wird auch für den Kopfbereich der gesamten Website verwendet und enthält üblicherweise das Seitenlogo, einen Slogan und ein `<nav>`-Menü.
+- `<nav>`: Das `<nav>`-Element kennzeichnet die Seitennavigation. Meistens ist dies eine Liste interner Links.
+- `<article>`: Abgeleitet von dem Artikel für die Zeitung werden alle in sich abgeschlossenen Inhalte, wie zum Beispiel Beiträge in einem Blog mit dem `<article>`-Element umfasst.
+- `<section>`: Beschreibt einen thematischen Abschnitt eines Dokuments. Jede `<section>` sollte daher auch eine Überschrift haben.
+- `<aside>`: Inhalte, die nicht zum Hauptinhalt einer Seite zählen, werden mit dem  `<aside>`-Element ausgezeichnet. Mit `<aside>` kann beispielsweise eine Sidebar auf der Website eingerichtet werden.
+- `<footer>`: Die Informationen im Fußbereich der Website oder eines Sinnabschnitts werden mit dem `<footer>`-Element umschlossen.
+- `<main>`: Definiert den Hauptinhalt der Seite. Es ist nur ein `<main>` Element pro Seite zulässig.
+
+Ein Beispiel:
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <title>Titel der Webseite</title>
+</head>
+<body>
+  <header>
+    <h1>Überschrift für die gesamte Webseite</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <h2>Überschrift des ersten Artikels</h2>
+      <p>Text des ersten Artikels</p>
+  </article>
+  <article>
+    <h2>Überschrift des zweiten Artikels</h2>
+    <p>Text des zweiten Artikels</p>
+  </article>
+  <aside>
+    <h3>Überschrift Sidebar</h3>
+    <p>Text in der Sidebar</p>
+  </aside>
+  <footer>
+    <h3>Überschrift Footer</h3>
+    <p>Text im Footer</p>
+  </footer>
+</body>
+</html>
+```
+
+Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird für Abschnitte verwendet, welche keine inhaltliche Bedeutung haben. Oftmals dient es vor allem dazu Container zu erstellen, die dann über CSS gestylt werden können.
+
+💡 *Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen angewiesen sind.*
+
+🌍 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))
+📖 **Kulturbanause**: [HTML-Elemente und Semantik](https://blog.kulturbanause.de/2008/01/html-elemente-und-semantik/)
+
 ## CSS
 CSS (Cascading Style Sheets) ist eine Beschreibungssprache, die das Design einer Webseite bestimmt. Während HTML genutzt wird, um die Struktur und Semantik Ihrer Inhalte zu definieren, dient CSS dazu, deren Erscheinung und Layout zu beeinflussen. So lässt sich CSS beispielsweise nutzen, um die Schriftarten, Farben, Größen und räumliche Abstände der Inhalte zu verändern. Außerdem lassen sich Inhalte in mehreren Spalten anzuordnen oder Animationen und andere dekorative Merkmale hinzuzufügen.
+
+### Aufbau
+
+### Selektoren
+
+- Universelle Selektoren
+- Typselektoren
+- Klassenselektoren
+- Attributselektoren
+- Pseudoklassen
+- ID-Selektoren
+- Inlinestile
 
 ## JavaScript
 JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. 
