@@ -5,14 +5,21 @@ Gerade für Journalisten ist diese Verständnis zunehmend wichtig, um kritisch �
 
 Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert vor allem Spaß am Lernen und Ausprobieren.
 
+**Ziel des Seminars:** 
+
+**Legende**:
+- 🌍 Quellen oder Referenz
+- 📖 Weiterführende Literatur
+- 💡 Tipps und Tricks
+- ⚠️ Warnungen und Probleme
+- 💻 Praktische Aufgaben
+
+**Weitere Workshops**:
+- [Datenvisualisierung mit D3.js lernen](https://github.com/stekhn/d3-workshop)
+- [Kartenvisualisierung mit Leaflet lernen](https://github.com/stekhn/leaflet-workshop)
+
 ## Inhaltsverzeichnis
 
-🌍 Quellenangaben und Verweise
-📖 Weiterführende Literatur
-💡 Tipps und Tricks
-⚠️ Warnungen und Probleme
-🤓 Nerd-Ecke
-💻 Praktische Aufgaben
 
 ## Programmieren lernen
 Es gibt viele Gründe dafür programmieren zu lernen. Der Einstieg ist leicht und die Vorteile vielzählig:
@@ -32,7 +39,7 @@ Web-Seminare und Coding-Plattformen helfen beim Einstieg. Durch kleine Aufgaben 
 ## Programmieren als Job
 Programmieren ist ein Job der sich in den letzten Jahren stark spezialisiert hat. Hier ein kleiner Überblick wo Entwickler im Medienbereich arbeiten:
 
-- **Frontend-Entwickler und UI-Entwickler** entwickeln vor allem  Benutzeroberflächen von Webseiten und Web-Anwendungen. Für diesen Job ist ein grundsätzliche Verständnis von benutzerfreundlicher Gestaltung (Usability) erforderlich, oft geschieht die Entwicklung in enger Zusammenarbeit mit Designern.
+- **Frontend-Entwickler und UI-Entwickler** entwickeln vor allem  Benutzeroberflächen von Webseiten und Web-Anwendungen. Für diesen Job ist ein grundsätzliches Verständnis von benutzerfreundlicher Gestaltung (Usability) erforderlich, oft geschieht die Entwicklung in enger Zusammenarbeit mit Designern.
 - **App-Entwickler (Mobile Developer)** entwickeln vor allem Apps für Smartphones (Android und Apples iOS). Dabei geht es vor allem um Usability und Leistungsoptimierung, da mobile Endgeräte meistens sehr beschränkte Ressourcen haben.
 - **Backend-Entwickler** kümmern sich um die Funktionalität einer Anwendung, welche meist durch Dienste die auf irgendwelchen Servern laufen bereitgestellte werden. Der Job erfordert meist eine enge Absprache mit den Frontend-, App- und gegebenfalls Datenbank-Entwicklern.
 - **Dev-Ops** (Developer Operations) verwalten die Server und teilweise auch die Netzwerkinfrastruktur eines Unternehmens. Meist sind sie eine Art Dienstleister für alle anderen Entwickler die auf funktionierende Server angewiesen sind.
@@ -47,14 +54,14 @@ Eher seltener im Medienbereich anzutreffen sind folgende Berufe:
 - **Experten-Entwickler** sind beispielsweise Wirtschaftsinformatiker, Bioinformatiker und Geoinformatiker sind in Bereichen tätig, in denen bestimmtes Fachwissen gefragt wird.
 
 ## Journalistische Anwendung
-Journalisten verwenden Methoden der Programmierung für unterschiedliche Aufgaben. Meistens geht es jedoch immer darum, entweder Werkzeuge für die Recherche zu entwickeln oder darum eine Geschichte online aufzubereiten.
+Journalisten verwenden Methoden der Programmierung für unterschiedliche Aufgaben. Meistens geht es jedoch  darum, entweder Werkzeuge für die Recherche zu entwickeln oder darum eine Geschichte online aufzubereiten.
 
 - **Scraping**: Daten aus dem Internet einmalig oder regelmäßig herunterladen. Datenquellen können Webseiten, Datenbanken, APIs oder etwas RSS-Feeds sein.
 - **Datenanalyse**: Um Analysen nachvollziehbar und reproduzierbar zu gestalten, verwenden Datenjournalisten oft Skripte um (große) Daten zu analysieren.
 - **Recherche-Werkzeuge**: Werkzeuge die bei der eigene Recherche helfen. Beispiel: Eine interne Plattformen zum Durchsuchen, Analysieren und Kommentieren von geleakten Dokumenten. 
 - **Longreads**: Speziell gestaltet Artikel zum Präsentieren einer großen Recherche oder Geschichte (Leuchturmprojekte) außerhalb des normalen Redaktionssystems.
 - **Grafiken**: Manche Grafiken lassen sich leichter programmieren als händisch zu bauen. Beispiel: Eine Symbolkarte mit hundert Orten und jeweils unterschiedlichen Werten.
-- **interaktive Anwendungen**: Alle Formen von Rechnern, Quizzes und Spielen im journalistischen Kontext.
+- **Interaktive Anwendungen**: Alle Formen von Rechnern, Quizzes und Spielen im journalistischen Kontext.
 - **Web-Analytics**: Benutzerverhalten auf einer Webseite zu verstehen, um den Erfolg einer interaktiven Umsetzung zu messen und zu verbessern.
 
 Diese Anwendungsbereiche sind vor allem für Datenjournalisten, Grafiker (Visual Journalism) und Newsroom-Entwickler relevant. Außerdem wird das Thema künstliche Intelligenz (genauer gesagt Maschine Learning) zunehmend wichtig. Methoden aus diesem Bereich können Journalisten dabei helfen, unstrukturierte Daten wie Dokumente, Bilder oder Videos automatisiert zu analysieren, wie in diesen Beispielen: [Illegaler Bernsteinabbau](http://texty.org.ua/d/2018/amber_eng/) oder [Geheime Überwachungsflüge](https://www.buzzfeednews.com/article/peteraldhous/hidden-spy-planes).
@@ -75,11 +82,11 @@ Für Journalisten sind jedoch vor allem drei Programmiersprachen relevant:
 
 - **JavaScript** wird in Kombination mit HTML und CSS für die Entwicklung von interaktiven Webseiten, Grafiken und Anwendungen im Internet verwendet. Außerdem kann man mit JavaScript (Node.js) auch einfach Backendend-Anwendungen entwickeln.
 - **Python** ist eine universelle Programmiersprache, welche gerne für das Scrapen, Analysieren und Aufbereiten von Daten verwenden wird. Mit dem populäres Framework Django können außerdem komplexe Web-Anwendungen entwickelt werden. Python ist einfach zu lernen und einfach zu lesen.
-- **Ruby** ist, ähnlich wie Python, für verschieden Aufgaben im Bereich Datenverarbeitung geeignet. Außerdem wir Ruby on Rails gerne für die Entwicklung von großen Web-Anwendungen verwendet. 
+- **Ruby** ist ähnlich wie Python für verschieden Aufgaben im Bereich Datenverarbeitung geeignet. Außerdem wir Ruby on Rails gerne für die Entwicklung von großen Web-Anwendungen verwendet. 
 - **R** eignet sich vor allem für statistische Analysen und das Erstellen einfacher Diagramme und Karten.
 
 🌍 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
-🌍 **GeeksforGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
+🌍 **GeeksForGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
 
 ## Algorithmen
 
@@ -266,12 +273,102 @@ Daraus entsteht folgende Tabelle:
 📖 **MDN**: [Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) 
 
 ### Formulare
+Formulare und die dazugehörigen Elemente sind Grundlage um Benutzereingaben zu verarbeiten. Formulare sind nicht nur im Bereich E-Commerce wichtig sondern auch um interaktive Webprojekte zu realisieren. Hier eine Auswahl der wichtigsten Eingabeelemente:
 
-📖 **MDN**: [Form Element](https://developer.mozilla.org/de/docs/Web/HTML/Element/form) 
+- `<form>`: Markiert ein Formular. Formulare bestehen typischerweise aus einer Reihe von Kontrollelementen, deren Werte zur weiteren Verarbeitung an einen Server übertragen werden.
+- `<label>`: Kennzeichnet die Beschriftung für ein Formular-Kontrollelement (z.B. Texteingabefelder).
+- `<input>`: Steht für ein Feld für Benutzereingaben eines bestimmten Typs. Der Typ (Radiobutton, Ankreuzfeld, Texteingabe, etc.) wird anhand des type-Attributs angegeben.
+- `<button>`: Markiert einenButton .
+- `<select>`: Kennzeichnet ein Kontrollelement, mit dem aus einer Reihe von Optionen ausgewählt werden kann.
+- `<datalist>`: Steht für eine Sammlung vordefinierter Optionen für andere Kontrollelemente.
+- `<option>`: Steht für eine Auswahloption innerhalb eines <select>-Elements, oder einen Vorschlag innerhalb eines <datalist>-Elements.
+- `<progress>`: Ein Element zur Fortschrittsanzeige einer bestimmten Aufgabe.
+
+Ein einfaches Beispiel für Kommentarfeld:
+
+```html
+<form id="comment" name="comment" action="/save-comment" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </div>
+  <div>
+    <label for="msg">Nachricht:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+  <div class="button">
+    <button type="submit">Kommentar speichern</button>
+  </div>
+</form>
+```
+
+In diesem Beispiel gehen wir davon aus, dass der Server einen Endpunkt `/save-comment` bereitstellt, der die Benutzereingaben entgegennimmt und speichert. Das ist aber nicht immer der Fall. Alternativ kann auch eine JavaScript-Funktion verwendet werden, um die Benutzereingeben zu verarbeiten.
+
+Dazu müssen die `action`- und `method`-Attribute des Formulars im HTML entfernt werden:
+
+```html
+<form id="comment">
+```
+
+Um eine Aktion auszulösen, wenn der Submit-Button geklickt wird, muss ein Event-Handler registriert werden: 
+
+```html
+<script>
+  document.querySelector('#comment').addEventListener('submit', handleSubmit)
+
+  function handleSubmit(e) {
+    var form = e.target;
+
+    // Formulardaten auslesen
+    var userName = form.querySelector('[name="user_name"]').value;
+    var userMail = form.querySelector('[name="user_mail"]').value;
+    var userComment = form.querySelector('[name="user_comment"]').value;
+
+    // Formulardaten ausgeben
+    console.log(userName, userMail, userComment);
+
+    // Verhindern, dass die Seite neu geladen wird
+    e.preventDefault();
+    return false;
+  }
+</script>
+```
+
+💡 *Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io/) oder [UIKit](https://getuikit.com/) einzusetzen.*
+
+📖 **MDN**: [Form Guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)   
+📖 **FreeCodeCamp**: [A step-by-step guide to getting started with HTML forms](https://medium.freecodecamp.org/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5)   
+📖 **Tuts+**: [Best Form Practices for Beginners](https://code.tutsplus.com/tutorials/20-html-forms-best-practices-for-beginners--net-6593)
 
 ### iFrames
+iFrames können dazu verwendet werden um Inhalte von einer anderen Webseite einzubetten.
 
-📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) 
+Beispiel für eine eingebettete Karte (OpenStreetMap):
+
+```html
+<iframe width="640" height="360" src="https://www.openstreetmap.org/export/embed.html?bbox=11.4071%2C48.0284%2C11.7191%2C48.2326&layer=mapnik"></iframe>
+```
+
+Beispiel für ein YouTube-Embed:
+
+```html
+<iframe width="640" height="360" src="https://www.youtube.com/embed/jpmeWXISU5E?&rel=0&showinfo=0" frameborder="0" allowfullscreen ></iframe>
+```
+
+💡 *Meistens empfiehlt es sich die Breiten- und Höhenangaben in einem iFrame wegzulassen und die Größe über eine CSS-Regel zu definieren. Das ist deutlich flexibler und erlaubt auch prozentuale Größenangeben wie `width: 100%;`* 
+
+Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbetten anzubieten. Hier ein Beispiel für das Einbetten eines Posts von Twitter:
+
+```html
+<blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">&quot;Weeks of coding can save you hours of planning.&quot; - Unknown</p>&mdash; Programming Wisdom (@CodeWisdom) <a href="https://twitter.com/CodeWisdom/status/1031158088018083841?ref_src=twsrc%5Etfw">19. August 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+
+📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) 
 
 ### Abschnitte und Blöcke
 Semantische Abschnitte helfen dabei eine Seite logisch zu strukturieren und Suchmaschinen und Screen-Readern Hinweise darauf zugeben, wie wichtig einzelne Abschnitte sind und welche Funktion sie erfüllen.
