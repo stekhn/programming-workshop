@@ -8,11 +8,11 @@ Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert
 **Ziel des Seminars:** 
 
 **Legende**:
-- 🌍 Quellen oder Referenz
-- 📖 Weiterführende Literatur
-- 💡 Tipps und Tricks
-- ⚠️ Warnungen und Probleme
-- 💻 Praktische Aufgaben
+🌍 Quellen oder Referenz   
+📖 Weiterführende Literatur   
+💡 Tipps und Tricks   
+⚠️ Warnungen und Probleme   
+💻 Praktische Aufgaben
 
 **Weitere Workshops**:
 - [Datenvisualisierung mit D3.js lernen](https://github.com/stekhn/d3-workshop)
@@ -281,7 +281,7 @@ Formulare und die dazugehörigen Elemente sind Grundlage um Benutzereingaben zu 
 - `<button>`: Markiert einenButton .
 - `<select>`: Kennzeichnet ein Kontrollelement, mit dem aus einer Reihe von Optionen ausgewählt werden kann.
 - `<datalist>`: Steht für eine Sammlung vordefinierter Optionen für andere Kontrollelemente.
-- `<option>`: Steht für eine Auswahloption innerhalb eines <select>-Elements, oder einen Vorschlag innerhalb eines <datalist>-Elements.
+- `<option>`: Steht für eine Auswahloption innerhalb eines `<select>`-Elements, oder einen Vorschlag innerhalb eines `<datalist>`-Elements.
 - `<progress>`: Ein Element zur Fortschrittsanzeige einer bestimmten Aufgabe.
 
 Ein einfaches Beispiel für Kommentarfeld:
