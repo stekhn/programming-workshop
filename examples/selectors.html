@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Einfache Kommentarfunktion</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      ul {
+        list-style-type: square;
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .list-item {
+        margin: 1em 0;
+        color: grey;
+      }
+
+      #todo-list {
+        background: aliceblue;
+      }
+
+      #name-list {
+        background: antiquewhite;
+      }
+
+      #todo-list .list-item {
+        color: darkblue;
+      }
+
+      #todo-list .list-item.done {
+        color: darkgreen;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul id="todo-list">
+      <li class="list-item done">Gemüse einkaufen</li>
+      <li class="list-item">Fahrrad reparieren</li>
+      <li class="list-item">Zahnarzttermin vereinbaren</li>
+    </ul>
+
+    <ul id="name-list">
+      <li class="list-item">Philipp</li>
+      <li class="list-item">Oskar</li>
+      <li class="list-item">Marlene</li>
+    </ul>
+
+    <ul>
+      <li>München</li>
+      <li>Hamburg</li>
+      <li>Berlin</li>
+    </ul>
+  </body>
+</html>
