@@ -7,7 +7,7 @@ Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert
 
 **Ziel des Seminars:** 
 
-**Legende**:
+**Legende**:   
 🌍 Quellen oder Referenz   
 📖 Weiterführende Literatur   
 💡 Tipps und Tricks   
@@ -753,6 +753,10 @@ Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten 
 
 📖 **MDN** [Farben](https://developer.mozilla.org/de/docs/Web/CSS/Farben)
 
+### Floats
+
+### Positions
+
 ## JavaScript
 JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. Zusammen mit HTML und CSS bildet JavaScript die Grundlage moderner Web-Technologie. Doch mittlerweile kann JavaScript auch für andere Aufgaben verwendet werden. Durch die Laufzeitumgebung V8 und Node.js können mittlerweile auch leistungsfähige Server- und Desktop-Anwendungen mit JavaScript entwickelt werden. 
 
@@ -809,7 +813,8 @@ function init() {
 ## Neues JavaScript
 In den letzten Jahren hat sich JavaScript als Sprache stark weiterentwickelt. Das hat auch einige Veränderungen in der Syntax mit sich geführt, so dass neueres JavaScript ein wenig anders aussieht als altes JavaScript
 
-Altes JavaScript (auch ECMAScript 5 oder auch ES5)
+**Altes JavaScript** (auch ECMAScript 5 oder auch ES5)
+
 ```javascript
 var names = ['Philipp', 'Andrea', 'Sophie'];
 
@@ -822,7 +827,7 @@ var sayHello = function (array) {
 sayHello(names);
 ```
 
-Neues JavaScript (auch ECMAScript 6, ES6, ES2015, ES2016, ES2017 ...):
+**Neues JavaScript** (auch ECMAScript 6, ES6, ES2015, ES2016, ES2017 ...):
 
 ```javascript
 const names = ['Philipp', 'Andrea', 'Sophie'];
@@ -836,9 +841,9 @@ const sayHello = (array) => {
 sayHello(names);
 ```
 
-Am einfachsten lässt sich neues JavaScript an den Variablennamen `let`, `const` und der Arrow-Funktionen `() => {}` erkennen.
-
 Da noch nicht alle Browser das neue JavaScript perfekt beherrschen, braucht man so genannte *Transpiler* die zwischen den unterschiedlichen JavaScript-Version hin und her übersetzen können. Der bekannteste Transpiler um neues JavaScript in altes JavaScript zu übersetzen ist [Babel](https://babeljs.io/repl). Um altes JavaScript in neues JavaScript zu übersetzen gibt es [Lebab](https://lebab.unibtc.me/editor) (Babel rückwärts geschrieben).
+
+💡 *Am einfachsten lässt sich neues JavaScript an den Variablennamen `let`, `const` und der Arrow-Funktionen `() => {}` erkennen.*
 
 📖 **Ralf S. Engelschall**: [ECMAScript 6 – New Features](http://es6-features.org/)
 
@@ -883,6 +888,8 @@ JavaScript ist eine schwach typisierte oder dynamische Programmiersprache. Daten
 
 ### Operatoren
 
+Mathematische Operatoren:
+
 - `+` addiert zwei Zahlen zusammen: `6 + 9` ergibt `15`
 - `-` subtrahiert zwei Zahlen: `20 - 15` ergibt `5`
 - `*` multipliziert zwei Zahlen miteinander: `3 * 7` ergibt `21`
@@ -890,6 +897,7 @@ JavaScript ist eine schwach typisierte oder dynamische Programmiersprache. Daten
 - `%` Modulo, teilt zwei Zahl durcheinander und gibt den Restwert zurück: `10 % 3` ergibt `1`
 - `**` Potenz, multipliziert eine Zahl entsprechend ihres Exponenten: `4 ** 3` ergibt `64`
 
+Vergleichsoperatoren:
 
 - `===` überprüft, ob die linken und rechten Werte miteinander identisch sind: `5 === 2 + 4` ergibt `false`
 - `!==` überprüft, ob die linken und rechten Werte nicht identisch sind: `5 !== 2 + 3` ergibt `false`
@@ -898,6 +906,7 @@ JavaScript ist eine schwach typisierte oder dynamische Programmiersprache. Daten
 - `<=` testet, ob der linke Wert kleiner oder gleich dem rechten ist: `3 <= 2` ergibt `false`
 - `>=` testet, ob der linke Wert größer oder gleich dem rechten ist: `5 >= 4` ergibt `false`
 
+Logische Operatoren:
 
 - `&&` logisches UND liefert einen Wahrheitswert `true` wenn beide Vergleichswerte `true` sind: `true && false` ergibt `false`
 - `||` logisches ODER liefert einen Wahrheitswert `true` wenn einer der beiden Vergleichswerte `true` ist: `true || false` ergibt `true`
@@ -981,7 +990,7 @@ sayHello('Philipp');
 ```javascript
 ```
 
-### Webseiten veröffentlichen
+## Webseiten veröffentlichen
 
 ## Lokaler Webserver
 
