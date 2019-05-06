@@ -480,6 +480,45 @@ Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird 
 CSS (Cascading Style Sheets) ist eine Beschreibungssprache, die das Design einer Webseite bestimmt. Während HTML genutzt wird, um die Struktur und Semantik Ihrer Inhalte zu definieren, dient CSS dazu, deren Erscheinung und Layout zu beeinflussen. So lässt sich CSS beispielsweise nutzen, um die Schriftarten, Farben, Größen und räumliche Abstände der Inhalte zu verändern. Außerdem lassen sich Inhalte in mehreren Spalten anzuordnen oder Animationen und andere dekorative Merkmale hinzuzufügen.
 
 ### Einbinden
+CSS kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man CSS-Regel direkt in einem `<style>`-Element, meistens im `<head>`-Bereich einer Seite, definieren:
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <title>Titel der Webseite</title>
+
+ <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      color: red;
+    }
+ </style>
+</head>
+<body>
+  <h1>Überschrift</h1>
+</body>
+</html>
+```
+
+Für größere Projekte empfiehlt es sich jedoch die CSS-Regel in einer eigenen CSS-Datei zu schreiben und diese über einen `link`-Tag einzubinden:
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Titel der Webseite</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Überschrift</h1>
+</body>
+</html>
+```
+
+💡 Man kann `<style>` und `<link>`-Tags auch an anderer Stelle im HTML verwenden. Durch das Einbauen im `<head>`-Bereich wird jedoch sichergestellt, dass die Styles geladen sind, bevor die Seite dargestellt wird. Das ist oftmals wichtig, wenn man auf darauf angewiesen ist, dass ein Element eine bestimmte Höhe hat, bevor man damit arbeitet.
 
 ### Aufbau
 Jede CSS-Regel besteht aus einem (oder mehreren) Selektor und meistens mehreren Eigenschaften und Werten. Der Selektor bestimmt, welche Elemente beeinflusst werden und die Eigenschaften und Werte wie die Elemente aussehen sollen. Ein Beispiel
@@ -715,25 +754,232 @@ Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten 
 📖 **MDN** [Farben](https://developer.mozilla.org/de/docs/Web/CSS/Farben)
 
 ## JavaScript
-JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. 
+JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. Zusammen mit HTML und CSS bildet JavaScript die Grundlage moderner Web-Technologie. Doch mittlerweile kann JavaScript auch für andere Aufgaben verwendet werden. Durch die Laufzeitumgebung V8 und Node.js können mittlerweile auch leistungsfähige Server- und Desktop-Anwendungen mit JavaScript entwickelt werden. 
 
 ### Einbinden
+JavaScript kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man den JavaScript-Code direkt in einem `<script>`-Element schreiben:
 
-### Variablen
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <title>Titel der Webseite</title>
+</head>
+<body>
+  <button id="submit">Abschicken</button>
+  <script>
+    document.querySelector('button#submit').addEventHandler('click', () => {
+      console.log('Button wurde geklickt');
+    });
+  </script>
+</body>
+</html>
+```
+
+Für größere Projekte empfiehlt es sich jedoch den JavaScript-Code in eine eigenen Datei zu schreiben und diese über einen `<script>`-Tag mit `src`-Attribut einzubinden:
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Titel der Webseite</title>
+</head>
+<body>
+  <button id="submit">Abschicken</button>
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+Im Gegensatz zu unserem CSS-Beispiel haben wir die Skripte nicht im `<head>`-Bereich der Seite eingebunden. Das liegt daran, dass unser JavaScript-Code davon abhängt, dass das Element <button> schon erstellt wurde. Das ist jedoch nur sichergestellt, wenn wir unseren JavaScript-Code in der Dokumentenstruktur (DOM) erst nach dem oder den benötigeten Elementen einbauen. 
+
+Alternativ kann man den JavaScript-Code so schreiben, dass er erst ausgeführt wird, wenn die ganze Seite geladen wurde:
+
+```javascript
+// Führe die Funktion init aus, wenn die Seite geladen wurde
+document.addEventListener('DOMContentLoaded', init, false);
+
+function init() {
+  // Hier können wir sicher sein, dass der Button schon erstellt wurde
+  document.querySelector('button#submit').addEventHandler('click', () => {
+    console.log('Button wurde geklickt');
+  });
+}
+```
+
+## Neues JavaScript
+In den letzten Jahren hat sich JavaScript als Sprache stark weiterentwickelt. Das hat auch einige Veränderungen in der Syntax mit sich geführt, so dass neueres JavaScript ein wenig anders aussieht als altes JavaScript
+
+Altes JavaScript (auch ECMAScript 5 oder auch ES5)
+```javascript
+var names = ['Philipp', 'Andrea', 'Sophie'];
+
+var sayHello = function (array) {
+  for (var i = 0; i < array.length; i++) {
+    console.log('Hallo ' + names[i]+ '.');
+  }
+}
+
+sayHello(names);
+```
+
+Neues JavaScript (auch ECMAScript 6, ES6, ES2015, ES2016, ES2017 ...):
+
+```javascript
+const names = ['Philipp', 'Andrea', 'Sophie'];
+
+const sayHello = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    console.log(`Hallo ${array[i]}.`);
+  }
+};
+
+sayHello(names);
+```
+
+Am einfachsten lässt sich neues JavaScript an den Variablennamen `let`, `const` und der Arrow-Funktionen `() => {}` erkennen.
+
+Da noch nicht alle Browser das neue JavaScript perfekt beherrschen, braucht man so genannte *Transpiler* die zwischen den unterschiedlichen JavaScript-Version hin und her übersetzen können. Der bekannteste Transpiler um neues JavaScript in altes JavaScript zu übersetzen ist [Babel](https://babeljs.io/repl). Um altes JavaScript in neues JavaScript zu übersetzen gibt es [Lebab](https://lebab.unibtc.me/editor) (Babel rückwärts geschrieben).
+
+📖 **Ralf S. Engelschall**: [ECMAScript 6 – New Features](http://es6-features.org/)
+
+### Variablen und Konstanten
+Variablen `let` und Konstanten `const` sind notwendig um Werte zu speichern und später wieder aufzurufen. Diese Konzept gibt es in eigentlich jeder Programmiersprache.  
+
+Variablen können, nach dem sie erstellt (deklariert wurde), mit einem anderen Wert überschrieben werden.
+
+```javascript
+// Deklaration der Variable
+let name = 'Philipp';
+
+// Kann überschrieben werden
+name = 'Marlene'
+```
+Konstanten können, wie der Name andeutet, nicht überschrieben werden:
+
+```javascript
+// Deklaration der Konstanten
+const name = 'Philipp';
+
+// Kann nicht überschrieben werden und führt zu einem Fehler:
+// Uncaught TypeError: Assignment to constant variable.
+name = 'Marlene' 
+```
+
+In altem JavaScript-Code findet man oft noch `var`-Variablen. Diese funktionieren relativ ähnlich wie `let`-Variablen, sollten aber nicht mehr verwendet werden. Wo möglich immer `const` verwenden, für alles andere `let`. 
+
+### Datentypen
+Datentypen beschreiben die Werte die eine Variable (oder Konstante) annehmen kann. In JavaScript gibt es sieben verschieden Datentypen. 
+
+- **Boolean**: Wahrheitswert `true` oder `false`
+- **Undefined**: Nicht zugewiesener Wert `undefined`.
+- **Null**: Fehlender Wert `null`. Meistens sollte man jedoch `undefined` verwenden.
+- **Number**: Zahlenwert, zum Beispiel `25`, `12.6251` oder `-5`
+- **String**: Zeichenkette, zum Beispiel `'I bims, ein String.'`. Verwendet einfache (empfohlen) oder doppelte Anführungszeichen.
+- **Symbol**: Unveränderlichen, eindeutiger Wert. Versteht aber niemand.
+- **Object**: ein komplexer Datentyp, im einfachsten Fall aber einfach ein nachschlagbare Liste `{Philipp: 25, Marlene: 27, Marlene: 22}`
+- **Array** eigentlich auch ein Objekt, aber vor allem eine sortierte Werteliste `['Philipp', 'Oskar', 'Marlene']`.
+
+JavaScript ist eine schwach typisierte oder dynamische Programmiersprache. Datentypen werden bei einer Variable nicht explizit deklariert und jede Variable kann mit Werten jedes Typen überschrieben werden. Anderen Programmiersprachen lassen dies nicht zu um Fehler zu vermeiden.
+
+### Operatoren
+
+- `+` addiert zwei Zahlen zusammen: `6 + 9` ergibt `15`
+- `-` subtrahiert zwei Zahlen: `20 - 15` ergibt `5`
+- `*` multipliziert zwei Zahlen miteinander: `3 * 7` ergibt `21`
+- `/` teilt zwei Zahl durcheinander: `10 / 5` ergibt `2`
+- `%` Modulo, teilt zwei Zahl durcheinander und gibt den Restwert zurück: `10 % 3` ergibt `1`
+- `**` Potenz, multipliziert eine Zahl entsprechend ihres Exponenten: `4 ** 3` ergibt `64`
+
+
+- `===` überprüft, ob die linken und rechten Werte miteinander identisch sind: `5 === 2 + 4` ergibt `false`
+- `!==` überprüft, ob die linken und rechten Werte nicht identisch sind: `5 !== 2 + 3` ergibt `false`
+- `<` testet, ob der linke Wert kleiner als der rechte ist: `10 < 6` ergibt `false`
+- `>` testet, ob der linke Wert größer als der rechte ist: `10 > 20` ergibt `false`
+- `<=` testet, ob der linke Wert kleiner oder gleich dem rechten ist: `3 <= 2` ergibt `false`
+- `>=` testet, ob der linke Wert größer oder gleich dem rechten ist: `5 >= 4` ergibt `false`
+
+
+- `&&` logisches UND liefert einen Wahrheitswert `true` wenn beide Vergleichswerte `true` sind: `true && false` ergibt `false`
+- `||` logisches ODER liefert einen Wahrheitswert `true` wenn einer der beiden Vergleichswerte `true` ist: `true || false` ergibt `true`
+- `!` logisches NICHT kann einen Wahrheitswert umkehren: `!true` ergibt `false`
+
+🌍 **MDN** [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)   
+📖 **Marius Schulz** [The && and || Operators in JavaScript](https://mariusschulz.com/blog/the-and-and-or-operators-in-javascript)
 
 ### Funktionen
+Funktionen sind eine sinnvolle Möglichkeit JavaScript-Programme zu strukturieren und wiederverwendebare Code-Schnipsel zu definieren. Hier die wichtigsten Eigenschaften:
+
+- Funktionen sind Unterprogramme, welche bestimmte Aufgabe erfüllen.
+- Funktionen werden erst dann ausgeführt, wenn sie aufgerufen werden.
+- Werte können als Parameter an die Funktion übergeben und innerhalb der Funktion als Argumente verwendet werden.
+- Funktionen geben immer Wert zurück. Wenn eine Funktion kein `return`-Statement hat, wird immer `undefined` zurückgegeben.
+
+Es gibt verschiedene Möglichkeiten, eine Funktion in JavaScript zu definieren:
+
+Eine Funktionsdeklaration definiert eine benannte Funktion. Um eine Funktionsdeklaration zu erstellen, verwenden Sie das functionSchlüsselwort gefolgt vom Namen der Funktion. Beim Verabeiten des JavaScript-Codes werden Funktionsdeklaration immer an den Anfang des Codes gesetzt, sodass die Funktion verwendet werden kann, bevor sie definiert wurde.
+
+```javascript
+// Funktion kann verwenden werden, bevor sie definiert wurde
+sayHello('Philipp');
+
+function sayHello(name)  {
+  console.log('Hallo ' + name);
+};
+```
+
+Ein Funktionsausdruck definiert eine benannte oder anonyme Funktion. Eine anonyme Funktion ist eine Funktion die keinen Namen hat. Funktionsausdrücke können erst verwendet werden, nach dem sie definiert wurden:
+
+```javascript
+const sayHello = function (name)  {
+  console.log('Hallo ' + name);
+};
+
+// Funktion kann erst verwendet werden, nach dem sie definiert wurde
+sayHello('Philipp');
+```
+
+Ein Pfeilfunktionsausdruck ist eine kürzere Syntax zum Schreiben von Funktionsausdrücken. Pfeilfunktionen erzeugen keinen eigenen `this`-Wert.
+
+```javascript
+const sayHello = (name) => {
+  console.log('Hallo ' + name);
+};
+
+// Funktion kann erst verwendet werden, nach dem sie definiert wurde
+sayHello('Philipp');
+```
+
+🌍 **Codeburst**: [JavaScript Functions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
 
 ### Bedingungen
 
+```javascript
+```
+
 ### Schleifen
+
+```javascript
+```
 
 ### Arrays und Objekte
 
+```javascript
+```
+
 ### Selektoren
+
+```javascript
+```
 
 ### Web APIs
 
+```javascript
+```
+
 ### Bibliotheken
+
+```javascript
+```
 
 ### Webseiten veröffentlichen
 
