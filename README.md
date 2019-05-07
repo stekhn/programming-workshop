@@ -8,7 +8,7 @@ Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert
 **Ziel des Seminars:** 
 
 **Legende**:   
-🌍 Quellen oder Referenz   
+📖 Quellen oder Referenz   
 📖 Weiterführende Literatur   
 💡 Tipps und Tricks   
 ⚠️ Warnungen und Probleme   
@@ -85,8 +85,8 @@ Für Journalisten sind jedoch vor allem drei Programmiersprachen relevant:
 - **Ruby** ist ähnlich wie Python für verschieden Aufgaben im Bereich Datenverarbeitung geeignet. Außerdem wir Ruby on Rails gerne für die Entwicklung von großen Web-Anwendungen verwendet. 
 - **R** eignet sich vor allem für statistische Analysen und das Erstellen einfacher Diagramme und Karten.
 
-🌍 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
-🌍 **GeeksForGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
+📖 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
+📖 **GeeksForGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
 
 ## Algorithmen
 
@@ -473,7 +473,7 @@ Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird 
 
 💡 *Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen angewiesen sind.*
 
-🌍 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))   
+📖 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))   
 📖 **Kulturbanause**: [HTML-Elemente und Semantik](https://blog.kulturbanause.de/2008/01/html-elemente-und-semantik/)
 
 ## CSS
@@ -912,7 +912,7 @@ Logische Operatoren:
 - `||` logisches ODER liefert einen Wahrheitswert `true` wenn einer der beiden Vergleichswerte `true` ist: `true || false` ergibt `true`
 - `!` logisches NICHT kann einen Wahrheitswert umkehren: `!true` ergibt `false`
 
-🌍 **MDN**: [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)   
+📖 **MDN**: [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)   
 📖 **Marius Schulz**: [The && and || Operators in JavaScript](https://mariusschulz.com/blog/the-and-and-or-operators-in-javascript)
 
 ### Funktionen
@@ -958,17 +958,97 @@ const sayHello = (name) => {
 sayHello('Philipp');
 ```
 
-🌍 **Codeburst**: [JavaScript Functions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
+📖 **MDN**: [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+📖 **Codeburst**: [JavaScript Functions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
 
-### Strings
+### Textmanipulation
+Mit Zeichenketten (*strings*) zu arbeiten gehört zum Alltag eines jeden Programmierers. JavaScript bietet dafür viele nützliche Methoden:
+
+Strings verketten:
+
+```javascript
+const name = 'Philipp';
+const age = 25;
+const occupation = 'Koch';
+const city = 'Stuttgart';
+
+// Modernes JavaScript 
+console.log(`${Philipp} ist ${age} Jahre alt und arbeitet als ${occupation} in ${city}`);
+
+// Oldschool JavaScript
+console.log(name + ' ist ' + age + ' Jahre alt und arbeitet als ' + occupation + ' in ' + city);
+```
+
+Die moderne Methode ist gerade bei mehreren Variablen deutlich einfach zu schreiben und vermeidet Fehler durch fehlende `+`-Zeichen und Leerzeichen.
+
+Länge eines Textstrings ermitteln:
+
+```javascript
+const name = 'Philipp';
+console.log(name.length);
+
+// 7
+```
+
+Jede String ist für JavaScript ein Array and Buchstaben und Zeichen und hat daher auch eine Länge. Auf die einzelnen Werte kann über den Index (die Position im Array) auch direkt zugegriffen werden:
+
+```javascript
+const name = 'Philipp';
+console.log(name[1]);
+
+// h
+```
+
+Um einen Zeichenkombination in eine String zu finden, können wir die Array-Methode `Array.indexOf()` verwenden:
+
+```javascript
+const phrase = 'Philipp ist cool';
+console.log(phrase.indexOf('ist'));
+
+// 8
+```
+
+Das Wort `ist` finde wir an achter Stelle im Array. Wir eine Zeichenkombination nicht gefunden, gibt die Methode immer `-1` zurück. Das ist nützlich um zum Beispiel zu überprüfen ob ein bestimmter Wert in einer Liste (Array) an Werten vorkommt oder nicht:
+
+```javascript
+const participants = ['Philipp', 'Andrea', 'Sophie'];
+
+if (participants.indexOf('Jana') === -1) {
+  console.log('Sorry, du stehst nicht auf unserer Liste');
+}
+```
+
+String in Klein- oder Großbuchstaben umwandeln:
+
+```javascript
+const name = 'Philipp';
+console.log(name.toLowerCase()); // philipp
+console.log(name.toUpperCase()); // Philipp
+```
+
+Das kann nützlich sein, um Benutzereingaben zu vereinheitlichen, zum Beispiel um daraus Benutzernamen zu generieren oder sie in einer Datenbank zu speichern.
+
+Zeichen in einer Zeichenfolge ersetzt:
+
+```javascript
+const phrase = 'Philipp ist cool';
+console.log(phrase.replace('Philipp', 'Jana'));
+
+// Jana ist cool
+```
+
+⚠️ *Wenn man mit Strings arbeitet, ersetzt `Array.replace()` immer nur den ersten Treffer. Wenn man mehrer Vorkommen eines Strings ersetzen möchte, muss man dazu eine sogenannte [Regular Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) verwenden: `phrase.replace(/Philipp/g, 'Jana')`
+
+📖 **MDN**: [Useful string methods
+ Languages   Edit   Advanced](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
 
 ### Bedingungen
 Mit Bedingungen (*conditionals*) kann man den Ablauf eines Programms steuern. Das Konzept ist relativ leicht zu verstehen, da es sich um eine einfache „Wenn, dann, ansonsten“-Logik handelt.
 
 ```javascript
-const personIsHungry = true;
+const isHungry = true;
 
-if (personIsHungry) {
+if (isHungry) {
   console.log('Geh was essen!');
 } else {
   console.log('Mach deine Hausaufgaben!');
@@ -977,17 +1057,17 @@ if (personIsHungry) {
 // Geh was essen!
 ```
 
-Wenn die Bedingung `personIsHungry` wahr, also `true` ist, wird der erste Block ausgeführt. Beim ersten Treffer wird die Schleife abgebrochen. Wenn keine Bedingung zutrifft, wird der `else`-Block ausgeführt werden. Der `else`-Block ist jedoch optional und kann auch weggelassen werden. In diesem Fall würde einfach nichts passieren, beziehungsweise ausgegeben werden.
+Wenn die Bedingung `isHungry` wahr, also `true` ist, wird der erste Block ausgeführt. Beim ersten Treffer wird die Schleife abgebrochen. Wenn keine Bedingung zutrifft, wird der `else`-Block ausgeführt werden. Der `else`-Block ist jedoch optional und kann auch weggelassen werden. In diesem Fall würde einfach nichts passieren, beziehungsweise ausgegeben werden.
 
 Man kann auch mehrere Bedingungen definieren:
 
 ```javascript
-const personIsHungry = false;
-const personIsHungry = true;
+const isHungry = false;
+const isThirsty = true;
 
-if (personIsHungry) {
+if (isHungry) {
   console.log('Geh was essen!');
-} else if (personIsHungry) {
+} else if (isThirsty) {
   console('Du solltest was trinken!')
 } else {
   console.log('Mach deine Hausaufgaben!');
@@ -999,12 +1079,12 @@ if (personIsHungry) {
 In diesem Fall würde der zweite Block `else if`-Block ausgeführt werden.
 
 ```javascript
-const personIsHungry = true;
-const personIsHungry = true;
+const isHungry = true;
+const isThirsty = true;
 
-if (personIsHungry) {
+if (isHungry) {
   console.log('Geh was essen!');
-} else if (personIsHungry) {
+} else if (isThirsty) {
   console('Du solltest was trinken!')
 } else {
   console.log('Mach deine Hausaufgaben!');
@@ -1016,12 +1096,12 @@ if (personIsHungry) {
 Wenn beide Bedingungen wahr sind, würde nur die erste davon ausgegeben werden, da die Schleife abbricht sobald eine Bedingung erfüllt ist. 
 
 ```javascript
-const personIsHungry = false;
-const personIsHungry = false;
+const isHungry = false;
+const isThirsty = false;
 
-if (personIsHungry) {
+if (isHungry) {
   console.log('Geh was essen!');
-} else if (personIsHungry) {
+} else if (isThirsty) {
   console('Du solltest was trinken!')
 } else {
   console.log('Mach deine Hausaufgaben!');
@@ -1087,6 +1167,8 @@ if (hasChaperone) {
 
 ⚠️ *Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer `true`. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: `if (userName !== undefined)`*
 
+📖 **MDN**: [Conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+
 ### Schleifen
 Schleifen (*loops*) sind nützlich, um sich wiederholende Aufgaben innerhalb eines Programms schnell zu erledigen. In JavaScript gibt es verschieden Möglichkeiten Schleifen zu programmieren. Jede Möglichkeit hat bestimmte Vor- und Nachteile.
 
@@ -1142,7 +1224,8 @@ names.forEach((name, index) => {
 
 Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber keinen Vorteil gegenüber der normalen **For-Loop** bieten und ziemlich „oldschool“ sind.
 
-**Impressive Webs**: [What’s the Best Way to Write a JavaScript For Loop?](https://www.impressivewebs.com/javascript-for-loop/)
+📖 **MDN**: [Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
+📖 **Impressive Webs**: [What’s the Best Way to Write a JavaScript For Loop?](https://www.impressivewebs.com/javascript-for-loop/)
 
 ### Arrays und Objekte
 
