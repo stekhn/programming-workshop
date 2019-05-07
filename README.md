@@ -820,7 +820,7 @@ var names = ['Philipp', 'Andrea', 'Sophie'];
 
 var sayHello = function (array) {
   for (var i = 0; i < array.length; i++) {
-    console.log('Hallo ' + names[i]+ '.');
+    console.log('Hallo ' + array[i]+ '.');
   }
 }
 
@@ -960,15 +960,189 @@ sayHello('Philipp');
 
 🌍 **Codeburst**: [JavaScript Functions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
 
+### Strings
+
 ### Bedingungen
+Mit Bedingungen (*conditionals*) kann man den Ablauf eines Programms steuern. Das Konzept ist relativ leicht zu verstehen, da es sich um eine einfache „Wenn, dann, ansonsten“-Logik handelt.
 
 ```javascript
+const personIsHungry = true;
+
+if (personIsHungry) {
+  console.log('Geh was essen!');
+} else {
+  console.log('Mach deine Hausaufgaben!');
+}
+
+// Geh was essen!
 ```
+
+Wenn die Bedingung `personIsHungry` wahr, also `true` ist, wird der erste Block ausgeführt. Beim ersten Treffer wird die Schleife abgebrochen. Wenn keine Bedingung zutrifft, wird der `else`-Block ausgeführt werden. Der `else`-Block ist jedoch optional und kann auch weggelassen werden. In diesem Fall würde einfach nichts passieren, beziehungsweise ausgegeben werden.
+
+Man kann auch mehrere Bedingungen definieren:
+
+```javascript
+const personIsHungry = false;
+const personIsHungry = true;
+
+if (personIsHungry) {
+  console.log('Geh was essen!');
+} else if (personIsHungry) {
+  console('Du solltest was trinken!')
+} else {
+  console.log('Mach deine Hausaufgaben!');
+}
+
+// Du solltest was trinken!
+```
+
+In diesem Fall würde der zweite Block `else if`-Block ausgeführt werden.
+
+```javascript
+const personIsHungry = true;
+const personIsHungry = true;
+
+if (personIsHungry) {
+  console.log('Geh was essen!');
+} else if (personIsHungry) {
+  console('Du solltest was trinken!')
+} else {
+  console.log('Mach deine Hausaufgaben!');
+}
+
+// Geh was essen!
+```
+
+Wenn beide Bedingungen wahr sind, würde nur die erste davon ausgegeben werden, da die Schleife abbricht sobald eine Bedingung erfüllt ist. 
+
+```javascript
+const personIsHungry = false;
+const personIsHungry = false;
+
+if (personIsHungry) {
+  console.log('Geh was essen!');
+} else if (personIsHungry) {
+  console('Du solltest was trinken!')
+} else {
+  console.log('Mach deine Hausaufgaben!');
+}
+
+// Mach deine Hausaufgaben!
+```
+
+Wenn keine Bedingung erfüllt wird, tritt der `else`-Fall ein.
+
+Man kann in den Bedingungen auch mit logischen Operatoren arbeiten. Wichtig ist aber, dass diese irgendeinen Wahrheitswert zurückgeben. In diesem Beispiel ist auch die Reihenfolge der Bedingungen wichtig, da diese logisch aufeinander aufbauen.
+
+In diesem Beispiel bauen wir einen Empfehlungsalgorithmus, der bestimmt wann ein Kind zuhause sein muss:
+
+```javascript
+const age = 15;
+
+if (age > 18) {
+  console.log('Sei bitte bis spätestens 2 Uhr zuhause!');
+} else if (age > 16) {
+  console.log('Sei bitte bis spätestens 24 Uhr zuhause!');
+} else if (age > 14) {
+  console.log('Sei bitte bis spätestens 22 Uhr zuhause!');
+} else if (age > 12) {
+  console.log('Sei bitte bis spätestens 20 Uhr zuhause!');
+} else {
+  console.log('Wenn du älter bist, darfst du auch mal aus dem Haus.');
+}
+
+// Sei bitte bis spätestens 22 Uhr zuhause!
+```
+
+Außerdem kann man Bedingungen ineinander verschachteln. In diesem Fall darf ein Kind länger wegbleiben, wenn eine volljährige Aufsichtsperson mit dabei ist. Es sei denn, dass Kind ist 14 oder jünger, dann muss es um 22 Uhr zuhause sein.  
+
+```javascript
+const hasChaperone = true;
+const age = 15;
+
+if (hasChaperone) {
+  if (age <= 14 ) {
+    console.log('Sei bitte bis spätestens 22 Uhr zuhause!')
+  } else {
+    console.log('Egal wann du nach Hause kommst, aber benimm dich!')
+  }
+} else {
+  if (age >= 18) {
+    console.log('Sei bitte bis spätestens 2 Uhr zuhause!');
+  } else if (age >= 16) {
+    console.log('Sei bitte bis spätestens 24 Uhr zuhause!');
+  } else if (age >= 14) {
+    console.log('Sei bitte bis spätestens 22 Uhr zuhause!');
+  } else if (age >= 12) {
+    console.log('Sei bitte bis spätestens 20 Uhr zuhause!');
+  } else {
+    console.log('Wenn du älter bist, darfst du auch mal aus dem Haus.');
+  }
+} 
+
+// Sei bitte bis spätestens 22 Uhr zuhause!
+```
+
+💡 *Man sollte es mit dem Verschachteln von if-Bedingungen nicht übertreiben. Mehr als drei Logik-Ebenen sind schwer zu verstehen, führen zu endlosen Fehlersuchen und werden generell als schlechten Stil angesehen.*
+
+⚠️ *Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer `true`. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: `if (userName !== undefined)`*
 
 ### Schleifen
+Schleifen (*loops*) sind nützlich, um sich wiederholende Aufgaben innerhalb eines Programms schnell zu erledigen. In JavaScript gibt es verschieden Möglichkeiten Schleifen zu programmieren. Jede Möglichkeit hat bestimmte Vor- und Nachteile.
+
+**For-Schleifen** sind die flexibelsten Formen von Schleifen und bestehen aus `for(Zähler, Abbruchbedingung, Iterator)`. Der Zähler `i` definiert eine Variable und ihren Startwert (meistens Null). Die Abbruchbedingung definiert, wann die Schleife zu Ende sein soll – in diesem Beispiel bevor der Zähler den gleichen Wert hat, wie die Anzahl der Personen (`names.length`). Der Iterator legt den Betrag fest, um den der Zähler `i` erhöht (oder erniedrigt) wird. `i++` bedeutet in diesem Fall, dass der Zähler immer um eins erhöht wird.
 
 ```javascript
+const names = ['Philipp', 'Andrea', 'Sophie'];
+
+for (let i = 0; i < names.length; i++) {
+  console.log(`Hallo ${names[i]}, du bist die Nummer ${i}`);
+}
+
+// Hallo Philipp, du bist die Nummer 0
+// Hallo Philipp, du bist die Nummer 1
+// Hallo Philipp, du bist die Nummer 2
 ```
+
+Direkt auf den Zähler zugreifen zu können ist dann praktisch, wenn man zum Beispiel nur jede zweite Person ausgeben möchte `i += 2`, kurz für `i = i + 2`. Wichtig ist, dass die Abbruchbedingung erreicht werden kann, da die Schleife sonst endlos läuft und das Programm oder der Browser abstürzen kann. Die folgenden Möglichkeiten eine Schleife zu schreiben sind  deutlich sicherer:
+
+**For-Of-Loops** für Arrays kann man dann verwenden, wenn man nicht auf einen Zähler angewiesen ist:
+
+```javascript
+const names = ['Philipp', 'Andrea', 'Sophie'];
+
+for (let name of names) {
+  console.log(`Hallo ${name}.`);
+}
+```
+
+**For-In-Loops** für Objekte funktioniert ganz ähnlich:
+
+```javascript
+const names = {
+  personA: 'Philipp', 
+  personB: 'Andrea', 
+  personC: 'Sophie'
+};
+
+for (let name in names) {
+  console.log(`Hallo ${name}.`);
+}
+```
+
+**Array.forEach()** ist eine weitere Funktion mit der man über Arrays iterieren (Nerd-Sprech für Schleifen bauen) kann. Der Vorteil ist, dass man hier auch auf den Index (Position im Array) eines Wertes zugreifen kann:
+
+```javascript
+const names = ['Philipp', 'Andrea', 'Sophie'];
+
+names.forEach((name, index) => {
+  console.log(`Hallo ${name}, du bist die Nummer ${index}.`);
+});
+```
+
+Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber keinen Vorteil gegenüber der normalen **For-Loop** bieten und ziemlich „oldschool“ sind.
+
+**Impressive Webs**: [What’s the Best Way to Write a JavaScript For Loop?](https://www.impressivewebs.com/javascript-for-loop/)
 
 ### Arrays und Objekte
 
