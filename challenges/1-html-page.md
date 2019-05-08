@@ -6,7 +6,8 @@ Deine Webseite sollte folgende Inhalte haben:
 - Hauptüberschrift und mehrere Unterüberschriften
 - Texte zum Aussehen, dem Lebensraum, dem Verhalten und was du noch gerne möchtest
 - Hervorhebungen wichtiger Textpassagen
-- Bild der Schwarzfußkatzen
+- Bild der Schwarzfußkatze
+- YouTube-Video wie dieser [BBC-Clip](https://www.youtube.com/watch?v=s6d9rqhivQY)
 - Liste mit Links zu weiterführenden Katzenartikeln
 - Tabelle die erklärt wo Schwarzfußkatzen in der Katzenfamilie einzuordnen ist
 - Newsletterformular, in dem sich Katzenfreunde eintragen können
