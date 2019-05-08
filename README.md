@@ -5,21 +5,20 @@ Gerade für Journalisten ist diese Verständnis zunehmend wichtig, um kritisch �
 
 Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert vor allem Spaß am Lernen und Ausprobieren.
 
-**Ziel des Seminars:**   
+### Ziel des Seminars
 Teilnehmer des Seminars sollen die Grundlagen der Web-Entwicklung mit HTML, CSS und JavaScript lernen. Dabei steht die praktische Vermittlung von Programmierkenntnissen, so wie das Entwickeln von Problemlösungsstrategien im Vordergrund.
 
-**Legende**:   
+### Legende
 📖 Quellen und Literatur   
 💡 Tipps und Tricks   
 ⚠️ Warnungen und Probleme   
 💻 Praktische Aufgaben
 
-**Weitere Workshops**:
+### Weitere Workshops
 - [Datenvisualisierung mit D3.js lernen](https://github.com/stekhn/d3-workshop)
 - [Kartenvisualisierung mit Leaflet lernen](https://github.com/stekhn/leaflet-workshop)
 
 ## Inhaltsverzeichnis
-
 
 ## Programmieren lernen
 Es gibt viele Gründe dafür programmieren zu lernen. Der Einstieg ist leicht und die Vorteile vielzählig:
@@ -64,7 +63,7 @@ Journalisten verwenden Methoden der Programmierung für unterschiedliche Aufgabe
 - **Interaktive Anwendungen**: Alle Formen von Rechnern, Quizzes und Spielen im journalistischen Kontext.
 - **Web-Analytics**: Benutzerverhalten auf einer Webseite zu verstehen, um den Erfolg einer interaktiven Umsetzung zu messen und zu verbessern.
 
-Diese Anwendungsbereiche sind vor allem für Datenjournalisten, Grafiker (Visual Journalism) und Newsroom-Entwickler relevant. Außerdem wird das Thema künstliche Intelligenz (genauer gesagt Maschine Learning) zunehmend wichtig. Methoden aus diesem Bereich können Journalisten dabei helfen, unstrukturierte Daten wie Dokumente, Bilder oder Videos automatisiert zu analysieren, wie in diesen Beispielen: [Illegaler Bernsteinabbau](http://texty.org.ua/d/2018/amber_eng/) oder [Geheime Überwachungsflüge](https://www.buzzfeednews.com/article/peteraldhous/hidden-spy-planes).
+Diese Anwendungsbereiche sind vor allem für Datenjournalisten, Grafiker (Visual Journalism) und Newsroom-Entwickler relevant. Außerdem wird das Thema künstliche Intelligenz, oder genauer gesagt Maschine Learning, zunehmend wichtig. Methoden aus diesem Bereich können Journalisten dabei helfen, unstrukturierte Daten wie Dokumente, Bilder oder Videos automatisiert zu analysieren, wie diese Beispielen eindrucksvoll zeigen: [Illegaler Bernsteinabbau (Texty)](http://texty.org.ua/d/2018/amber_eng/) oder [Geheime Überwachungsflüge (BuzzFeedNews)](https://www.buzzfeednews.com/article/peteraldhous/hidden-spy-planes).
 
 ## Unterschiedliche Programmiersprachen
 [Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages) zählt über 700 verschieden Programmiersprachen. Davon sind aber die wenigsten tatsächlich relevant. Mittlerweile habe sich ungefähr 15 Programmiersprachen durchgesetzt, welche bei den meisten Projekten zum Einsatz kommen. Es gibt verschieden Möglichkeiten Programmiersprachen in Kategorien einzuordnen. Hier ein Auswahl populärer Programmiersprachen nach Anwendungsfall:
@@ -106,7 +105,7 @@ Die Unterstützung für HTML und CSS ist bereits eingebaut. Sogenannten Linter h
 
 💡 *Es gibt in Visual Studio Code vor allem eine wichtige Tastenkombination: `Strg` + `Shift` + `P` öffnet das Befehlsmenü, über das man schnell häufig genutzte Funktionen aufrufen kann. So muss man sich keine hundert Tastenkombinationen merken, sondern kann einfach eingeben, was man gerne tun möchte.*
 
-Weitere Editoren: [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/), [Atom](https://atom.io/), [Coda](https://panic.com/coda/), [Brackets](http://brackets.io/)
+Weitere gute Code-Editoren sind [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/), [Atom](https://atom.io/), [Coda](https://panic.com/coda/) und [Brackets](http://brackets.io/).
 
 ## HTML
 HTML (Hyper Text Markup Language) ist keine Programmiersprache im engere Sinne, sondern eine Auszeichnungssprache. Es beschreibt und definiert den Inhalt einer Webseite zusammen mit dem grundlegenden Layout der Webseite. HTML besteht aus einer Reihe von Elementen, sogenannte Tags, welche dazu verwenden werden, um bestimmte Inhalte wie beispielsweise Überschriften, Absätze oder Bilder einzubinden.
@@ -197,7 +196,7 @@ CSS-Beispiel:
 }
 ```
 
-Javascript Beispiel:
+JavaScript-Beispiel:
 
 ```javascript
 // Einen Button nach ID auswählen
@@ -766,7 +765,7 @@ Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten 
 - `rgb(0, 0, 128)`: Die dezimale Farbdefinition funktioniert im Prinzip wie die hexadezimalen Farbdefinition und bestimmt den Rot-, Grün- und Blauanteil einer Farbe von 0 bis 255. Aus dem hexadezimalen Wert `80` wird ind dieser Definition der dezimale Wert `128`.
 - `rgba(0, 0, 128, 0.5)`: Die dezimale Farbdefinition hat noch einen vierten Parameter der die Transparenz einer Farbe bestimmt. `0` ist durchsichtig, `1` ist undurchsichtig.
 
-📖 **MDN** [Farben](https://developer.mozilla.org/de/docs/Web/CSS/Farben)
+📖 **MDN**: [Farben](https://developer.mozilla.org/de/docs/Web/CSS/Farben)
 
 ### Floats
 
@@ -973,7 +972,7 @@ const sayHello = (name) => {
 sayHello('Philipp');
 ```
 
-📖 **MDN**: [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+📖 **MDN**: [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)   
 📖 **Codeburst**: [JavaScript Functions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
 
 ### Textmanipulation
@@ -1260,6 +1259,9 @@ Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber 
 ```
 
 ### Event Listener
+
+```javascript
+```
 
 ### Web APIs
 
