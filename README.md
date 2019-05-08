@@ -5,11 +5,11 @@ Gerade für Journalisten ist diese Verständnis zunehmend wichtig, um kritisch �
 
 Glücklicherweise ist Programmieren lernen so einfach wie noch nie und erfordert vor allem Spaß am Lernen und Ausprobieren.
 
-**Ziel des Seminars:** 
+**Ziel des Seminars:**   
+Teilnehmer des Seminars sollen die Grundlagen der Web-Entwicklung mit HTML, CSS und JavaScript lernen. Dabei steht die praktische Vermittlung von Programmierkenntnissen, so wie das Entwickeln von Problemlösungsstrategien im Vordergrund.
 
 **Legende**:   
-📖 Quellen oder Referenz   
-📖 Weiterführende Literatur   
+📖 Quellen und Literatur   
 💡 Tipps und Tricks   
 ⚠️ Warnungen und Probleme   
 💻 Praktische Aufgaben
@@ -78,7 +78,7 @@ Diese Anwendungsbereiche sind vor allem für Datenjournalisten, Grafiker (Visual
 
 Mittlerweile ist es sehr selten, dass Unternehmen nur auf eine Programmiersprache setzen. Durch Containerlösungen und Virtualisierung können mittlerweile unterschiedeliche Programmiersprachen parallel eingesetzt werden. Das ist durchaus sinnvoll, da jede Programmiersprache ihre eigenen Stärken hat. 
 
-Für Journalisten sind jedoch vor allem drei Programmiersprachen relevant:
+Für Journalisten sind jedoch vor allem vier Programmiersprachen relevant:
 
 - **JavaScript** wird in Kombination mit HTML und CSS für die Entwicklung von interaktiven Webseiten, Grafiken und Anwendungen im Internet verwendet. Außerdem kann man mit JavaScript (Node.js) auch einfach Backendend-Anwendungen entwickeln.
 - **Python** ist eine universelle Programmiersprache, welche gerne für das Scrapen, Analysieren und Aufbereiten von Daten verwenden wird. Mit dem populäres Framework Django können außerdem komplexe Web-Anwendungen entwickelt werden. Python ist einfach zu lernen und einfach zu lesen.
@@ -88,11 +88,25 @@ Für Journalisten sind jedoch vor allem drei Programmiersprachen relevant:
 📖 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
 📖 **GeeksForGeeks**: [Top 10 Programming Languages of the World](https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/) 
 
-## Algorithmen
-
 ## Code-Editor
+Visual Studio Code ist ein kostenloser Editor, der viele Programmiersprachen unterstützt und mit Plugins erweitert und angepasst werden kann.
 
-## Linter
+Hier eine kleine Installationsanleitung für Windows-PC ohne Administratorrechte:
+1. Visual Studio Code [hier](https://code.visualstudio.com/Download) herunterladen (Windows, 64 bit, Zip) 
+2. Zip-Datei in einen Ordner `VSCode` entpacken
+3. Im Ordner `VSCode` einen neuen Ordner `data` erstellen ([Portable-Modus](https://code.visualstudio.com/docs/editor/portable))
+4. `Code.exe` ausführen, um den Editor zu starten
+
+Um den Editor optimal nutzen zu können, sollten man noch ein paar Plugins (*extensions*) installieren:
+- **ESLint**: Fehlerüberprüfung für JavaScript-Code
+- **Prettier**: Code richtig formatieren und einrücken
+- **devServer**: kleiner Web-Server
+
+Die Unterstützung für HTML und CSS ist bereits eingebaut. Sogenannten Linter helfen dabei, Fehler im Code frühzeitig zu erkennen. Das erspart viel Ärger und Arbeit bei der Fehlersuche.
+
+💡 *Es gibt in Visual Studio Code vor allem eine wichtige Tastenkombination: `Strg` + `Shift` + `P` öffnet das Befehlsmenü, über das man schnell häufig genutzte Funktionen aufrufen kann. So muss man sich keine hundert Tastenkombinationen merken, sondern kann einfach eingeben, was man gerne tun möchte.*
+
+Weitere Editoren: [Sublime Text](https://www.sublimetext.com/), [Notepad++](https://notepad-plus-plus.org/), [Atom](https://atom.io/), [Coda](https://panic.com/coda/), [Brackets](http://brackets.io/)
 
 ## HTML
 HTML (Hyper Text Markup Language) ist keine Programmiersprache im engere Sinne, sondern eine Auszeichnungssprache. Es beschreibt und definiert den Inhalt einer Webseite zusammen mit dem grundlegenden Layout der Webseite. HTML besteht aus einer Reihe von Elementen, sogenannte Tags, welche dazu verwenden werden, um bestimmte Inhalte wie beispielsweise Überschriften, Absätze oder Bilder einzubinden.
@@ -130,7 +144,7 @@ Grundsätzlich besteht ein Element aus dem Element-Tag und bei bestimmten Elemen
 
 `src` ist das sogenannte Attribut und `image.jpg` der Wert. Zusammen geben sie an wo sich das Bild befindet, welches eingebunden werden soll. Das Attribut `alt` ist die Bildbeschreibung, welche für die Barrierefreiheit wichtig ist und auch dann angezeigt wird, wenn das Bild nicht geladen werden kann.
 
-`<img>` gehört zu den Elementen, welche keinen schließenden Tag benötigen. Davon gibt es aber sehr wenige. Die wichtigsten sind: `img`, `input`, `br`, `hr`, `meta` und `link`.
+`<img>` gehört zu den Elementen, welche keinen schließenden Tag benötigen. Davon gibt es aber sehr wenige. Die wichtigsten sind: `<img>`, `<input>`, `<br>`, `<hr>`, `<meta>` und `<link>`.
 
 Die meisten Elemente benötigen einen schließenden Tag. Ein Beispiel dafür ist das `<a>`-Element, welches für Links (Anchor) verwendet wird. Hier verwenden wir das `<a>`-Element innerhalb eines `<p>`-Paragraphen. Das Verschachteln von unterschiedlichen Elementen ist typisch für HTML:
 
@@ -216,7 +230,7 @@ Ein Beispiel:
 💡 *Von der Verwendung der alten Texthervorhebungen `<i>` (kursiv), `<b>` (fett) und `<u>` (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen.*
 
 ### Links
-Der <a>-Tag	bezeichnet einen Hyperlink , der auf eine andere Seite oder einen Anker innerhalb der Seite verweist, angegeben durch das href-Attribut.
+Der `<a>`-Tag	bezeichnet einen Hyperlink , der auf eine andere Seite oder einen Anker innerhalb der Seite verweist, angegeben durch das `href`-Attribut.
 
 Ein Beispiel für einen Link:
 
@@ -506,6 +520,7 @@ CSS kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine 
 
 Für größere Projekte empfiehlt es sich jedoch die CSS-Regel in einer eigenen CSS-Datei zu schreiben und diese über einen `link`-Tag einzubinden:
 
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -518,7 +533,7 @@ Für größere Projekte empfiehlt es sich jedoch die CSS-Regel in einer eigenen 
 </html>
 ```
 
-💡 Man kann `<style>` und `<link>`-Tags auch an anderer Stelle im HTML verwenden. Durch das Einbauen im `<head>`-Bereich wird jedoch sichergestellt, dass die Styles geladen sind, bevor die Seite dargestellt wird. Das ist oftmals wichtig, wenn man auf darauf angewiesen ist, dass ein Element eine bestimmte Höhe hat, bevor man damit arbeitet.
+💡 *Man kann `<style>` und `<link>`-Tags auch an anderer Stelle im HTML verwenden. Durch das Einbauen im `<head>`-Bereich wird jedoch sichergestellt, dass die Styles geladen sind, bevor die Seite dargestellt wird. Das ist oftmals wichtig, wenn man auf darauf angewiesen ist, dass ein Element eine bestimmte Höhe hat, bevor man damit arbeitet.*
 
 ### Aufbau
 Jede CSS-Regel besteht aus einem (oder mehreren) Selektor und meistens mehreren Eigenschaften und Werten. Der Selektor bestimmt, welche Elemente beeinflusst werden und die Eigenschaften und Werte wie die Elemente aussehen sollen. Ein Beispiel
@@ -635,10 +650,10 @@ Einträge mit der in der ToDo-Liste mit der Klasse `done` werde grün eingefärb
 }
 ```
 
+💡 *Man kann einzelne CSS-Regeln auch mit dem Attribut `!important` erzwingen `.error { color: red !important; }`. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen `!important` zu verwenden, deutet dass auf schlecht strukturiertes HTML oder CSS hin.*
+
 📖 **MDN** [Combinators and selector lists
 ](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
-
-`!important`
 
 ### Box-Model
 Das CSS-Boxmodell ist die Grundlage für das Layout im Web. Jedes Element wird als rechteckige Box dargestellt. Jedes Element kann einen Innenabstand (*padding*), einen Rahmen (*border*) und einen Außenabstand (*margin*) haben. Diese Werte ergeben zusammen mit der intrinsischen Höhe/Breite die absolute Höhe/Breite eines Elements:
@@ -726,7 +741,7 @@ Für die Eigenschaften `margin` und `padding` gibt es also vier verschieden Shor
 - `margin: top (right, left) bottom;`
 - `margin: top right left bottom;`
 
-Es gibt noch viele weitere CSS-Eigenschaften (`background`, `font`, `box-shadow`), welche bestimmte Shorthand-Properties unterstützen. Gerade am Anfang aber sollte man eher sparsam damit umgehen.
+💡 *Es gibt noch viele weitere CSS-Eigenschaften (`background`, `font`, `box-shadow`), welche bestimmte Shorthand-Properties unterstützen. Gerade am Anfang aber sollte man eher sparsam damit umgehen.*
 
 📖 **MDN** [Shorthand Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 
@@ -1023,7 +1038,7 @@ String in Klein- oder Großbuchstaben umwandeln:
 ```javascript
 const name = 'Philipp';
 console.log(name.toLowerCase()); // philipp
-console.log(name.toUpperCase()); // Philipp
+console.log(name.toUpperCase()); // PHILIPP
 ```
 
 Das kann nützlich sein, um Benutzereingaben zu vereinheitlichen, zum Beispiel um daraus Benutzernamen zu generieren oder sie in einer Datenbank zu speichern.
@@ -1224,10 +1239,17 @@ names.forEach((name, index) => {
 
 Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber keinen Vorteil gegenüber der normalen **For-Loop** bieten und ziemlich „oldschool“ sind.
 
-📖 **MDN**: [Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
+💡 *In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays `array.length` ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und `array[array.length - 1]` schreiben.*
+
+📖 **MDN**: [Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)   
 📖 **Impressive Webs**: [What’s the Best Way to Write a JavaScript For Loop?](https://www.impressivewebs.com/javascript-for-loop/)
 
-### Arrays und Objekte
+### Arrays
+
+```javascript
+```
+
+### Objekte
 
 ```javascript
 ```
@@ -1236,6 +1258,8 @@ Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber 
 
 ```javascript
 ```
+
+### Event Listener
 
 ### Web APIs
 
@@ -1247,26 +1271,4 @@ Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber 
 ```javascript
 ```
 
-## Webseiten veröffentlichen
-
-## Lokaler Webserver
-
-## Github
-
-## Datenformate
-
-## Scraping
-
-## APIs
-
-## Web-Analytics
-
-## Ressourcen
-
-## Wie werde ich besser
-
 ## Über den Autor
-
-## Modernes Webdesign
-
-## Agile Methoden und Philosophie
