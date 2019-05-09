@@ -14,11 +14,16 @@ Teilnehmer des Seminars sollen die Grundlagen der Web-Entwicklung mit HTML, CSS 
 ⚠️ Warnungen und Probleme   
 💻 Praktische Aufgaben
 
-### Weitere Workshops
-- [Datenvisualisierung mit D3.js lernen](https://github.com/stekhn/d3-workshop)
-- [Kartenvisualisierung mit Leaflet lernen](https://github.com/stekhn/leaflet-workshop)
-
 ## Inhaltsverzeichnis
+- [Programmieren lernen](#user-content-programmieren-lernen)
+- [Programmieren als Job](#user-content-programmieren-als-job)
+- [Journalistische Anwendung](#user-content-journalistische-anwendung)
+- [Programmiersprachen im Vergleich](#user-content-unterschiedliche-programmiersprachen)
+- [Code-Editor einrichten](#user-content-code-editor)
+- [HTML-Grundlagen](#user-content-html)
+- [CSS-Grundlagen](#user-content-css)
+- [JavaScript-Grundlagen](#user-content-javascript)
+- [Über den Autor](#user-content-über-den-autor)
 
 ## Programmieren lernen
 Es gibt viele Gründe dafür programmieren zu lernen. Der Einstieg ist leicht und die Vorteile vielzählig:
@@ -266,7 +271,7 @@ Ein Beispiel:
 
 💡 *Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.*
 
-📖 **MDN**: [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML) 
+📖 **MDN**: [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) 
 📖 **MDN**: [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) 
 
 ### Listen
@@ -1295,3 +1300,14 @@ Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber 
 ```
 
 ## Über den Autor
+Steffen Kühne arbeitet als Datenjournalist beim Bayerischen Rundfunk und beschäftigt sich vor allem mit investigativen Datenanalysen und Datenvisualisierung. Nach einem Studium der Journalistik studierte er Medieninformatik, um dann ein Volontariat als Datenjournalist und digitaler Designer bei der Süddeutschen Zeitung zu beginnen. Bis 2015 arbeitete er dort in der Entwicklungsredaktion. Außerdem ist Steffen Kühne als Trainer für verschiedene Medien und Journalistenschulen tätig.
+
+- Webseite: [stekhn.de](https://stekhn.de)
+- Github: [stekhn](https://github.com/stekhn)
+- Twitter: [stekhn](https://twitter.com/stekhn)
+- LinkedIn: [stekhn](https://www.linkedin.com/in/stekhn/)
+- Xing: [Steffen Kühne](https://www.xing.com/profile/Steffen_Kuehne11/cv)
+
+## Weitere Workshops
+- [Datenvisualisierung mit D3.js lernen](https://github.com/stekhn/d3-workshop)
+- [Kartenvisualisierung mit Leaflet lernen](https://github.com/stekhn/leaflet-workshop)
