@@ -32,9 +32,7 @@
 
       async function getWeather(city) {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=de&appid=86573a082f27e2374ef4541a388c0311`);
-        const data = await response.json();
-
-        return data;
+        return await response.json();
       }
     </script>
   </body>
