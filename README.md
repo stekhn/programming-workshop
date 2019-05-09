@@ -81,7 +81,8 @@ Für Journalisten sind jedoch vor allem vier Programmiersprachen relevant:
 
 - **JavaScript** wird in Kombination mit HTML und CSS für die Entwicklung von interaktiven Webseiten, Grafiken und Anwendungen im Internet verwendet. Außerdem kann man mit JavaScript (Node.js) auch einfach Backendend-Anwendungen entwickeln.
 - **Python** ist eine universelle Programmiersprache, welche gerne für das Scrapen, Analysieren und Aufbereiten von Daten verwenden wird. Mit dem populäres Framework Django können außerdem komplexe Web-Anwendungen entwickelt werden. Python ist einfach zu lernen und einfach zu lesen.
-- **Ruby** ist ähnlich wie Python für verschieden Aufgaben im Bereich Datenverarbeitung geeignet. Außerdem wir Ruby on Rails gerne für die Entwicklung von großen Web-Anwendungen verwendet. 
+- **Ruby** ist ähnlich wie Python für verschieden Aufgaben im Bereich Datenverarbeitung geeignet. Außerdem wir Ruby on Rails gerne für die Entwicklung von großen Web-Anwendungen verwendet.
+- **PHP** ist eine ältere Programmiersprache und findet sich oft in CMS-Lösungen wie Wordpress.
 - **R** eignet sich vor allem für statistische Analysen und das Erstellen einfacher Diagramme und Karten.
 
 📖 **Learneroo**: [The Different Programming Languages](https://www.learneroo.com/modules/12/nodes/94)   
@@ -98,10 +99,11 @@ Hier eine kleine Installationsanleitung für Windows-PC ohne Administratorrechte
 
 Um den Editor optimal nutzen zu können, sollten man noch ein paar Plugins (*extensions*) installieren:
 - **ESLint**: Fehlerüberprüfung für JavaScript-Code
+- **HTMLHint**: Fehlerüberprüfung für HTML
 - **Prettier**: Code richtig formatieren und einrücken
 - **devServer**: kleiner Web-Server
 
-Die Unterstützung für HTML und CSS ist bereits eingebaut. Sogenannten Linter helfen dabei, Fehler im Code frühzeitig zu erkennen. Das erspart viel Ärger und Arbeit bei der Fehlersuche.
+Sogenannten Linter helfen dabei, Fehler im Code frühzeitig zu erkennen. Das erspart viel Ärger und Arbeit bei der Fehlersuche.
 
 💡 *Es gibt in Visual Studio Code vor allem eine wichtige Tastenkombination: `Strg` + `Shift` + `P` öffnet das Befehlsmenü, über das man schnell häufig genutzte Funktionen aufrufen kann. So muss man sich keine hundert Tastenkombinationen merken, sondern kann einfach eingeben, was man gerne tun möchte.*
 
@@ -247,7 +249,7 @@ Ein Beispiel für einen Anchor:
 
 Anker beziehen sich immer auf das `id`-Attribut eines Elements und beginnen mit einer Raute `#`.
 
-💡 *Oft sieht man auch das Attribut `target="_blank`. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von `target="_blank` angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut `rel="noopener"` setzen.*
+💡 *Oft sieht man auch das Attribut `target="_blank"`. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von `target="_blank"` angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut `rel="noopener"` setzen.*
 
 📖 **CSS-Tricks**: [When to use target=”_blank”](https://css-tricks.com/use-target_blank/)
 
@@ -331,6 +333,8 @@ Daraus entsteht folgende Tabelle:
 | Philipp | Primus   | 25    |
 | Oskar   | Optimus  | 27    |
 | Marlene | Maximus  | 22    |
+
+💡 *HTML-Tabellen können auch mit dem praktischen [Tables Generator](https://www.tablesgenerator.com/html_tables) online erstellt werden.*
 
 📖 **MDN**: [Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) 
 
