@@ -68,16 +68,18 @@ Diese Anwendungsbereiche sind vor allem für Datenjournalisten, Grafiker (Visual
 ## Unterschiedliche Programmiersprachen
 [Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages) zählt über 700 verschieden Programmiersprachen. Davon sind aber die wenigsten tatsächlich relevant. Mittlerweile habe sich ungefähr 15 Programmiersprachen durchgesetzt, welche bei den meisten Projekten zum Einsatz kommen. Es gibt verschieden Möglichkeiten Programmiersprachen in Kategorien einzuordnen. Hier ein Auswahl populärer Programmiersprachen nach Anwendungsfall:
 
-- **Frontend-Entwicklung**: JavaScript
+- **Frontend-Entwicklung**: JavaScript, (HTML), (CSS)
 - **Backend-Entwicklung**: JavaScript, Python, Ruby, Java, PHP, Scala, Go
 - **Desktopanwendung**: C++, C#, Objective–C, Java, Python
 - **Mobile Entwicklung**: Swift, Java, C#
 - **Spieleentwicklung**: C++, C#
 - **Datenanalyse**: R, SAS, Matlab
 
+HTML und CSS sind streng genommen keine Programmiersprachen, da sie sich nicht für die Formulierung von logischen Anweisungen eignen. HTML ist eine Auszeichnungssprache und CSS ist eine Stylesheet-Sprache. Trotzdem sind beide Sprache ein wichtige Grundlage für alle Menschen die sich mit Web-Entwicklung beschäftigen.
+
 Mittlerweile ist es sehr selten, dass Unternehmen nur auf eine Programmiersprache setzen. Durch Containerlösungen und Virtualisierung können mittlerweile unterschiedeliche Programmiersprachen parallel eingesetzt werden. Das ist durchaus sinnvoll, da jede Programmiersprache ihre eigenen Stärken hat. 
 
-Für Journalisten sind jedoch vor allem vier Programmiersprachen relevant:
+Für Journalisten sind jedoch vor allem fünf Programmiersprachen relevant:
 
 - **JavaScript** wird in Kombination mit HTML und CSS für die Entwicklung von interaktiven Webseiten, Grafiken und Anwendungen im Internet verwendet. Außerdem kann man mit JavaScript (Node.js) auch einfach Backendend-Anwendungen entwickeln.
 - **Python** ist eine universelle Programmiersprache, welche gerne für das Scrapen, Analysieren und Aufbereiten von Daten verwenden wird. Mit dem populäres Framework Django können außerdem komplexe Web-Anwendungen entwickelt werden. Python ist einfach zu lernen und einfach zu lesen.
@@ -153,7 +155,7 @@ Die meisten Elemente benötigen einen schließenden Tag. Ein Beispiel dafür ist
 <p>Mehr Informationen zum Thema HTML gibt es auf der <a href="https://developer.mozilla.org/">MDN-Webseite</a>.</p>
 ```
 
-Der `<a>`-Tag umschließt den Linktext *MDN-Webseite*. Das Attribut `href` gibt an, wohin der Link führen soll. Weiter unten gibt es mehr Informationen zur Verwendung von Links. Welche Elemente es gibt und welche Attribute diese besitzen, lässt sich auf den Seiten des Mozilla Developer Networks nachschlagen: 📖 [HTML Element Reference](https://developer.mozilla.org/de/docs/Web/HTML/Element)
+Der `<a>`-Tag umschließt den Linktext *MDN-Webseite*. Das Attribut `href` gibt an, wohin der Link führen soll. Weiter unten gibt es mehr Informationen zur Verwendung von Links. Welche Elemente es gibt und welche Attribute diese besitzen, lässt sich auf den Seiten des Mozilla Developer Networks nachschlagen: 📖 [HTML Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 ⚠️ *Fehlende schließende Tags sind gerade für Einsteiger eine häufige Fehlerquelle und können das Layout einer Seite zerschießen. Das Problem wird dadurch verstärkt, dass der Browser selbstständig versucht  ungültiges HTML zu reparieren und offene Tags wieder zu schließen. Im Zweifelsfalls hilft es, das eigene HTML auf nicht geschlossenen Tags hin zu überprüfen. Ein gute Code-Editor kann dabei helfen, solche Fehler frühzeitig zu erkennen.*
 
@@ -264,6 +266,7 @@ Ein Beispiel:
 
 💡 *Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.*
 
+📖 **MDN**: [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML) 
 📖 **MDN**: [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) 
 
 ### Listen
@@ -435,6 +438,7 @@ Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbette
 ```
 
 📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) 
+📖 **MDN**: [Multimedia and Embedding](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding) 
 
 ### Abschnitte und Blöcke
 Semantische Abschnitte helfen dabei eine Seite logisch zu strukturieren und Suchmaschinen und Screen-Readern Hinweise darauf zugeben, wie wichtig einzelne Abschnitte sind und welche Funktion sie erfüllen.
@@ -488,9 +492,9 @@ Ein Beispiel:
 
 Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird für Abschnitte verwendet, welche keine inhaltliche Bedeutung haben. Oftmals dient es vor allem dazu Container zu erstellen, die dann über CSS gestylt werden können.
 
-💡 *Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen angewiesen sind.*
+💡 *Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen, angewiesen sind.*
 
-📖 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))   
+📖 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/en-US/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))   
 📖 **Kulturbanause**: [HTML-Elemente und Semantik](https://blog.kulturbanause.de/2008/01/html-elemente-und-semantik/)
 
 ## CSS
@@ -769,7 +773,7 @@ Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten 
 - `rgb(0, 0, 128)`: Die dezimale Farbdefinition funktioniert im Prinzip wie die hexadezimalen Farbdefinition und bestimmt den Rot-, Grün- und Blauanteil einer Farbe von 0 bis 255. Aus dem hexadezimalen Wert `80` wird ind dieser Definition der dezimale Wert `128`.
 - `rgba(0, 0, 128, 0.5)`: Die dezimale Farbdefinition hat noch einen vierten Parameter der die Transparenz einer Farbe bestimmt. `0` ist durchsichtig, `1` ist undurchsichtig.
 
-📖 **MDN**: [Farben](https://developer.mozilla.org/de/docs/Web/CSS/Farben)
+📖 **MDN**: [Farben](https://developer.mozilla.org/en-US/docs/Web/CSS/Farben)
 
 ### Floats
 
@@ -1252,25 +1256,38 @@ Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber 
 ```javascript
 ```
 
+📖 **MDN**: [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
 ### Objekte
 
 ```javascript
 ```
+
+📖 **MDN**: [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+📖 **MDN**: [Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 
 ### Selektoren
 
 ```javascript
 ```
 
-### Event Listener
+### Events
 
 ```javascript
 ```
 
-### Web APIs
+📖 **MDN**: [Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
+### DOM-Manipulation
+
+📖 **MDN**: [Manipulating documents](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+
+### Web-APIs
 
 ```javascript
 ```
+
+📖 **MDN**: [Introduction to Web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
 
 ### Bibliotheken
 
