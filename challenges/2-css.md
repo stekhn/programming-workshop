@@ -1,4 +1,4 @@
-# CSS-Aufgaben
+# CSS-Aufgabe
 
 Um ein besseres Gefühl für den Umgang mit CSS zu bekommen, darfst du die Schwarzfußkatze-Seite aus der ersten Übung nach deinen Vorstellungen gestalten.
 
