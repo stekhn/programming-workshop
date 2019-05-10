@@ -19,13 +19,13 @@ calculateVolume(35, 20, 70) // => 49000
 Schreibe eine Funktion die abhängig von der aktuellen Uhrzeit entweder „Guten Morgen“, „Guten Tag“, „Guten Abend“ oder „Gute Nacht“ ausgibt:
 
 ```javascript
-function sayHelloByTime(array) {
+function sayHelloByTime() {
   const time = new Date().getHours(); 
 
   // dein Code
 }
 
-sayHelloByTime(numbers) // => Guten Tag
+sayHelloByTime() // => Guten Tag
 ```
 
 ### Schleifen
