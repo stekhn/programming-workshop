@@ -108,6 +108,7 @@ Um den Editor optimal nutzen zu können, sollten man noch ein paar Plugins (*ext
 - **ESLint**: Fehlerüberprüfung für JavaScript-Code
 - **HTMLHint**: Fehlerüberprüfung für HTML
 - **Prettier**: Code richtig formatieren und einrücken
+- **EditorConfig**: Einstellungen für den Editor aus Datei laden
 - **devServer**: kleiner Web-Server
 
 Sogenannten Linter helfen dabei, Fehler im Code frühzeitig zu erkennen. Das erspart viel Ärger und Arbeit bei der Fehlersuche.
@@ -118,6 +119,8 @@ Weitere gute Code-Editoren sind [Sublime Text](https://www.sublimetext.com/), [N
 
 ## HTML
 HTML (Hyper Text Markup Language) ist keine Programmiersprache im engere Sinne, sondern eine Auszeichnungssprache. Es beschreibt und definiert den Inhalt einer Webseite zusammen mit dem grundlegenden Layout der Webseite. HTML besteht aus einer Reihe von Elementen, sogenannte Tags, welche dazu verwenden werden, um bestimmte Inhalte wie beispielsweise Überschriften, Absätze oder Bilder einzubinden.
+
+💻 **Übung 1**: [Einfache HTML-Seite bauen](./blob/master/challenges/1-html.md)
 
 ### Grundstruktur eine Seite
 Hier ein einfaches Beispiel für die Grundstruktur einer Seite mit Titel, Überschrift und einem Textabsatz:
@@ -271,7 +274,7 @@ Ein Beispiel:
 
 💡 *Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.*
 
-📖 **MDN**: [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) 
+📖 **MDN**: [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)   
 📖 **MDN**: [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) 
 
 ### Listen
@@ -442,7 +445,7 @@ Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbette
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ```
 
-📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) 
+📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)   
 📖 **MDN**: [Multimedia and Embedding](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding) 
 
 ### Abschnitte und Blöcke
@@ -504,6 +507,8 @@ Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird 
 
 ## CSS
 CSS (Cascading Style Sheets) ist eine Beschreibungssprache, die das Design einer Webseite bestimmt. Während HTML genutzt wird, um die Struktur und Semantik Ihrer Inhalte zu definieren, dient CSS dazu, deren Erscheinung und Layout zu beeinflussen. So lässt sich CSS beispielsweise nutzen, um die Schriftarten, Farben, Größen und räumliche Abstände der Inhalte zu verändern. Außerdem lassen sich Inhalte in mehreren Spalten anzuordnen oder Animationen und andere dekorative Merkmale hinzuzufügen.
+
+💻 **Übung 2**: [Einfache Seite mit CSS stylen](./blob/master/challenges/2-css.md)
 
 ### Einbinden
 CSS kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man CSS-Regel direkt in einem `<style>`-Element, meistens im `<head>`-Bereich einer Seite, definieren:
@@ -785,7 +790,11 @@ Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten 
 ### Positions
 
 ## JavaScript
-JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. Zusammen mit HTML und CSS bildet JavaScript die Grundlage moderner Web-Technologie. Doch mittlerweile kann JavaScript auch für andere Aufgaben verwendet werden. Durch die Laufzeitumgebung V8 und Node.js können mittlerweile auch leistungsfähige Server- und Desktop-Anwendungen mit JavaScript entwickelt werden. 
+JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. Zusammen mit HTML und CSS bildet JavaScript die Grundlage moderner Web-Technologie. Doch mittlerweile kann JavaScript auch für andere Aufgaben verwendet werden. Durch die Laufzeitumgebung V8 und Node.js können mittlerweile auch leistungsfähige Server- und Desktop-Anwendungen mit JavaScript entwickelt werden.
+
+💻 **Übung 3**: [JavaScript-Aufgaben](./blob/master/challenges/3-javascript.md)   
+💻 **Übung 4**: [Wetter-API anbinden](./blob/master/challenges/4-api.md)   
+💻 **Übung 5**: [Einfaches Ratespiel programmieren](./blob/master/challenges/5-game.md)
 
 ### Einbinden
 JavaScript kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man den JavaScript-Code direkt in einem `<script>`-Element schreiben:
@@ -1268,13 +1277,8 @@ Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber 
 ```javascript
 ```
 
-📖 **MDN**: [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+📖 **MDN**: [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)   
 📖 **MDN**: [Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
-
-### Selektoren
-
-```javascript
-```
 
 ### Events
 
