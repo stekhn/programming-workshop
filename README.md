@@ -120,7 +120,7 @@ Weitere gute Code-Editoren sind [Sublime Text](https://www.sublimetext.com/), [N
 ## HTML
 HTML (Hyper Text Markup Language) ist keine Programmiersprache im engere Sinne, sondern eine Auszeichnungssprache. Es beschreibt und definiert den Inhalt einer Webseite zusammen mit dem grundlegenden Layout der Webseite. HTML besteht aus einer Reihe von Elementen, sogenannte Tags, welche dazu verwenden werden, um bestimmte Inhalte wie beispielsweise Überschriften, Absätze oder Bilder einzubinden.
 
-💻 **Übung 1**: [Einfache HTML-Seite bauen](./blob/master/challenges/1-html.md)
+💻 **Übung 1**: [Einfache HTML-Seite bauen](./challenges/1-html.md)
 
 ### Grundstruktur eine Seite
 Hier ein einfaches Beispiel für die Grundstruktur einer Seite mit Titel, Überschrift und einem Textabsatz:
@@ -508,7 +508,7 @@ Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird 
 ## CSS
 CSS (Cascading Style Sheets) ist eine Beschreibungssprache, die das Design einer Webseite bestimmt. Während HTML genutzt wird, um die Struktur und Semantik Ihrer Inhalte zu definieren, dient CSS dazu, deren Erscheinung und Layout zu beeinflussen. So lässt sich CSS beispielsweise nutzen, um die Schriftarten, Farben, Größen und räumliche Abstände der Inhalte zu verändern. Außerdem lassen sich Inhalte in mehreren Spalten anzuordnen oder Animationen und andere dekorative Merkmale hinzuzufügen.
 
-💻 **Übung 2**: [Einfache Seite mit CSS stylen](./blob/master/challenges/2-css.md)
+💻 **Übung 2**: [Einfache Seite mit CSS stylen](./challenges/2-css.md)
 
 ### Einbinden
 CSS kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man CSS-Regel direkt in einem `<style>`-Element, meistens im `<head>`-Bereich einer Seite, definieren:
@@ -792,9 +792,9 @@ Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten 
 ## JavaScript
 JavaScript ist die Programmiersprache des Internets. Mit Hilfe von JavaScript können Webseiten interaktiv gestaltet werden. Dazu gehören grundlegende Funktionen wie Buttons, Werte berechnen und das Verarbeiten von Nutzereingaben. Zusammen mit HTML und CSS bildet JavaScript die Grundlage moderner Web-Technologie. Doch mittlerweile kann JavaScript auch für andere Aufgaben verwendet werden. Durch die Laufzeitumgebung V8 und Node.js können mittlerweile auch leistungsfähige Server- und Desktop-Anwendungen mit JavaScript entwickelt werden.
 
-💻 **Übung 3**: [JavaScript-Aufgaben](./blob/master/challenges/3-javascript.md)   
-💻 **Übung 4**: [Wetter-API anbinden](./blob/master/challenges/4-api.md)   
-💻 **Übung 5**: [Einfaches Ratespiel programmieren](./blob/master/challenges/5-game.md)
+💻 **Übung 3**: [JavaScript-Aufgaben](./challenges/3-javascript.md)   
+💻 **Übung 4**: [Wetter-API anbinden](./challenges/4-api.md)   
+💻 **Übung 5**: [Einfaches Ratespiel programmieren](./challenges/5-game.md)
 
 ### Einbinden
 JavaScript kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man den JavaScript-Code direkt in einem `<script>`-Element schreiben:
