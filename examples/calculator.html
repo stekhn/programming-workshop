@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Volumen berechnen</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+      }
+
+      button {
+        font-size: 1em;
+        background: coral;
+        border: 0;
+        border-radius: .25em;
+        margin: 1em 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Volumen berechnen</h1>
+
+    <label>Breite: </label><input id="width" type="number">
+    <label>Länge: </label><input id="length" type="number">
+    <label>Höhe: </label><input id="height" type="number">
+    <button id="calculate">Berechnen</button>
+
+    <p id="result"></p>
+
+    <script>
+      const widthInput = document.querySelector('#width');
+      const lengthInput = document.querySelector('#length');
+      const heightInput = document.querySelector('#height');
+
+      const button = document.querySelector('#calculate');
+
+      const result = document.querySelector('#result');
+
+      button.addEventListener('click', handleClick);
+
+      function handleClick() {
+        const result = calculateVolume(widthInput.value, lengthInput.value, heightInput.value);
+
+        result.textContent = result;
+      }
+
+      function calculateVolume(width, length, height) {
+
+        if (width < 0 || length < 0 || height < 0) {
+          return 'Fehler: Alle Eingabenwerte müssen größer als Null sein.'
+        } else {
+          return 'Das Volumen beträgt ' + width * length * height + ' m^3';
+        }
+      }
+    </script>
+  </body>
+</html>

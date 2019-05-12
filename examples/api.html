@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <h1>Wetter für Berlin</h1>
+    <h1>Wetter für Stuttgart</h1>
 
     <section>
       <img id="weather-icon">
@@ -22,7 +22,7 @@
       const weatherIcon = document.querySelector('#weather-icon');
       const weatherText = document.querySelector('#weather-text');
 
-      getWeather('Berlin')
+      getWeather('Stuttgart')
         .then(setWeather);
 
       function setWeather(data) {
