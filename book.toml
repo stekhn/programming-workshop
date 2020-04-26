@@ -1,0 +1,9 @@
+[book]
+title = "Programmieren für Journalisten"
+description = "Grundlagen der Programmierung mit HTML, CSS und JavaScript lernen"
+authors = ["Steffen Kühne"]
+language = "de"
+src = "./book"
+
+[build]
+build-dir = "docs"
