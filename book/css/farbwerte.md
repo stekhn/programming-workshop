@@ -1,4 +1,4 @@
-### Farbwerte
+# Farbwerte
 
 Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten definieren. Hier ist es vor allem nützlich, wenn sich mit der sehr gängigen [hexadezimalen Farbdefinition](https://de.wikipedia.org/wiki/Hexadezimale_Farbdefinition) auseinandern gesetzt hat. Die Beispiele benutzen alle den gleich blauen Farbton:
 

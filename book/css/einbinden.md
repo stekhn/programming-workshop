@@ -1,4 +1,4 @@
-### Einbinden
+# Einbinden
 
 CSS kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man CSS-Regel direkt in einem `<style>`-Element, meistens im `<head>`-Bereich einer Seite, definieren:
 

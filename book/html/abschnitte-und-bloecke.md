@@ -1,4 +1,5 @@
-### Abschnitte und Blöcke
+# Abschnitte und Blöcke
+
 Semantische Abschnitte helfen dabei eine Seite logisch zu strukturieren und Suchmaschinen und Screen-Readern Hinweise darauf zugeben, wie wichtig einzelne Abschnitte sind und welche Funktion sie erfüllen.
 
 - `<header>`: Mit dem `<header>`-Element wir der Kopfbereich eines Sinnabschnitts ausgezeichnet. Er wird auch für den Kopfbereich der gesamten Website verwendet und enthält üblicherweise das Seitenlogo, einen Slogan und ein `<nav>`-Menü.
@@ -52,5 +53,5 @@ Sehr häufig sieht man auch das unspezifische Blockelement `<div>`. Dieses wird 
 
 💡 *Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen, angewiesen sind.*
 
-📖 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/en-US/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections))   
+📖 **MDN**: [HTML Dokumentation](https://developer.mozilla.org/en-US/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections)) 
 📖 **Kulturbanause**: [HTML-Elemente und Semantik](https://blog.kulturbanause.de/2008/01/html-elemente-und-semantik/)

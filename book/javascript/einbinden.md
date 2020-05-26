@@ -1,4 +1,4 @@
-### Einbinden
+# Einbinden
 
 JavaScript kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für kleine Webprojekte kann man den JavaScript-Code direkt in einem `<script>`-Element schreiben:
 

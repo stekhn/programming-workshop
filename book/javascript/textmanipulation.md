@@ -1,4 +1,4 @@
-### Textmanipulation
+# Textmanipulation
 
 Mit Zeichenketten (*strings*) zu arbeiten gehört zum Alltag eines jeden Programmierers. JavaScript bietet dafür viele nützliche Methoden:
 
@@ -10,7 +10,7 @@ const age = 25;
 const occupation = 'Koch';
 const city = 'Stuttgart';
 
-// Modernes JavaScript 
+// Modernes JavaScript
 console.log(`${Philipp} ist ${age} Jahre alt und arbeitet als ${occupation} in ${city}`);
 
 // Oldschool JavaScript

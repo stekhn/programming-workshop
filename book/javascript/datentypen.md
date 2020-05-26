@@ -1,4 +1,4 @@
-### Datentypen
+# Datentypen
 
 Datentypen beschreiben die Werte die eine Variable (oder Konstante) annehmen kann. In JavaScript gibt es sieben verschieden Datentypen.
 

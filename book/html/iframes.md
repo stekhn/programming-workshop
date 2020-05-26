@@ -1,4 +1,5 @@
-### iFrames
+# iFrames
+
 iFrames können dazu verwendet werden um Inhalte von einer anderen Webseite einzubetten.
 
 Beispiel für eine eingebettete Karte (OpenStreetMap):
@@ -13,7 +14,7 @@ Beispiel für ein YouTube-Embed:
 <iframe width="640" height="360" src="https://www.youtube.com/embed/jpmeWXISU5E?&rel=0&showinfo=0" frameborder="0" allowfullscreen ></iframe>
 ```
 
-💡 *Meistens empfiehlt es sich die Breiten- und Höhenangaben in einem iFrame wegzulassen und die Größe über eine CSS-Regel zu definieren. Das ist deutlich flexibler und erlaubt auch prozentuale Größenangeben wie `width: 100%;`* 
+💡 *Meistens empfiehlt es sich die Breiten- und Höhenangaben in einem iFrame wegzulassen und die Größe über eine CSS-Regel zu definieren. Das ist deutlich flexibler und erlaubt auch prozentuale Größenangeben wie `width: 100%;`*
 
 Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbetten anzubieten. Hier ein Beispiel für das Einbetten eines Posts von Twitter:
 
@@ -22,5 +23,5 @@ Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbette
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ```
 
-📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)   
+📖 **MDN**: [iFrame Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)  
 📖 **MDN**: [Multimedia and Embedding](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding)

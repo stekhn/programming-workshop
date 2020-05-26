@@ -1,7 +1,8 @@
-### Box-Model
+# Box-Model
+
 Das CSS-Boxmodell ist die Grundlage für das Layout im Web. Jedes Element wird als rechteckige Box dargestellt. Jedes Element kann einen Innenabstand (*padding*), einen Rahmen (*border*) und einen Außenabstand (*margin*) haben. Diese Werte ergeben zusammen mit der intrinsischen Höhe/Breite die absolute Höhe/Breite eines Elements:
 
-```         
+```plaintext
 +-----------------------------------------------------------------+
 |                             margin                              |
 |    +-------------------------------------------------------+    |

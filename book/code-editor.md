@@ -1,13 +1,15 @@
-## Code-Editor
+# Code-Editor
 Visual Studio Code ist ein kostenloser Editor, der viele Programmiersprachen unterstützt und mit Plugins erweitert und angepasst werden kann.
 
 Hier eine kleine Installationsanleitung für Windows-PC ohne Administratorrechte:
+
 1. Visual Studio Code [hier](https://code.visualstudio.com/Download) herunterladen (Windows, 64 bit, Zip) 
 2. Zip-Datei in einen Ordner `VSCode` entpacken
 3. Im Ordner `VSCode` einen neuen Ordner `data` erstellen ([Portable-Modus](https://code.visualstudio.com/docs/editor/portable))
 4. `Code.exe` ausführen, um den Editor zu starten
 
 Um den Editor optimal nutzen zu können, sollten man noch ein paar Plugins (*extensions*) installieren:
+
 - **ESLint**: Fehlerüberprüfung für JavaScript-Code
 - **HTMLHint**: Fehlerüberprüfung für HTML
 - **Prettier**: Code richtig formatieren und einrücken

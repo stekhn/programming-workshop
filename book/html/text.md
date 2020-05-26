@@ -1,5 +1,6 @@
-### Text
-Gerade für Journalisten sind dies die wohl wichtigten HTML-Elemente. Grundsätzlich besteht 
+# Text
+
+Gerade für Journalisten sind dies die wohl wichtigten HTML-Elemente. Grundsätzlich besteht:
 
 - `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Überschriften in absteigender Hierarchie und Textgröße. Eine Hauptüberschrift ist meistens `<h1>` oder `h2`, während man für Zwischentitel eher eine `h3` verwenden würden.
 - `<p>`: Ein Textabschnitt und damit wohl das am häufigsten verwenden HTML-Element.

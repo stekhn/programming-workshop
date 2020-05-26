@@ -1,4 +1,5 @@
-### Formulare
+# Formulare
+
 Formulare und die dazugehörigen Elemente sind Grundlage um Benutzereingaben zu verarbeiten. Formulare sind nicht nur im Bereich E-Commerce wichtig sondern auch um interaktive Webprojekte zu realisieren. Hier eine Auswahl der wichtigsten Eingabeelemente:
 
 - `<form>`: Markiert ein Formular. Formulare bestehen typischerweise aus einer Reihe von Kontrollelementen, deren Werte zur weiteren Verarbeitung an einen Server übertragen werden.
@@ -40,7 +41,7 @@ Dazu müssen die `action`- und `method`-Attribute des Formulars im HTML entfernt
 <form id="comment">
 ```
 
-Um eine Aktion auszulösen, wenn der Submit-Button geklickt wird, muss ein Event-Handler registriert werden: 
+Um eine Aktion auszulösen, wenn der Submit-Button geklickt wird, muss ein Event-Handler registriert werden:
 
 ```html
 <script>
@@ -66,6 +67,6 @@ Um eine Aktion auszulösen, wenn der Submit-Button geklickt wird, muss ein Event
 
 💡 *Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io/) oder [UIKit](https://getuikit.com/) einzusetzen.*
 
-📖 **MDN**: [Form Guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)   
-📖 **FreeCodeCamp**: [A step-by-step guide to getting started with HTML forms](https://medium.freecodecamp.org/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5)   
+📖 **MDN**: [Form Guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)  
+📖 **FreeCodeCamp**: [A step-by-step guide to getting started with HTML forms](https://medium.freecodecamp.org/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5)  
 📖 **Tuts+**: [Best Form Practices for Beginners](https://code.tutsplus.com/tutorials/20-html-forms-best-practices-for-beginners--net-6593)

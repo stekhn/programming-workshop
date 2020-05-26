@@ -1,4 +1,4 @@
-### Neues JavaScript
+# Neues JavaScript
 
 In den letzten Jahren hat sich JavaScript als Sprache stark weiterentwickelt. Das hat auch einige Veränderungen in der Syntax mit sich geführt, so dass neueres JavaScript ein wenig anders aussieht als altes JavaScript
 

@@ -1,4 +1,4 @@
-### Schleifen
+# Schleifen
 
 Schleifen (*loops*) sind nützlich, um sich wiederholende Aufgaben innerhalb eines Programms schnell zu erledigen. In JavaScript gibt es verschieden Möglichkeiten Schleifen zu programmieren. Jede Möglichkeit hat bestimmte Vor- und Nachteile.
 
@@ -56,5 +56,5 @@ Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber 
 
 💡 *In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays `array.length` ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und `array[array.length - 1]` schreiben.*
 
-📖 **MDN**: [Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)   
+📖 **MDN**: [Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)  
 📖 **Impressive Webs**: [What’s the Best Way to Write a JavaScript For Loop?](https://www.impressivewebs.com/javascript-for-loop/)

@@ -1,4 +1,4 @@
-### Shorthand-Eigenschaften
+# Shorthand-Eigenschaften
 
 Vor allem wenn man mit Größenangaben arbeiten, erleichtern einem sogenannte *Shorthand-Properties* die Arbeit ungemein. Grundsätzlich kann man die Außenabstände eine Containers einfach einzeln angeben:
 

@@ -1,4 +1,5 @@
-### Tabellen
+# Tabellen
+
 Tabellen sind nützliche Helfer um Daten und Informationen strukturiert darzustellen. Eine Tabelle besteht immer aus mehreren verschachtelten HTML-Elementen:
 
 - `<table>`: Markiert eine Tabelle, d.h. Daten mit mehr als einer Dimension.
@@ -49,4 +50,4 @@ Daraus entsteht folgende Tabelle:
 
 💡 *HTML-Tabellen können auch mit dem praktischen [Tables Generator](https://www.tablesgenerator.com/html_tables) online erstellt werden.*
 
-📖 **MDN**: [Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) 
+📖 **MDN**: [Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)

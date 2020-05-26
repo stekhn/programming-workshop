@@ -1,4 +1,5 @@
-### IDs und Klassen
+# IDs und Klassen
+
 Es gibt zwei spezielle Attribute die auf jedes Element angewendet werden können: `id` und `class`. IDs und Klassen sind essenzielle Konzepte um Elemente eindeutig identifiziert zu machen. Dies ist vor allem in Verbindung mit CSS und JavaScript relevant, wo man einen bestimmten Style oder eine bestimmte Funktionalität nur auf bestimmte Argumente anwenden möchte. IDs dürfen jeweils nur einmal vergebene werden, Klassen mehrfach. Hier ein Button mit einer ID, der genau eine Aktion auslöst:
 
 ```html

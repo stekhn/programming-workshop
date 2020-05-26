@@ -1,5 +1,6 @@
-### Links
-Der `<a>`-Tag	bezeichnet einen Hyperlink , der auf eine andere Seite oder einen Anker innerhalb der Seite verweist, angegeben durch das `href`-Attribut.
+# Links
+
+Der `<a>`-Tag bezeichnet einen Hyperlink , der auf eine andere Seite oder einen Anker innerhalb der Seite verweist, angegeben durch das `href`-Attribut.
 
 Ein Beispiel für einen Link:
 

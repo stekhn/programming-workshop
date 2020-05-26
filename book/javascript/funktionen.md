@@ -1,4 +1,4 @@
-### Funktionen
+# Funktionen
 
 Funktionen sind eine sinnvolle Möglichkeit JavaScript-Programme zu strukturieren und wiederverwendebare Code-Schnipsel zu definieren. Hier die wichtigsten Eigenschaften:
 
@@ -42,5 +42,5 @@ const sayHello = (name) => {
 sayHello('Philipp');
 ```
 
-📖 **MDN**: [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)   
+📖 **MDN**: [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)  
 📖 **Codeburst**: [JavaScript Functions](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)

@@ -1,4 +1,5 @@
-### Listen
+# Listen
+
 Grundsätzlich gibt es zwei Arten von Aufzählungen:
 
 - `<ol>`: geordnete Liste, bei der die Einträge eine bestimmte Reihenfolge haben müssen. Hier wird jedem Listeneintrag eine Zahl vorangestellt.

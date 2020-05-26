@@ -1,7 +1,8 @@
-### Elemente
+# Elemente
+
 HTML unterstützt zur Zeit etwa 130 verschiedene Elemente. In der Praxis braucht man aber meistens nur einen kleinen Teil davon. Im Folgenden werden nur eine Handvoll Elemente vorgestellt, die man als Einsteiger braucht um ein einfache Webseite zu bauen.
 
-Grundsätzlich besteht ein Element aus dem Element-Tag und bei bestimmten Elementen zusätzlich noch aus verschiedenen Attributen und Werten. Hier ein Beispiel für ein Bild-Tag <img> mit zwei Attributen `src` und `alt`:
+Grundsätzlich besteht ein Element aus dem Element-Tag und bei bestimmten Elementen zusätzlich noch aus verschiedenen Attributen und Werten. Hier ein Beispiel für ein Bild-Tag `<img>` mit zwei Attributen `src` und `alt`:
 
 ```html
 <img src="image.jpg" alt="Beispielbild">

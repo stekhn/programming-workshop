@@ -1,4 +1,4 @@
-### Operatoren
+# Operatoren
 
 Mathematische Operatoren:
 
@@ -24,5 +24,5 @@ Logische Operatoren:
 - `||` logisches ODER liefert einen Wahrheitswert `true` wenn einer der beiden Vergleichswerte `true` ist: `true || false` ergibt `true`
 - `!` logisches NICHT kann einen Wahrheitswert umkehren: `!true` ergibt `false`
 
-📖 **MDN**: [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)   
+📖 **MDN**: [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)  
 📖 **Marius Schulz**: [The && and || Operators in JavaScript](https://mariusschulz.com/blog/the-and-and-or-operators-in-javascript)

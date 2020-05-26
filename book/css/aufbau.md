@@ -1,4 +1,4 @@
-### Aufbau
+# Aufbau
 
 Jede CSS-Regel besteht aus einem (oder mehreren) Selektor und meistens mehreren Eigenschaften und Werten. Der Selektor bestimmt, welche Elemente beeinflusst werden und die Eigenschaften und Werte wie die Elemente aussehen sollen. Ein Beispiel
 

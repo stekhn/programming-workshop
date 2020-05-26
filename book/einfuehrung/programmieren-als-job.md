@@ -1,4 +1,5 @@
-## Programmieren als Job
+# Programmieren als Job
+
 Programmieren ist ein Job der sich in den letzten Jahren stark spezialisiert hat. Hier ein kleiner Überblick wo Entwickler im Medienbereich arbeiten:
 
 - **Frontend-Entwickler und UI-Entwickler** entwickeln vor allem  Benutzeroberflächen von Webseiten und Web-Anwendungen. Für diesen Job ist ein grundsätzliches Verständnis von benutzerfreundlicher Gestaltung (Usability) erforderlich, oft geschieht die Entwicklung in enger Zusammenarbeit mit Designern.

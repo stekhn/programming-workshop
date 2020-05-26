@@ -1,4 +1,4 @@
-### Selektoren
+# Selektoren
 
 Selektoren dienen dazu bestimmte Elemente oder Gruppen von Elementen auszuwählen, um sie zu stylen. Ein wichtiges Konzept dabei ist Spezifität. Spezifität bedeutet, dass wenn es mehrere Style-Regeln für ein Element gibt, wird die jeweils spezifiste Regel angewandt. Universalselektor sind am unspezifisten, ID-Selektoren und Inline-Styles am spezifisten und daher am stärkesten. Hier die Selektoren in aufsteigender Spezifität:
 
@@ -20,7 +20,7 @@ Eher seltener zum Einsatz kommen diese Selektorkombinationen:
 - `A > B`: Es wird B (*direct child*)selektiert, welches in der Hierarche unmittelbar unter A (*parent*) liegt.
 - `A ~ B`: Es wird B (*sibling*) selektiert, welches in der Hierarchie neben A (*sibling*) liegt.
 - `A + B`: Es wird B (*direct sibling*) selektiert, welches in der Hierarchie direkt neben A (*sibling*) liegt.
- 
+
 Um die grundlegende Konzepte zu verdeutlichen, erstellen wir drei unterschiedliche Listen. Diese sollen gestylt werden.
 
 ```html
@@ -86,7 +86,7 @@ Die Liste mit der ID `#todo-list` bekommt einen hellblauen Hintergrund:
 }
 ```
 
-Die Listeneinträge der ToDo-Liste bekommen eine blaue Textfarbe. Die ursprüngliche Farbe Grau wird automatisch überschrieben. Hier könnte man auch `#todo-list li` schreiben 
+Die Listeneinträge der ToDo-Liste bekommen eine blaue Textfarbe. Die ursprüngliche Farbe Grau wird automatisch überschrieben. Hier könnte man auch `#todo-list li` schreiben.
 
 ```css
 #todo-list .list-item {

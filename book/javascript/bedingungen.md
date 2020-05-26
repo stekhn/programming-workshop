@@ -1,4 +1,4 @@
-### Bedingungen
+# Bedingungen
 
 Mit Bedingungen (*conditionals*) kann man den Ablauf eines Programms steuern. Das Konzept ist relativ leicht zu verstehen, da es sich um eine einfache „Wenn, dann, ansonsten“-Logik handelt.
 
@@ -50,7 +50,7 @@ if (isHungry) {
 // Geh was essen!
 ```
 
-Wenn beide Bedingungen wahr sind, würde nur die erste davon ausgegeben werden, da die Schleife abbricht sobald eine Bedingung erfüllt ist. 
+Wenn beide Bedingungen wahr sind, würde nur die erste davon ausgegeben werden, da die Schleife abbricht sobald eine Bedingung erfüllt ist.
 
 ```javascript
 const isHungry = false;
@@ -115,7 +115,7 @@ if (hasChaperone) {
   } else {
     console.log('Wenn du älter bist, darfst du auch mal aus dem Haus.');
   }
-} 
+}
 
 // Sei bitte bis spätestens 22 Uhr zuhause!
 ```
