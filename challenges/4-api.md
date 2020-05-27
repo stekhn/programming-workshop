@@ -5,6 +5,7 @@ In dieser Aufgabe geht es darum eine API anzuzapfen. Dafür verwenden wir die [A
 Auf unsere Infoseite zum Leben der Schwarzfußkatze wollen wir einen aktuellen Wetterbericht einblenden, damit unsere Benutzer sehen können ob die Kätzchen gerade in der Sonne baden oder frieren müssen.
 
 Die API wird über eine URL mit bestimmten Parametern angefragt und ist folgendermaßen aufgebaut:
+
 - `https://api.openweathermap.org/data/2.5/weather`: URL des API-Endpunkts
 - `q=Upington,ZA`: Suchbegriff für den Ort für den wir das Wetter wissen wollen
 - `units=metric`: Format in dem wir die Wetterdaten haben wollen (Grad Celsius)

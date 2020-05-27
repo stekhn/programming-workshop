@@ -4,7 +4,7 @@ Um ein besseres Gefühl für den Umgang mit CSS zu bekommen, darfst du die Schwa
 
 Das Grundlayout sollte ungefähr so aussehen:
 
-```      
+```plaintext
 +---------------------------------------------------------------------------+
 |                                                                           |
 |  +----------------------------------------------+  +-------------------+  |
@@ -27,6 +27,7 @@ Das Grundlayout sollte ungefähr so aussehen:
 ```
 
 Folgende Elemente kannst du gestalten:
+
 - Seitenweite Einstellungen (Typografie, Hintergrund, Breite, Abstände)
 - Überschrift und Text (Schrift, Größe, Farbe, Zeilenabstand)
 - Rechte Spalte (Position, Größe, Hintergrundfarbe, Rahmen)
