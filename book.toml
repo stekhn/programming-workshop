@@ -1,9 +1,13 @@
 [book]
 title = "Programmieren für Journalisten"
-description = "Grundlagen der Programmierung mit HTML, CSS und JavaScript lernen"
-authors = ["Steffen Kühne"]
+description = "Grundlagen der Webentwicklung mit HTML, CSS und JavaScript lernen"
+author = "Steffen Kühne"
 language = "de"
 src = "./book"
 
 [build]
 build-dir = "docs"
+
+[output.html]
+git-repository-url = "https://github.com/stekhn/programming-workshop"
+git-repository-icon = "fa-github"
