@@ -2,8 +2,9 @@
 
 Hier ein paar Aufgaben, um deine JavaScript-Fähigkeiten zu testen.
 
-### Funktionen
-Schreibe eine Funktion, welche das Volumen eines Quaders (Länge * Breite * Höhe) berechnet
+## Funktionen
+
+Schreibe eine Funktion, welche das Volumen eines Quaders (Länge x Breite x Höhe) berechnet
 
 ```javascript
 function calculateVolume(a, b, c) {
@@ -29,7 +30,8 @@ const volume = calculateArea(calculateArea(20, 20), 20);
 console.log(volume) // => 8000
 ```
 
-### Bedingungen
+## Bedingungen
+
 Schreibe eine Funktion die abhängig von der aktuellen Uhrzeit entweder „Guten Morgen“, „Guten Tag“, „Guten Abend“ oder „Gute Nacht“ ausgibt:
 
 ```javascript
@@ -56,7 +58,8 @@ function sayHelloByTime() {
 sayHelloByTime() // => Guten Tag
 ```
 
-### Schleifen
+## Schleifen
+
 Wir haben ein Array mit verschieden Zahlen. Schreibe eine Funktion, welche alle Zahlen addiert und die Summe ausgibt.
 
 ```javascript
@@ -93,7 +96,8 @@ function sumAll(array) {
 sumAll(numbers) // => 1111
 ```
 
-### Schleifen und Bedingungen
+## Schleifen und Bedingungen
+
 Wir haben ein Array mit verschieden geraden und ungeraden Zahlen. Schreibe eine Funktion, welche nur die geraden Zahlen addiert und die Summe ausgibt.
 
 ```javascript
@@ -115,7 +119,8 @@ function sumEven(array) {
 sumEven(numbers) // => 666
 ```
 
-### Arrays
+## Arrays
+
 Wir haben ein Array mit verschiedenen Namen. Deine Aufgabe ist es, eine Funktion zu schreiben, welche alle Personen einzeln begrüßt.
 
 ```javascript
@@ -130,7 +135,8 @@ function sayHello(array) {
 sayHello(names); // => Hallo Philipp. Hallo Andrea. Hallo Sophie.
 ```
 
-### Objekte
+## Objekte
+
 Objekte sind neben Arrays eine andere Möglichkeit digitale Listen zu führen. In diesem Beispiel wollen wir Philipps Alter wissen:
 
 ```javascript
@@ -143,7 +149,8 @@ function getAge(object) {
 getAge(person); // => Philipp ist 31 Jahre alt.
 ```
 
-### Object-Arrays
+## Object-Arrays
+
 Arrays bestehen nicht immer nur aus Buchstaben oder Zahlen, sondern manchmal auch aus mehreren Objekten. Das ist praktisch, um zum Beispiel Personen mit mehreren Eigenschaften zu speichern. Schaffst du es, alle Personen mit ihrem Namen und Herkunftsort zu begrüßen?
 
 ```javascript

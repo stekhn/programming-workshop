@@ -1,6 +1,6 @@
 # Spiel: Rate die Zahl!
 
-### Welche Schritte sind notwendig, um das Spiel umzusetzen?
+## Welche Schritte sind notwendig, um das Spiel umzusetzen?
 
 - Erzeuge eine Zufallszahl zwischen 1 und 100.
 - Notiere die Zugnummer, auf der sich der Spieler befindet. Beginne mit 1.
@@ -21,4 +21,4 @@
   - Button anzeigen mit dem der Spieler das Spiel neu starten kann.
 - (Spiel zurücksetzen)
 
-Quelle: https://developer.mozilla.org/de/docs/Learn/JavaScript/First_steps/A_first_splash
+Quelle: <https://developer.mozilla.org/de/docs/Learn/JavaScript/First_steps/A_first_splash>
