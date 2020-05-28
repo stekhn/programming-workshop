@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Rate die Zahl!</title>
 
     <style>
       body {
@@ -11,6 +11,7 @@
         margin: 0 auto;
         padding: 0;
         font-family: sans-serif;
+        line-height: 1.3;
       }
 
       .lastResult {
@@ -44,34 +45,30 @@
         padding: 5px 10px 5px 26px;
       }
     </style>
-
-    <title>
-      Number guessing game
-    </title>
   </head>
+
   <body>
-    <h1>Number guessing game</h1>
+    <h1>Rate die Zahl!</h1>
+
     <p>
-      We have selected a random number between 1 and 100. See if you can guess
-      it in 10 turns or fewer. We'll tell you if your guess was too high or too
-      low.
+      Kannst du erraten, an welche Zahl zwischen 0 und 100 dein Computer gerade denkt? Du hast zehn Versuche, um die Zahl zu erraten. Bei jedem Versuch bekommst du einen Hinweis, ob die gesuchte Zahl niedriger oder höher als deine Schätzung ist.
     </p>
+
     <div class="form">
-      <label for="guessField">Enter a guess: </label
+      <label for="guessField">Gib eine Zahl ein: </label
       ><input type="text" id="guessField" class="guessField" />
-      <input type="submit" value="Submit guess" class="guessSubmit" />
+      <input type="submit" value="Schätzung abgeben" class="guessSubmit" />
     </div>
+
     <div class="resultParas">
       <p class="guesses"></p>
       <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
     </div>
+
     <script>
-      // Your JavaScript goes here
       let randomNumber = Math.floor(Math.random() * 100) + 1;
       const guesses = document.querySelector('.guesses');
       const lastResult = document.querySelector('.lastResult');
-      const lowOrHi = document.querySelector('.lowOrHi');
       const guessSubmit = document.querySelector('.guessSubmit');
       const guessField = document.querySelector('.guessField');
       let guessCount = 1;
@@ -80,27 +77,25 @@
       function checkGuess() {
         let userGuess = Number(guessField.value);
         if (guessCount === 1) {
-          guesses.textContent = 'Previous guesses: ';
+          guesses.textContent = 'Bisherige Versuche: ';
         }
 
         guesses.textContent += userGuess + ' ';
 
         if (userGuess === randomNumber) {
-          lastResult.textContent = 'Congratulations! You got it right!';
+          lastResult.textContent = 'Gratulation, du hast die Zahl erraten!';
           lastResult.style.backgroundColor = 'green';
-          lowOrHi.textContent = '';
           setGameOver();
         } else if (guessCount === 10) {
-          lastResult.textContent = '!!!GAME OVER!!!';
-          lowOrHi.textContent = '';
+          lastResult.textContent = 'Du hast verloren! Mehr Glück beim nächsten Mal';
           setGameOver();
         } else {
-          lastResult.textContent = 'Wrong!';
+          lastResult.textContent = 'Falsch,';
           lastResult.style.backgroundColor = 'red';
           if (userGuess < randomNumber) {
-            lowOrHi.textContent = 'Last guess was too low!';
+            lastResult.textContent += ' die gesuchte Zahl ist höher!';
           } else if (userGuess > randomNumber) {
-            lowOrHi.textContent = 'Last guess was too high!';
+            lastResult.textContent += ' die gesuchte Zahl ist niedriger!';
           }
         }
 
@@ -114,7 +109,7 @@
         guessField.disabled = true;
         guessSubmit.disabled = true;
         resetButton = document.createElement('button');
-        resetButton.textContent = 'Start new game';
+        resetButton.textContent = 'Neues Spiel starten';
         document.body.appendChild(resetButton);
         resetButton.addEventListener('click', resetGame);
       }
