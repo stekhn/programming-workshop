@@ -7,4 +7,4 @@ Genauso wie Größenangaben lassen sich Farbwerte über verschiedenen Einheiten 
 - `rgb(0, 0, 128)`: Die dezimale Farbdefinition funktioniert im Prinzip wie die hexadezimalen Farbdefinition und bestimmt den Rot-, Grün- und Blauanteil einer Farbe von 0 bis 255. Aus dem hexadezimalen Wert `80` wird ind dieser Definition der dezimale Wert `128`.
 - `rgba(0, 0, 128, 0.5)`: Die dezimale Farbdefinition hat noch einen vierten Parameter der die Transparenz einer Farbe bestimmt. `0` ist durchsichtig, `1` ist undurchsichtig.
 
-📖 **MDN**: [Farben](https://developer.mozilla.org/en-US/docs/Web/CSS/Farben)
+📖 **MDN**: [Farben](https://developer.mozilla.org/en-US/docs/Web/CSS/Color)
