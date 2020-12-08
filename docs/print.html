@@ -256,6 +256,7 @@
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;de&quot;&gt;
   &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;title&gt;Titel der Webseite&lt;/title&gt;
   &lt;/head&gt;
 
@@ -346,11 +347,19 @@ document.querySelectorAll('.removable')
 <p>💡 <em>Oft sieht man auch das Attribut <code>target=&quot;_blank&quot;</code>. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von <code>target=&quot;_blank&quot;</code> angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut <code>rel=&quot;noopener&quot;</code> setzen.</em></p>
 <p>📖 <strong>CSS-Tricks</strong>: <a href="https://css-tricks.com/use-target_blank/">When to use target=”_blank”</a></p>
 <h1><a class="header" href="#bilder" id="bilder">Bilder</a></h1>
-<p>Bilder sind auf einer Webseite mindestens ebenso wichtig wie Texte. In HTML werden Bilder mit den <code>&lt;img&gt;</code>-Element eingebunden. Diese benötigt im Gegensatz zu den meisten anderen Elementen keinen schließenden Tag und sollte immer ein ein <code>src</code>- und ein <code>alt</code>-Attribut besitzen.</p>
+<p>Bilder sind auf einer Webseite mindestens ebenso wichtig wie Texte. In HTML werden Bilder mit dem <code>&lt;img&gt;</code>-Element eingebunden. Dieses benötigt im Gegensatz zu den meisten anderen Elementen keinen schließenden Tag und sollte immer ein ein <code>src</code>- und ein <code>alt</code>-Attribut besitzen.</p>
 <p>Ein Beispiel:</p>
 <pre><code class="language-html">&lt;img src=&quot;image.jpg&quot; alt=&quot;Beispielbild&quot;&gt;
 </code></pre>
-<p>💡 <em>Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.</em></p>
+<p>Das <code>alt</code>-Attribut ist der Alternativtext eines Bildes. Suchmaschinen benutzen dieses Attribut, um den Bildinhalt zu erkennen, da die Bilddateien selbst in der Regel nicht direkt ausgelesen werden können. Für sehbehinderte Nutzer trägt das <code>alt</code>-Attribut zur Barrierefreiheit bei. Dadurch lassen sich Webseiten mit einem Screenreader vorlesen.</p>
+<p>Bilder lassen sich mit dem <code>src</code>-Attribut aus verschiedenden Quellen laden. Im Beispiel oben wird das Bild aus dem Hauptverzeichnis der Webseite geladen, wo sich auch die <code>index.html</code>-Datei befindet. Oftmals werden Bilder jedoch in einem Unterordner <code>images</code> (oder so ähnlich) gespeichert. In diesem Fall muss das <code>src</code>-Attribut entsprechend angepasst werden.</p>
+<pre><code class="language-html">&lt;img src=&quot;images/image.jpg&quot; alt=&quot;Beispielbild&quot;&gt;
+</code></pre>
+<p>Bilder können jedoch auch direkt von anderen Webseiten geladen werden:</p>
+<pre><code class="language-html">&lt;img src=&quot;https://de.wikipedia.org/static/images/project-logos/dewiki.png&quot; alt=&quot;Wikipedia-Logo&quot;&gt;
+</code></pre>
+<p>Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.</p>
+<p>💡 <em>Die Dateigröße von Bildern trägt maßgeblich zur Gesamtgröße und damit auch Ladezeit einer Webseite bei. Daher empfiehlt es sich die Bilder vorher auf die maximal notwendige Auflösung zu verkleinern und im JPEG-Format (85 bis 95 % Kompression) abzuspeichern.</em></p>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Images in HTML</a><br />
 📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive Images</a></p>
 <h1><a class="header" href="#listen" id="listen">Listen</a></h1>
@@ -538,7 +547,7 @@ document.querySelectorAll('.removable')
 </code></pre>
 <p>Sehr häufig sieht man auch das unspezifische Blockelement <code>&lt;div&gt;</code>. Dieses wird für Abschnitte verwendet, welche keine inhaltliche Bedeutung haben. Oftmals dient es vor allem dazu Container zu erstellen, die dann über CSS gestylt werden können.</p>
 <p>💡 <em>Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen, angewiesen sind.</em></p>
-<p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections)">HTML Dokumentation</a> 
+<p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections)">HTML Dokumentation</a><br />
 📖 <strong>Kulturbanause</strong>: <a href="https://blog.kulturbanause.de/2008/01/html-elemente-und-semantik/">HTML-Elemente und Semantik</a></p>
 <h1><a class="header" href="#css" id="css">CSS</a></h1>
 <p>CSS (Cascading Style Sheets) ist eine Beschreibungssprache, die das Design einer Webseite bestimmt. Während HTML genutzt wird, um die Struktur und Semantik Ihrer Inhalte zu definieren, dient CSS dazu, deren Erscheinung und Layout zu beeinflussen. So lässt sich CSS beispielsweise nutzen, um die Schriftarten, Farben, Größen und räumliche Abstände der Inhalte zu verändern. Außerdem lassen sich Inhalte in mehreren Spalten anzuordnen oder Animationen und andere dekorative Merkmale hinzuzufügen.</p>
@@ -753,10 +762,40 @@ document.querySelectorAll('.removable')
 <li><code>rgb(0, 0, 128)</code>: Die dezimale Farbdefinition funktioniert im Prinzip wie die hexadezimalen Farbdefinition und bestimmt den Rot-, Grün- und Blauanteil einer Farbe von 0 bis 255. Aus dem hexadezimalen Wert <code>80</code> wird ind dieser Definition der dezimale Wert <code>128</code>.</li>
 <li><code>rgba(0, 0, 128, 0.5)</code>: Die dezimale Farbdefinition hat noch einen vierten Parameter der die Transparenz einer Farbe bestimmt. <code>0</code> ist durchsichtig, <code>1</code> ist undurchsichtig.</li>
 </ul>
-<p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Farben">Farben</a></p>
+<p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Color">Farben</a></p>
 <h1><a class="header" href="#layout" id="layout">Layout</a></h1>
 <h1><a class="header" href="#float" id="float">Float</a></h1>
+<p>Die <code>float</code>-Eigenschaft ermöglicht es Bilder und Textblöcke aus dem Textfluss herauszunehmen und nach links oder rechts zu verschieben. Die Methode ist nur schlecht dazu geeignet aufwendige, mehrspaltige Seitenlayouts zu bauen. Hierfür sollte man immer Flexbox oder Grid verwenden.</p>
+<p>Das folgende Beispiel zeigt einen Zitatkasten, welchen wir nach rechts verschieben wollen („ausblocken“). Außerdem folgen drei Absätze Blindtext, um den Effekt von <code>float</code> zu verdeutlichen:</p>
+<pre><code class="language-html">&lt;section class=&quot;quote&quot;&gt;
+  &lt;p&gt;„Ein tiefgründiges Zitat zum Zustand der Welt“&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. &lt;/p&gt;
+    
+&lt;p&gt;Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.&lt;/p&gt;
+
+&lt;p&gt;Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus.&lt;/p&gt;
+</code></pre>
+<p>Die halbe Breite sorgt dafür, dass der übrige Text den Zitatkasten umfließen kann. Eine größere Schrift und die Hintergrundfarbe helfen dabei, denn Zitatkasten hervorzuheben:</p>
+<pre><code class="language-css">.info-box {
+  float: right;
+  width: 50%;
+  margin: 20px;
+  font-size: 2em;
+  background-color: lightgray;
+}
+</code></pre>
+<p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats">Floats</a></p>
 <h1><a class="header" href="#position" id="position">Position</a></h1>
+<ul>
+<li><code>static</code>: Standardwert. Das Element ist im normalen Fluss. Die Eigenschaften top, right, bottom oder left haben keine Auswirkungen.</li>
+<li><code>relative</code>: Das Element wird vom normalen Fluss aus verschoben und hat keinen Einfluss auf andere Elemente, da an der ursprünglichen Position Platz gelassen wird. Bei table-*-group, table-row, table-column, table-cell, und table-caption Elementen ist kein Effekt definiert.</li>
+<li><code>absolute</code>: Das Element wird aus dem normalen Fluss gelöst und unabhängig verschoben. Dabei können andere Elemente verdeckt werden. Diese verhalten sich so, als ob das Element nicht vorhanden wäre und lassen keinen Platz für das Element.</li>
+<li><code>sticky</code>: Eine Mischung zwischen fixed und relative: Das Element wird vom normalen Fluss aus verschoben und hat keinen Einfluss auf andere Elemente, solange es sich innerhalb des Viewports befindet. Sobald es sich ausserhalb befindet, wird das Element aus dem normalen Fluss gelöst und bleibt so beim Scrollen an seiner fest definierten Position.</li>
+<li><code>fixed</code>: Die Verschiebung orientiert sich am Viewport. Das Element wird aus dem normalen Fluss gelöst und bleibt auch beim Scrollen an seiner fest definierten Position. Beim Drucken wird das Element auf jeder Seite an der positionierten Stelle angezeigt.</li>
+</ul>
+<p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">Position</a></p>
 <h1><a class="header" href="#flexbox" id="flexbox">Flexbox</a></h1>
 <h1><a class="header" href="#grid" id="grid">Grid</a></h1>
 <h1><a class="header" href="#javascript" id="javascript">JavaScript</a></h1>

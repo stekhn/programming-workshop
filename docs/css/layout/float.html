@@ -152,6 +152,28 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#float" id="float">Float</a></h1>
+<p>Die <code>float</code>-Eigenschaft ermöglicht es Bilder und Textblöcke aus dem Textfluss herauszunehmen und nach links oder rechts zu verschieben. Die Methode ist nur schlecht dazu geeignet aufwendige, mehrspaltige Seitenlayouts zu bauen. Hierfür sollte man immer Flexbox oder Grid verwenden.</p>
+<p>Das folgende Beispiel zeigt einen Zitatkasten, welchen wir nach rechts verschieben wollen („ausblocken“). Außerdem folgen drei Absätze Blindtext, um den Effekt von <code>float</code> zu verdeutlichen:</p>
+<pre><code class="language-html">&lt;section class=&quot;quote&quot;&gt;
+  &lt;p&gt;„Ein tiefgründiges Zitat zum Zustand der Welt“&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. &lt;/p&gt;
+    
+&lt;p&gt;Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.&lt;/p&gt;
+
+&lt;p&gt;Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus.&lt;/p&gt;
+</code></pre>
+<p>Die halbe Breite sorgt dafür, dass der übrige Text den Zitatkasten umfließen kann. Eine größere Schrift und die Hintergrundfarbe helfen dabei, denn Zitatkasten hervorzuheben:</p>
+<pre><code class="language-css">.info-box {
+  float: right;
+  width: 50%;
+  margin: 20px;
+  font-size: 2em;
+  background-color: lightgray;
+}
+</code></pre>
+<p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats">Floats</a></p>
 
                     </main>
 
