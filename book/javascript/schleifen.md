@@ -28,7 +28,7 @@ for (let name of names) {
 }
 ```
 
-**For-In-Loops** für Objekte funktioniert ganz ähnlich:
+**For-In-Loops** für Objekte funktioniert ganz ähnlich, werden aber eher selten verwendet:
 
 ```javascript
 const names = {
@@ -52,9 +52,7 @@ names.forEach((name, index) => {
 });
 ```
 
-Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber keinen Vorteil gegenüber der normalen **For-Loop** bieten und ziemlich „oldschool“ sind.
-
-💡 *In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays `array.length` ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und `array[array.length - 1]` schreiben.*
+Vergleichbare Schleifen kann man mit den Funktionen **Array.map()** oder **Array.reduce()** bauen, welche genutzt werden können, um die Daten eines Arrays entweder zu verändern oder zusammenzufassen. Außerdem gibt es noch **While-Schleifen** und **Do-While-Schleifen**, die aber keinen Vorteil gegenüber der normalen **For-Loop** bieten und ein wenig „oldschool“ sind.
 
 📖 **MDN**: [Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)  
 📖 **Impressive Webs**: [What’s the Best Way to Write a JavaScript For Loop?](https://www.impressivewebs.com/javascript-for-loop/)
