@@ -27,7 +27,7 @@ Um die grundlegende Konzepte zu verdeutlichen, erstellen wir drei unterschiedlic
 <ul id="todo-list">
   <li class="list-item">Gemüse einkaufen</li>
   <li class="list-item">Fahrrad reparieren</li>
-  <li class="list-item">Zahnarzttermin vereinbaren</li>
+  <li class="list-item done">Zahnarzttermin vereinbaren</li>
 </ul>
 
 <ul id="name-list">
@@ -102,7 +102,7 @@ Einträge mit der in der ToDo-Liste mit der Klasse `done` werde grün eingefärb
 }
 ```
 
-💡 *Man kann einzelne CSS-Regeln auch mit dem Attribut `!important` erzwingen `.error { color: red !important; }`. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen `!important` zu verwenden, deutet dass auf schlecht strukturiertes HTML oder CSS hin.*
+💡 *Man kann einzelne CSS-Regeln auch mit dem Attribut `!important` erzwingen `.error { color: red !important; }`. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen `!important` zu verwenden, deutet das auf schlecht strukturiertes HTML oder CSS hin.*
 
 📖 **MDN** [Combinators and selector lists
 ](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
