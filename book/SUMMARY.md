@@ -31,6 +31,7 @@
     - [Position](css/layout/position.md)
     - [Flexbox](css/layout/flexbox.md)
     - [Grid](css/layout/grid.md)
+  - [Media Queries](css/layout/media-queries.md)
 - [JavaScript](javascript/README.md)
   - [Einbinden](javascript/einbinden.md)
   - [Neues JavaScript](javascript/neues-javascript.md)
