@@ -7,7 +7,7 @@ Tabellen sind nützliche Helfer um Daten und Informationen strukturiert darzuste
 - `<td>`: Kennzeichnet eine einzelne Tabellenzelle.
 - `<th>`: Kennzeichnet eine Tabellenzelle mit einer Beschriftung.
 
-Diese zusätzliche Elemente helfen dabei die Tabelle inhaltlich zu strukturieren, sind aber nicht zwingend notwending:
+Diese zusätzliche Elemente helfen dabei die Tabelle inhaltlich zu strukturieren, sind aber nicht zwingend notwendig:
 
 - `<tbody>`: Steht für die Spalten, die die eigentlichen Daten einer Tabelle enthalten.
 - `<thead>`: Markiert die Gruppe der Tabellenzeilen, die die Beschriftungen der Tabellenspalten enthalten.
