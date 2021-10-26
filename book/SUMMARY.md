@@ -18,6 +18,8 @@
   - [Formulare](html/formulare.md)
   - [iFrames](html/iframes.md)
   - [Abschnitte und Blöcke](html/abschnitte-und-bloecke.md)
+  - [Meta-Tags](html/metatags.md)
+  - [Favicons](html/favicons.md)
 - [CSS](css/README.md)
   - [Einbinden](css/einbinden.md)
   - [Aufbau](css/aufbau.md)
