@@ -180,7 +180,9 @@
 <li><code>margin: top (right, left) bottom;</code></li>
 <li><code>margin: top right left bottom;</code></li>
 </ul>
+<blockquote>
 <p>💡 <em>Es gibt noch viele weitere CSS-Eigenschaften (<code>background</code>, <code>font</code>, <code>box-shadow</code>), welche bestimmte Shorthand-Properties unterstützen. Gerade am Anfang aber sollte man eher sparsam damit umgehen.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">Shorthand Properties</a></p>
 
                     </main>
@@ -212,22 +214,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

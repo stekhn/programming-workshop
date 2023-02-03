@@ -189,7 +189,9 @@
 <tr><td>Marlene</td><td>Maximus</td><td>22</td></tr>
 </tbody></table>
 </div>
+<blockquote>
 <p>💡 <em>HTML-Tabellen können auch mit dem praktischen <a href="https://www.tablesgenerator.com/html_tables">Tables Generator</a> online erstellt werden.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">Table Element</a></p>
 
                     </main>
@@ -221,22 +223,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

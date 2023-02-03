@@ -169,7 +169,9 @@ const sayHello = (array) =&gt; {
 sayHello(names);
 </code></pre>
 <p>Da noch nicht alle Browser das neue JavaScript perfekt beherrschen, braucht man so genannte <em>Transpiler</em> die zwischen den unterschiedlichen JavaScript-Version hin und her übersetzen können. Der bekannteste Transpiler um neues JavaScript in altes JavaScript zu übersetzen ist <a href="https://babeljs.io/repl">Babel</a>. Um altes JavaScript in neues JavaScript zu übersetzen gibt es <a href="https://lebab.unibtc.me/editor">Lebab</a> (Babel rückwärts geschrieben).</p>
+<blockquote>
 <p>💡 <em>Am einfachsten lässt sich neues JavaScript an den Variablennamen <code>let</code>, <code>const</code> und der Arrow-Funktionen <code>() =&gt; {}</code> erkennen.</em></p>
+</blockquote>
 <p>📖 <strong>Ralf S. Engelschall</strong>: <a href="http://es6-features.org/">ECMAScript 6 – New Features</a></p>
 
                     </main>
@@ -201,22 +203,6 @@ sayHello(names);
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -158,7 +158,9 @@
 &lt;/p&gt;
 </code></pre>
 <p>Der <code>&lt;a&gt;</code>-Tag umschließt den Linktext <em>MDN-Webseite</em>. Das Attribut <code>href</code> gibt an, wohin der Link führen soll. Weiter unten gibt es mehr Informationen zur Verwendung von Links. Welche Elemente es gibt und welche Attribute diese besitzen, lässt sich auf den Seiten des Mozilla Developer Networks nachschlagen: 📖 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Element Reference</a></p>
+<blockquote>
 <p>⚠️ <em>Fehlende schließende Tags sind gerade für Einsteiger eine häufige Fehlerquelle und können das Layout einer Seite zerschießen. Das Problem wird dadurch verstärkt, dass der Browser selbstständig versucht ungültiges HTML zu reparieren und offene Tags wieder zu schließen. Im Zweifelsfalls hilft es, das eigene HTML auf nicht geschlossenen Tags hin zu überprüfen. Ein gute Code-Editor kann dabei helfen, solche Fehler frühzeitig zu erkennen.</em></p>
+</blockquote>
 
                     </main>
 
@@ -189,22 +191,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

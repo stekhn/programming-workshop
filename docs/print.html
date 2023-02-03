@@ -237,7 +237,9 @@
 <li><strong>Live Server</strong>: kleiner Web-Server</li>
 </ul>
 <p>Sogenannten Linter helfen dabei, Fehler im Code frühzeitig zu erkennen. Das erspart viel Ärger und Arbeit bei der Fehlersuche.</p>
+<blockquote>
 <p>💡 <em>Es gibt in Visual Studio Code vor allem eine wichtige Tastenkombination: <code>Strg</code> + <code>Shift</code> + <code>P</code> öffnet das Befehlsmenü, über das man schnell häufig genutzte Funktionen aufrufen kann. So muss man sich keine hundert Tastenkombinationen merken, sondern kann einfach eingeben, was man gerne tun möchte.</em></p>
+</blockquote>
 <p>Weitere gute Code-Editoren sind <a href="https://www.sublimetext.com/">Sublime Text</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>, <a href="https://atom.io/">Atom</a>, <a href="https://panic.com/coda/">Coda</a> und <a href="http://brackets.io/">Brackets</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="html"><a class="header" href="#html">HTML</a></h1>
 <p>HTML (Hyper Text Markup Language) ist keine Programmiersprache im engere Sinne, sondern eine Auszeichnungssprache. Es beschreibt und definiert den Inhalt einer Webseite zusammen mit dem grundlegenden Layout der Webseite. HTML besteht aus einer Reihe von Elementen, sogenannte Tags, welche dazu verwenden werden, um bestimmte Inhalte wie beispielsweise Überschriften, Absätze oder Bilder einzubinden.</p>
@@ -275,7 +277,9 @@
 &lt;/p&gt;
 </code></pre>
 <p>Der <code>&lt;a&gt;</code>-Tag umschließt den Linktext <em>MDN-Webseite</em>. Das Attribut <code>href</code> gibt an, wohin der Link führen soll. Weiter unten gibt es mehr Informationen zur Verwendung von Links. Welche Elemente es gibt und welche Attribute diese besitzen, lässt sich auf den Seiten des Mozilla Developer Networks nachschlagen: 📖 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Element Reference</a></p>
+<blockquote>
 <p>⚠️ <em>Fehlende schließende Tags sind gerade für Einsteiger eine häufige Fehlerquelle und können das Layout einer Seite zerschießen. Das Problem wird dadurch verstärkt, dass der Browser selbstständig versucht ungültiges HTML zu reparieren und offene Tags wieder zu schließen. Im Zweifelsfalls hilft es, das eigene HTML auf nicht geschlossenen Tags hin zu überprüfen. Ein gute Code-Editor kann dabei helfen, solche Fehler frühzeitig zu erkennen.</em></p>
+</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ids-und-klassen"><a class="header" href="#ids-und-klassen">IDs und Klassen</a></h1>
 <p>Es gibt zwei spezielle Attribute die auf jedes Element angewendet werden können: <code>id</code> und <code>class</code>. IDs und Klassen sind essenzielle Konzepte um Elemente eindeutig identifiziert zu machen. Dies ist vor allem in Verbindung mit CSS und JavaScript relevant, wo man einen bestimmten Style oder eine bestimmte Funktionalität nur auf bestimmte Argumente anwenden möchte. IDs dürfen jeweils nur einmal vergebene werden, Klassen mehrfach. Hier ein Button mit einer ID, der genau eine Aktion auslöst:</p>
 <pre><code class="language-html">&lt;button id=&quot;submit&quot;&gt;Abschicken&lt;/button&gt;
@@ -326,8 +330,12 @@ document.querySelectorAll(&quot;.removable&quot;);
 <pre><code class="language-html">&lt;h1&gt;Überschrift&lt;/h1&gt;
 &lt;p&gt;Paragraph mit normalem Fließtext und einer &lt;strong&gt;Hervorhebung&lt;strong&gt;&lt;/p&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Meistens sind drei Überschriftengrößen (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) völlig ausreichend.</em></p>
+</blockquote>
+<blockquote>
 <p>💡 <em>Von der Verwendung der alten Texthervorhebungen <code>&lt;i&gt;</code> (kursiv), <code>&lt;b&gt;</code> (fett) und <code>&lt;u&gt;</code> (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen.</em></p>
+</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="links"><a class="header" href="#links">Links</a></h1>
 <p>Der <code>&lt;a&gt;</code>-Tag bezeichnet einen Hyperlink , der auf eine andere Seite oder einen Anker innerhalb der Seite verweist, angegeben durch das <code>href</code>-Attribut.</p>
 <p>Ein Beispiel für einen Link:</p>
@@ -349,7 +357,9 @@ document.querySelectorAll(&quot;.removable&quot;);
 &lt;p&gt;&lt;/p&gt;
 </code></pre>
 <p>Anker beziehen sich immer auf das <code>id</code>-Attribut eines Elements und beginnen mit einer Raute <code>#</code>.</p>
+<blockquote>
 <p>💡 <em>Oft sieht man auch das Attribut <code>target=&quot;_blank&quot;</code>. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von <code>target=&quot;_blank&quot;</code> angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut <code>rel=&quot;noopener&quot;</code> setzen.</em></p>
+</blockquote>
 <p>📖 <strong>CSS-Tricks</strong>: <a href="https://css-tricks.com/use-target_blank/">When to use target=”_blank”</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bilder"><a class="header" href="#bilder">Bilder</a></h1>
 <p>Bilder sind auf einer Webseite mindestens ebenso wichtig wie Texte. In HTML werden Bilder mit dem <code>&lt;img&gt;</code>-Element eingebunden. Dieses benötigt im Gegensatz zu den meisten anderen Elementen keinen schließenden Tag und sollte immer ein ein <code>src</code>- und ein <code>alt</code>-Attribut besitzen.</p>
@@ -367,7 +377,9 @@ document.querySelectorAll(&quot;.removable&quot;);
 /&gt;
 </code></pre>
 <p>Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.</p>
+<blockquote>
 <p>💡 <em>Die Dateigröße von Bildern trägt maßgeblich zur Gesamtgröße und damit auch Ladezeit einer Webseite bei. Daher empfiehlt es sich die Bilder vorher auf die maximal notwendige Auflösung zu verkleinern und im JPEG-Format (85 bis 95 % Kompression) abzuspeichern.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Images in HTML</a><br />
 📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive Images</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="listen"><a class="header" href="#listen">Listen</a></h1>
@@ -384,7 +396,9 @@ document.querySelectorAll(&quot;.removable&quot;);
   &lt;li&gt;Zahnarzttermin vereinbaren&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Listen werden auch gerne dafür eingesetzt, um eine Seitennavigation zu bauen. Das Aussehen einer Liste kann dabei durch CSS stark verändert werden.</em></p>
+</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tabellen"><a class="header" href="#tabellen">Tabellen</a></h1>
 <p>Tabellen sind nützliche Helfer um Daten und Informationen strukturiert darzustellen. Eine Tabelle besteht immer aus mehreren verschachtelten HTML-Elementen:</p>
 <ul>
@@ -430,7 +444,9 @@ document.querySelectorAll(&quot;.removable&quot;);
 <tr><td>Marlene</td><td>Maximus</td><td>22</td></tr>
 </tbody></table>
 </div>
+<blockquote>
 <p>💡 <em>HTML-Tabellen können auch mit dem praktischen <a href="https://www.tablesgenerator.com/html_tables">Tables Generator</a> online erstellt werden.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">Table Element</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="formulare"><a class="header" href="#formulare">Formulare</a></h1>
 <p>Formulare und die dazugehörigen Elemente sind Grundlage um Benutzereingaben zu verarbeiten. Formulare sind nicht nur im Bereich E-Commerce wichtig sondern auch um interaktive Webprojekte zu realisieren. Hier eine Auswahl der wichtigsten Eingabeelemente:</p>
@@ -488,7 +504,9 @@ document.querySelectorAll(&quot;.removable&quot;);
   }
 &lt;/script&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://foundation.zurb.com/">Foundation</a>, <a href="https://bulma.io/">Bulma</a> oder <a href="https://getuikit.com/">UIKit</a> einzusetzen.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms">Form Guide</a><br />
 📖 <strong>FreeCodeCamp</strong>: <a href="https://medium.freecodecamp.org/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5">A step-by-step guide to getting started with HTML forms</a><br />
 📖 <strong>Tuts+</strong>: <a href="https://code.tutsplus.com/tutorials/20-html-forms-best-practices-for-beginners--net-6593">Best Form Practices for Beginners</a></p>
@@ -510,7 +528,9 @@ document.querySelectorAll(&quot;.removable&quot;);
   allowfullscreen
 &gt;&lt;/iframe&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Meistens empfiehlt es sich die Breiten- und Höhenangaben in einem iFrame wegzulassen und die Größe über eine CSS-Regel zu definieren. Das ist deutlich flexibler und erlaubt auch prozentuale Größenangeben wie <code>width: 100%;</code></em></p>
+</blockquote>
 <p>Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbetten anzubieten. Hier ein Beispiel für das Einbetten eines Posts von Twitter:</p>
 <pre><code class="language-html">&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;de&quot;&gt;
   &lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;
@@ -578,7 +598,9 @@ document.querySelectorAll(&quot;.removable&quot;);
 &lt;/html&gt;
 </code></pre>
 <p>Sehr häufig sieht man auch das unspezifische Blockelement <code>&lt;div&gt;</code>. Dieses wird für Abschnitte verwendet, welche keine inhaltliche Bedeutung haben. Oftmals dient es vor allem dazu Container zu erstellen, die dann über CSS gestylt werden können.</p>
+<blockquote>
 <p>💡 <em>Semantisches HTML ist die Grundlage einer barrierefreien Webseite. Gerade Menschen mit Sehbehinderungen nutzen oftmals technisches Hilfsmittel wie Screen-Reader, welche auf semantische Auszeichnungen, aber auch sinnvolle Bildbeschreibungen, angewiesen sind.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/HTML5/HTML5_element_list#Abschnitte_(Sections)">HTML Dokumentation</a><br />
 📖 <strong>Kulturbanause</strong>: <a href="https://blog.kulturbanause.de/2008/01/html-elemente-und-semantik/">HTML-Elemente und Semantik</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="meta-tags"><a class="header" href="#meta-tags">Meta-Tags</a></h1>
@@ -655,7 +677,9 @@ document.querySelectorAll(&quot;.removable&quot;);
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Man kann <code>&lt;style&gt;</code> und <code>&lt;link&gt;</code>-Tags auch an anderer Stelle im HTML verwenden. Durch das Einbauen im <code>&lt;head&gt;</code>-Bereich wird jedoch sichergestellt, dass die Styles geladen sind, bevor die Seite dargestellt wird. Das ist oftmals wichtig, wenn man auf darauf angewiesen ist, dass ein Element eine bestimmte Höhe hat, bevor man damit arbeitet.</em></p>
+</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="aufbau"><a class="header" href="#aufbau">Aufbau</a></h1>
 <p>Jede CSS-Regel besteht aus einem (oder mehreren) Selektor und meistens mehreren Eigenschaften und Werten. Der Selektor bestimmt, welche Elemente beeinflusst werden und die Eigenschaften und Werte wie die Elemente aussehen sollen. Ein Beispiel</p>
 <pre><code class="language-css">p {
@@ -744,7 +768,9 @@ document.querySelectorAll(&quot;.removable&quot;);
   color: darkgreen;
 }
 </code></pre>
+<blockquote>
 <p>💡 <em>Man kann einzelne CSS-Regeln auch mit dem Attribut <code>!important</code> erzwingen <code>.error { color: red !important; }</code>. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen <code>!important</code> zu verwenden, deutet das auf schlecht strukturiertes HTML oder CSS hin.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors">Combinators and selector lists</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="box-model"><a class="header" href="#box-model">Box-Model</a></h1>
 <p>Das CSS-Boxmodell ist die Grundlage für das Layout im Web. Jedes Element wird als rechteckige Box dargestellt. Jedes Element kann einen Innenabstand (<em>padding</em>), einen Rahmen (<em>border</em>) und einen Außenabstand (<em>margin</em>) haben. Diese Werte ergeben zusammen mit der intrinsischen Höhe/Breite die absolute Höhe/Breite eines Elements:</p>
@@ -808,7 +834,9 @@ document.querySelectorAll(&quot;.removable&quot;);
 <li><code>margin: top (right, left) bottom;</code></li>
 <li><code>margin: top right left bottom;</code></li>
 </ul>
+<blockquote>
 <p>💡 <em>Es gibt noch viele weitere CSS-Eigenschaften (<code>background</code>, <code>font</code>, <code>box-shadow</code>), welche bestimmte Shorthand-Properties unterstützen. Gerade am Anfang aber sollte man eher sparsam damit umgehen.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">Shorthand Properties</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="größenangaben"><a class="header" href="#größenangaben">Größenangaben</a></h1>
 <p>In CSS gibt es verschiedene Arten Größenangaben zu definieren. Um Layouts genau umzusetzen und leicht anpassbar zu entwickeln, ist es wichtig die unterschiede zwischen den verschiedenen Einheiten zu verstehen.</p>
@@ -839,6 +867,7 @@ document.querySelectorAll(&quot;.removable&quot;);
 <li><strong>Grid:</strong> Ermöglicht es, Elemente in einem Raster anzuordnen. Hierbei kann man Spalten und Zeilen definieren und die Elemente innerhalb dieses Gitters positionieren. CSS Grid bietet eine hohe Kontrolle über das Layout und ist besonders nützlich für die Anordnung von Elementen auf größeren Geräten wie Desktops.</li>
 </ul>
 <p>Jede dieser Methoden hat ihre Stärken und Schwächen und es hängt von den Anforderungen des Projekts ab, welche Methode am besten geeignet ist.</p>
+<p>Bücher, Webtexte, Wikipedia und Artikel</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="float"><a class="header" href="#float">Float</a></h1>
 <p>Die <code>float</code>-Eigenschaft ermöglicht es Bilder und Textblöcke aus dem Textfluss herauszunehmen und nach links oder rechts zu verschieben. Die Methode ist nur schlecht dazu geeignet aufwendige, mehrspaltige Seitenlayouts zu bauen. Hierfür sollte man immer Flexbox oder Grid verwenden.</p>
 <p>Das folgende Beispiel zeigt einen Zitatkasten, welchen wir nach rechts verschieben wollen („ausblocken“). Außerdem folgen drei Absätze Blindtext, um den Effekt von <code>float</code> zu verdeutlichen:</p>
@@ -1045,7 +1074,9 @@ const sayHello = (array) =&gt; {
 sayHello(names);
 </code></pre>
 <p>Da noch nicht alle Browser das neue JavaScript perfekt beherrschen, braucht man so genannte <em>Transpiler</em> die zwischen den unterschiedlichen JavaScript-Version hin und her übersetzen können. Der bekannteste Transpiler um neues JavaScript in altes JavaScript zu übersetzen ist <a href="https://babeljs.io/repl">Babel</a>. Um altes JavaScript in neues JavaScript zu übersetzen gibt es <a href="https://lebab.unibtc.me/editor">Lebab</a> (Babel rückwärts geschrieben).</p>
+<blockquote>
 <p>💡 <em>Am einfachsten lässt sich neues JavaScript an den Variablennamen <code>let</code>, <code>const</code> und der Arrow-Funktionen <code>() =&gt; {}</code> erkennen.</em></p>
+</blockquote>
 <p>📖 <strong>Ralf S. Engelschall</strong>: <a href="http://es6-features.org/">ECMAScript 6 – New Features</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="variablen-und-konstanten"><a class="header" href="#variablen-und-konstanten">Variablen und Konstanten</a></h1>
 <p>Variablen <code>let</code> und Konstanten <code>const</code> sind notwendig um Werte zu speichern und später wieder aufzurufen. Diese Konzept gibt es in eigentlich jeder Programmiersprache.</p>
@@ -1196,7 +1227,9 @@ console.log(phrase.replace(&quot;Philipp&quot;, &quot;Jana&quot;));
 
 // Jana ist cool
 </code></pre>
+<blockquote>
 <p>⚠️ *Wenn man mit Strings arbeitet, ersetzt <code>Array.replace()</code> immer nur den ersten Treffer. Wenn man mehrer Vorkommen eines Strings ersetzen möchte, muss man dazu eine sogenannte <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Regular Expression</a> verwenden: <code>phrase.replace(/Philipp/g, 'Jana')</code></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">Useful string methods</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bedingungen"><a class="header" href="#bedingungen">Bedingungen</a></h1>
 <p>Mit Bedingungen (<em>conditionals</em>) kann man den Ablauf eines Programms steuern. Das Konzept ist relativ leicht zu verstehen, da es sich um eine einfache „Wenn, dann, ansonsten“-Logik handelt.</p>
@@ -1298,8 +1331,12 @@ if (hasChaperone) {
 
 // Sei bitte bis spätestens 22 Uhr zuhause!
 </code></pre>
+<blockquote>
 <p>💡 <em>Man sollte es mit dem Verschachteln von if-Bedingungen nicht übertreiben. Mehr als drei Logik-Ebenen sind schwer zu verstehen, führen zu endlosen Fehlersuchen und werden generell als schlechten Stil angesehen.</em></p>
+</blockquote>
+<blockquote>
 <p>⚠️ <em>Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer <code>true</code>. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: <code>if (userName !== undefined)</code></em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">Conditionals</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="schleifen"><a class="header" href="#schleifen">Schleifen</a></h1>
 <p>Schleifen (<em>loops</em>) sind nützlich, um sich wiederholende Aufgaben innerhalb eines Programms schnell zu erledigen. In JavaScript gibt es verschieden Möglichkeiten Schleifen zu programmieren. Jede Möglichkeit hat bestimmte Vor- und Nachteile.</p>
@@ -1358,7 +1395,9 @@ console.log(names[1]);
 console.log(names[2]);
 // Sophie
 </code></pre>
+<blockquote>
 <p>💡 <em>In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays <code>array.length</code> ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und <code>array[array.length - 1]</code> schreiben.</em></p>
+</blockquote>
 <p>Um einem Array neue Elemente hinzuzufügen, kann man die Methode <strong>Array.push()</strong> verwenden:</p>
 <pre><code class="language-javascript">const names = [&quot;Philipp&quot;, &quot;Andrea&quot;, &quot;Sophie&quot;];
 
@@ -1514,8 +1553,45 @@ console.log(person.sayHello());
 <p>Events sind ein wichtiger Bestandteil jeder JavaScript-Webseite und ermöglichen es, interaktive Webseiten zu erstellen.</p>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">Introduction to Events</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dom-manipulation"><a class="header" href="#dom-manipulation">DOM-Manipulation</a></h1>
-<pre><code class="language-javascript">
+<p>DOM-Manipulation bezeichnet das Ändern von Webseiten-Elemente mithilfe von JavaScript. Der DOM (Document Object Model) ist, vereinfacht gesagt, die Struktur einer Webseite, wenn man sie als Baum mit Elementen und Unterelementen darstellen würden. Der Browser stellt bestimmte Methoden bereit, um auf den DOM zuzugreifen und Elemente verändern zu können. Neue Elemente können hinzugefügt, bestehende Elemente können geändert oder entfernt werden.</p>
+<p>Zum Auswählen einzelner oder mehrere Elemente gibt es folgende Möglichkeiten:</p>
+<ol>
+<li><strong>getElementById:</strong> Diese Methode sucht nach einem Element auf der Basis seiner ID. Sie gibt das erste gefundene Element mit dieser ID zurück. Beispiel: <code>document.getElementById(&quot;meineId&quot;)</code></li>
+<li><strong>getElementsByTagName:</strong> Diese Methode sucht nach allen Elementen mit einem bestimmten HTML-Tag. Sie gibt ein HTMLCollection (ähnlich einem Array) mit allen gefundenen Elementen zurück. Beispiel: <code>document.getElementsByTagName(&quot;p&quot;)</code></li>
+<li><strong>querySelector:</strong> Diese Methode ist eine erweiterte Version von getElementById und getElementsByTagName. Man kann mittels eines CSS-ähnlichen Selektors nach einem Element suchen. Sie gibt das erste gefundene Element zurück. Beispiel: <code>document.querySelector(&quot;#meineId .meineKlasse&quot;)</code></li>
+<li><strong>querySelectorAll:</strong> Diese Methode ist eine erweiterte Version von getElementsByTagName. Man kann mittels eines CSS-ähnlichen Selektors nach allen passenden Elementen suchen. Sie gibt ein NodeList (ähnlich einem Array) mit allen gefundenen Elementen zurück. Beispiel: <code>document.querySelectorAll(&quot;.meineKlasse&quot;)</code></li>
+</ol>
+<blockquote>
+<p>💡 <em><code>querySelector</code> und <code>querySelectorAll</code> sind die flexibelsten Methoden, um Elemente auszuwählen. Gerade für den Anfang lohnt es sich, einfach mit diesen beiden Methoden zu arbeiten und zu lernen, wie man Selektoren dafür schreibt. Die Selektoren funktionieren im Prinzip genauso, wie man sie in CSS schreiben würde.</em></p>
+</blockquote>
+<p>Um ein Element mit JavaScript hinzuzufügen, muss zunächst ein neues Element erstellt werden. Dies kann mit der Methode <code>document.createElement(elementName)</code> erreicht werden, wobei <code>elementName</code> der gewünschte Name des Elements ist, zum Beispiel &quot;h1&quot; für eine Überschrift. Für das neu erstellte Element können dann bestimmte Eigenschaften festgelegt werden, wie Inhalt, ID, Klasse oder andere Attribute.</p>
+<p>Zum Hinzufügen des Elements zur Seite kann es an ein bestehendes Element angehängt werden, indem die Methode <code>appendChild</code> des Elternelements, in diesem Fall der <code>body</code>, aufgerufen wird und das neue Element als Argument übergeben wird.</p>
+<p>Beispiel:</p>
+<pre><code class="language-javascript">var newHeadline = document.createElement(&quot;h1&quot;);
+newDiv.textContent = &quot;Ich bin ein neue Überschrift&quot;;
+newDiv.id = &quot;headline&quot;;
+document.body.appendChild(newHeadline);
 </code></pre>
+<p>Um eine bereits bestehende Überschrift mit JavaScript zu ändern, kann man das entsprechende Element über seine ID oder Klasse mittels <code>document.getElementById</code> oder <code>document.getElementsByClassName</code> auswählen. In diesen Beispielen wird eine Überschrift mittels ihrer ID ausgewählt und entsprechend verändert. Auf ähnliche Weise kann man auch Überschriften, die mittels Klasse ausgewählt wurden, verändern.</p>
+<p>Ändern des Textes:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+headline.innerHTML = &quot;Neuer Überschriftentext&quot;;
+</code></pre>
+<p>Ändern der Klasse:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+headline.className = &quot;new-class&quot;;
+Ändern der Hintergrundfarbe:
+</code></pre>
+<p>Ändern der Hintergrundfarbe:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+headline.style.backgroundColor = &quot;lightblue&quot;;
+</code></pre>
+<p>Um die oben angelegte Überschrift zu löschen, muss man dessen Eltern-Element verwenden und dessen <code>removeChild</code>-Methode aufrufen. Hier ist ein Beispiel:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+var parent = headline.parentNode;
+parent.removeChild(headline);
+</code></pre>
+<p>Dass jeweils das Eltern-Element ermittelt werden muss, um ein Element zu löschen ist leider ein wenig aufwendig.</p>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents">Manipulating documents</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="web-apis"><a class="header" href="#web-apis">Web-APIs</a></h1>
 <p>Web-APIs (Application Programming Interfaces) sind Schnittstellen, die vom Browser bereitgestellt werden, um bestimmte Funktionalitäten wie Geolokalisierung, Kamera- oder Dateien-Zugriff zu ermöglichen. Diese Funktionalitäten können direkt aus JavaScript heraus verwendet werden.</p>
@@ -1532,12 +1608,16 @@ console.log(person.sayHello());
 &lt;/script&gt;
 </code></pre>
 <p>In diesem Beispiel wird zuerst überprüft, ob der Browser die Geolokalisierung unterstützt. Falls ja, wird mit <code>navigator.geolocation.getCurrentPosition</code> der Standort des Benutzers abgefragt. Die Funktion, die hier als Argument übergeben wird, wird aufgerufen, wenn die Geolokalisierung erfolgreich ermittelt wurde. In dieser Funktion werden dann Längen- und Breitengrad auf der Browser-Konsole ausgegeben.</p>
+<blockquote>
 <p>💡 <em>Es ist wichtig zu beachten, dass manche Browser APIs nur dann zur Verfügung stehen, wenn die Webseite über eine gültige SSL-Zertifizierung verfügt und sicher über HTTPS aufgerufen wird. Außerdem kann es sein, dass der Benutzer der Verwendung bestimmter APIs erst einmal genehmigen muss.</em></p>
+</blockquote>
 <p>Browser APIs ermöglichen es, die Funktionalitäten des Browsers direkt von JavaScript aus zu nutzen und interaktive Webseiten zu erstellen, die besser auf die Bedürfnisse des Benutzers eingehen.</p>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction">Introduction to Web APIs</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="bibliotheken"><a class="header" href="#bibliotheken">Bibliotheken</a></h1>
 <p>Durch Bibliotheken können Entwickler ihre Arbeit beschleunigen, indem sie auf bereits getestete und bewährte Lösungen zurückgreifen, statt jedes Mal eigenen Code schreiben zu müssen. Die meisten Bibliotheken sind für sehr bestimmte Aufgaben oder Probleme gemacht, wie zum Beispiel das Arbeiten mit Datumsangaben, Formularen oder bestimmten Datenschnittstellen. Die meisten Bibliotheken werden kostenlos und unter einen Open-Source-Lizenz angeboten.</p>
+<blockquote>
 <p>💡 <em>Häufig bezeichnet man Bibliotheken auch als Libraries, Packages, Dependencies oder auf Deutsch Abhängigkeiten.</em></p>
+</blockquote>
 <p>Bibliotheken in JavaScript können über den Paketmanager <a href="https://www.npmjs.com/">NPM</a> oder über ein CDN (Content Delivery Network) eingebunden werden. NPM bietet auch einen Überblick über die verfügbaren Bibliotheken. Um npm verwenden zu können, muss jedoch zuerst <a href="https://nodejs.org/">Node.js</a> installiert werden. Node.js ermöglicht es JavaScript in der Kommandozeile auszuführen. Nach erfolgreicher Installation, können Bibliotheken über folgenden Befehle installiert werden:</p>
 <pre><code class="language-shell">npm install lodash
 </code></pre>
@@ -1603,22 +1683,6 @@ console.log(person.sayHello());
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

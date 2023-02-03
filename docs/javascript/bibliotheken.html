@@ -146,7 +146,9 @@
                     <main>
                         <h1 id="bibliotheken"><a class="header" href="#bibliotheken">Bibliotheken</a></h1>
 <p>Durch Bibliotheken können Entwickler ihre Arbeit beschleunigen, indem sie auf bereits getestete und bewährte Lösungen zurückgreifen, statt jedes Mal eigenen Code schreiben zu müssen. Die meisten Bibliotheken sind für sehr bestimmte Aufgaben oder Probleme gemacht, wie zum Beispiel das Arbeiten mit Datumsangaben, Formularen oder bestimmten Datenschnittstellen. Die meisten Bibliotheken werden kostenlos und unter einen Open-Source-Lizenz angeboten.</p>
+<blockquote>
 <p>💡 <em>Häufig bezeichnet man Bibliotheken auch als Libraries, Packages, Dependencies oder auf Deutsch Abhängigkeiten.</em></p>
+</blockquote>
 <p>Bibliotheken in JavaScript können über den Paketmanager <a href="https://www.npmjs.com/">NPM</a> oder über ein CDN (Content Delivery Network) eingebunden werden. NPM bietet auch einen Überblick über die verfügbaren Bibliotheken. Um npm verwenden zu können, muss jedoch zuerst <a href="https://nodejs.org/">Node.js</a> installiert werden. Node.js ermöglicht es JavaScript in der Kommandozeile auszuführen. Nach erfolgreicher Installation, können Bibliotheken über folgenden Befehle installiert werden:</p>
 <pre><code class="language-shell">npm install lodash
 </code></pre>
@@ -200,22 +202,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

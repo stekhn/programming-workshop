@@ -223,7 +223,9 @@
   color: darkgreen;
 }
 </code></pre>
+<blockquote>
 <p>💡 <em>Man kann einzelne CSS-Regeln auch mit dem Attribut <code>!important</code> erzwingen <code>.error { color: red !important; }</code>. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen <code>!important</code> zu verwenden, deutet das auf schlecht strukturiertes HTML oder CSS hin.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors">Combinators and selector lists</a></p>
 
                     </main>
@@ -255,22 +257,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -178,7 +178,9 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Man kann <code>&lt;style&gt;</code> und <code>&lt;link&gt;</code>-Tags auch an anderer Stelle im HTML verwenden. Durch das Einbauen im <code>&lt;head&gt;</code>-Bereich wird jedoch sichergestellt, dass die Styles geladen sind, bevor die Seite dargestellt wird. Das ist oftmals wichtig, wenn man auf darauf angewiesen ist, dass ein Element eine bestimmte Höhe hat, bevor man damit arbeitet.</em></p>
+</blockquote>
 
                     </main>
 
@@ -209,22 +211,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

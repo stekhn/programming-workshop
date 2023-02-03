@@ -159,7 +159,9 @@ console.log(names[1]);
 console.log(names[2]);
 // Sophie
 </code></pre>
+<blockquote>
 <p>💡 <em>In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays <code>array.length</code> ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und <code>array[array.length - 1]</code> schreiben.</em></p>
+</blockquote>
 <p>Um einem Array neue Elemente hinzuzufügen, kann man die Methode <strong>Array.push()</strong> verwenden:</p>
 <pre><code class="language-javascript">const names = [&quot;Philipp&quot;, &quot;Andrea&quot;, &quot;Sophie&quot;];
 
@@ -231,22 +233,6 @@ console.log(found);
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

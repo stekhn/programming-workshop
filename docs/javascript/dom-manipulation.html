@@ -145,8 +145,45 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="dom-manipulation"><a class="header" href="#dom-manipulation">DOM-Manipulation</a></h1>
-<pre><code class="language-javascript">
+<p>DOM-Manipulation bezeichnet das Ändern von Webseiten-Elemente mithilfe von JavaScript. Der DOM (Document Object Model) ist, vereinfacht gesagt, die Struktur einer Webseite, wenn man sie als Baum mit Elementen und Unterelementen darstellen würden. Der Browser stellt bestimmte Methoden bereit, um auf den DOM zuzugreifen und Elemente verändern zu können. Neue Elemente können hinzugefügt, bestehende Elemente können geändert oder entfernt werden.</p>
+<p>Zum Auswählen einzelner oder mehrere Elemente gibt es folgende Möglichkeiten:</p>
+<ol>
+<li><strong>getElementById:</strong> Diese Methode sucht nach einem Element auf der Basis seiner ID. Sie gibt das erste gefundene Element mit dieser ID zurück. Beispiel: <code>document.getElementById(&quot;meineId&quot;)</code></li>
+<li><strong>getElementsByTagName:</strong> Diese Methode sucht nach allen Elementen mit einem bestimmten HTML-Tag. Sie gibt ein HTMLCollection (ähnlich einem Array) mit allen gefundenen Elementen zurück. Beispiel: <code>document.getElementsByTagName(&quot;p&quot;)</code></li>
+<li><strong>querySelector:</strong> Diese Methode ist eine erweiterte Version von getElementById und getElementsByTagName. Man kann mittels eines CSS-ähnlichen Selektors nach einem Element suchen. Sie gibt das erste gefundene Element zurück. Beispiel: <code>document.querySelector(&quot;#meineId .meineKlasse&quot;)</code></li>
+<li><strong>querySelectorAll:</strong> Diese Methode ist eine erweiterte Version von getElementsByTagName. Man kann mittels eines CSS-ähnlichen Selektors nach allen passenden Elementen suchen. Sie gibt ein NodeList (ähnlich einem Array) mit allen gefundenen Elementen zurück. Beispiel: <code>document.querySelectorAll(&quot;.meineKlasse&quot;)</code></li>
+</ol>
+<blockquote>
+<p>💡 <em><code>querySelector</code> und <code>querySelectorAll</code> sind die flexibelsten Methoden, um Elemente auszuwählen. Gerade für den Anfang lohnt es sich, einfach mit diesen beiden Methoden zu arbeiten und zu lernen, wie man Selektoren dafür schreibt. Die Selektoren funktionieren im Prinzip genauso, wie man sie in CSS schreiben würde.</em></p>
+</blockquote>
+<p>Um ein Element mit JavaScript hinzuzufügen, muss zunächst ein neues Element erstellt werden. Dies kann mit der Methode <code>document.createElement(elementName)</code> erreicht werden, wobei <code>elementName</code> der gewünschte Name des Elements ist, zum Beispiel &quot;h1&quot; für eine Überschrift. Für das neu erstellte Element können dann bestimmte Eigenschaften festgelegt werden, wie Inhalt, ID, Klasse oder andere Attribute.</p>
+<p>Zum Hinzufügen des Elements zur Seite kann es an ein bestehendes Element angehängt werden, indem die Methode <code>appendChild</code> des Elternelements, in diesem Fall der <code>body</code>, aufgerufen wird und das neue Element als Argument übergeben wird.</p>
+<p>Beispiel:</p>
+<pre><code class="language-javascript">var newHeadline = document.createElement(&quot;h1&quot;);
+newDiv.textContent = &quot;Ich bin ein neue Überschrift&quot;;
+newDiv.id = &quot;headline&quot;;
+document.body.appendChild(newHeadline);
 </code></pre>
+<p>Um eine bereits bestehende Überschrift mit JavaScript zu ändern, kann man das entsprechende Element über seine ID oder Klasse mittels <code>document.getElementById</code> oder <code>document.getElementsByClassName</code> auswählen. In diesen Beispielen wird eine Überschrift mittels ihrer ID ausgewählt und entsprechend verändert. Auf ähnliche Weise kann man auch Überschriften, die mittels Klasse ausgewählt wurden, verändern.</p>
+<p>Ändern des Textes:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+headline.innerHTML = &quot;Neuer Überschriftentext&quot;;
+</code></pre>
+<p>Ändern der Klasse:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+headline.className = &quot;new-class&quot;;
+Ändern der Hintergrundfarbe:
+</code></pre>
+<p>Ändern der Hintergrundfarbe:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+headline.style.backgroundColor = &quot;lightblue&quot;;
+</code></pre>
+<p>Um die oben angelegte Überschrift zu löschen, muss man dessen Eltern-Element verwenden und dessen <code>removeChild</code>-Methode aufrufen. Hier ist ein Beispiel:</p>
+<pre><code class="language-javascript">const headline = document.querySelector(&quot;#headline&quot;);
+var parent = headline.parentNode;
+parent.removeChild(headline);
+</code></pre>
+<p>Dass jeweils das Eltern-Element ermittelt werden muss, um ein Element zu löschen ist leider ein wenig aufwendig.</p>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents">Manipulating documents</a></p>
 
                     </main>
@@ -178,22 +215,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -153,6 +153,7 @@
 <li><strong>Grid:</strong> Ermöglicht es, Elemente in einem Raster anzuordnen. Hierbei kann man Spalten und Zeilen definieren und die Elemente innerhalb dieses Gitters positionieren. CSS Grid bietet eine hohe Kontrolle über das Layout und ist besonders nützlich für die Anordnung von Elementen auf größeren Geräten wie Desktops.</li>
 </ul>
 <p>Jede dieser Methoden hat ihre Stärken und Schwächen und es hängt von den Anforderungen des Projekts ab, welche Methode am besten geeignet ist.</p>
+<p>Bücher, Webtexte, Wikipedia und Artikel</p>
 
                     </main>
 
@@ -183,22 +184,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

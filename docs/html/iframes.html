@@ -162,7 +162,9 @@
   allowfullscreen
 &gt;&lt;/iframe&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Meistens empfiehlt es sich die Breiten- und Höhenangaben in einem iFrame wegzulassen und die Größe über eine CSS-Regel zu definieren. Das ist deutlich flexibler und erlaubt auch prozentuale Größenangeben wie <code>width: 100%;</code></em></p>
+</blockquote>
 <p>Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbetten anzubieten. Hier ein Beispiel für das Einbetten eines Posts von Twitter:</p>
 <pre><code class="language-html">&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;de&quot;&gt;
   &lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;
@@ -212,22 +214,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -160,7 +160,9 @@
 /&gt;
 </code></pre>
 <p>Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.</p>
+<blockquote>
 <p>💡 <em>Die Dateigröße von Bildern trägt maßgeblich zur Gesamtgröße und damit auch Ladezeit einer Webseite bei. Daher empfiehlt es sich die Bilder vorher auf die maximal notwendige Auflösung zu verkleinern und im JPEG-Format (85 bis 95 % Kompression) abzuspeichern.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Images in HTML</a><br />
 📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive Images</a></p>
 
@@ -193,22 +195,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -200,7 +200,9 @@ console.log(phrase.replace(&quot;Philipp&quot;, &quot;Jana&quot;));
 
 // Jana ist cool
 </code></pre>
+<blockquote>
 <p>⚠️ *Wenn man mit Strings arbeitet, ersetzt <code>Array.replace()</code> immer nur den ersten Treffer. Wenn man mehrer Vorkommen eines Strings ersetzen möchte, muss man dazu eine sogenannte <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">Regular Expression</a> verwenden: <code>phrase.replace(/Philipp/g, 'Jana')</code></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">Useful string methods</a></p>
 
                     </main>
@@ -232,22 +234,6 @@ console.log(phrase.replace(&quot;Philipp&quot;, &quot;Jana&quot;));
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

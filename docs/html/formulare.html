@@ -200,7 +200,9 @@
   }
 &lt;/script&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://foundation.zurb.com/">Foundation</a>, <a href="https://bulma.io/">Bulma</a> oder <a href="https://getuikit.com/">UIKit</a> einzusetzen.</em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms">Form Guide</a><br />
 📖 <strong>FreeCodeCamp</strong>: <a href="https://medium.freecodecamp.org/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5">A step-by-step guide to getting started with HTML forms</a><br />
 📖 <strong>Tuts+</strong>: <a href="https://code.tutsplus.com/tutorials/20-html-forms-best-practices-for-beginners--net-6593">Best Form Practices for Beginners</a></p>
@@ -234,22 +236,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

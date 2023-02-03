@@ -244,8 +244,12 @@ if (hasChaperone) {
 
 // Sei bitte bis spätestens 22 Uhr zuhause!
 </code></pre>
+<blockquote>
 <p>💡 <em>Man sollte es mit dem Verschachteln von if-Bedingungen nicht übertreiben. Mehr als drei Logik-Ebenen sind schwer zu verstehen, führen zu endlosen Fehlersuchen und werden generell als schlechten Stil angesehen.</em></p>
+</blockquote>
+<blockquote>
 <p>⚠️ <em>Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer <code>true</code>. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: <code>if (userName !== undefined)</code></em></p>
+</blockquote>
 <p>📖 <strong>MDN</strong>: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">Conditionals</a></p>
 
                     </main>
@@ -277,22 +281,6 @@ if (hasChaperone) {
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

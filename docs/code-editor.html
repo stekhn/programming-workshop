@@ -162,7 +162,9 @@
 <li><strong>Live Server</strong>: kleiner Web-Server</li>
 </ul>
 <p>Sogenannten Linter helfen dabei, Fehler im Code frühzeitig zu erkennen. Das erspart viel Ärger und Arbeit bei der Fehlersuche.</p>
+<blockquote>
 <p>💡 <em>Es gibt in Visual Studio Code vor allem eine wichtige Tastenkombination: <code>Strg</code> + <code>Shift</code> + <code>P</code> öffnet das Befehlsmenü, über das man schnell häufig genutzte Funktionen aufrufen kann. So muss man sich keine hundert Tastenkombinationen merken, sondern kann einfach eingeben, was man gerne tun möchte.</em></p>
+</blockquote>
 <p>Weitere gute Code-Editoren sind <a href="https://www.sublimetext.com/">Sublime Text</a>, <a href="https://notepad-plus-plus.org/">Notepad++</a>, <a href="https://atom.io/">Atom</a>, <a href="https://panic.com/coda/">Coda</a> und <a href="http://brackets.io/">Brackets</a>.</p>
 
                     </main>
@@ -194,22 +196,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

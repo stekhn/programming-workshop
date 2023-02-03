@@ -159,8 +159,12 @@
 <pre><code class="language-html">&lt;h1&gt;Überschrift&lt;/h1&gt;
 &lt;p&gt;Paragraph mit normalem Fließtext und einer &lt;strong&gt;Hervorhebung&lt;strong&gt;&lt;/p&gt;
 </code></pre>
+<blockquote>
 <p>💡 <em>Meistens sind drei Überschriftengrößen (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) völlig ausreichend.</em></p>
+</blockquote>
+<blockquote>
 <p>💡 <em>Von der Verwendung der alten Texthervorhebungen <code>&lt;i&gt;</code> (kursiv), <code>&lt;b&gt;</code> (fett) und <code>&lt;u&gt;</code> (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen.</em></p>
+</blockquote>
 
                     </main>
 
@@ -191,22 +195,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

@@ -165,7 +165,9 @@
 &lt;p&gt;&lt;/p&gt;
 </code></pre>
 <p>Anker beziehen sich immer auf das <code>id</code>-Attribut eines Elements und beginnen mit einer Raute <code>#</code>.</p>
+<blockquote>
 <p>💡 <em>Oft sieht man auch das Attribut <code>target=&quot;_blank&quot;</code>. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von <code>target=&quot;_blank&quot;</code> angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut <code>rel=&quot;noopener&quot;</code> setzen.</em></p>
+</blockquote>
 <p>📖 <strong>CSS-Tricks</strong>: <a href="https://css-tricks.com/use-target_blank/">When to use target=”_blank”</a></p>
 
                     </main>
@@ -197,22 +199,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
