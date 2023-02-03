@@ -1,0 +1,135 @@
+
+/* Globals */
+
+:root {
+    --sidebar-width: 300px;
+    --page-padding: 15px;
+    --content-max-width: 750px;
+    --menu-bar-height: 50px;
+    --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */
+}
+
+/* Themes */
+
+.light {
+    --bg: #FFFFFF;
+    --fg: #334455;
+
+    --sidebar-bg: #F4F9FF;
+    --sidebar-fg: #334455;
+    --sidebar-non-existant: #8899AA;
+    --sidebar-active: #5599EE;
+    --sidebar-spacer: #CCDDEE;
+
+    --scrollbar: #8899AA;
+
+    --icons: #334455;
+    --icons-hover: #5599EE;
+
+    --links: #5599EE;
+
+    --inline-code-color: #8899AA;
+
+    --theme-popup-bg: #F4F9FF;
+    --theme-popup-border: #CCDDEE;
+    --theme-hover: #F4F9FF;
+
+    --quote-bg: #F4F9FF;
+    --quote-border: #CCDDEE;
+
+    --table-border-color: #CCDDEE;
+    --table-header-bg: #F4F9FF;
+    --table-alternate-bg: #F4F9FF;
+
+    --searchbar-border-color: #CCDDEE;
+    --searchbar-bg: #F4F9FF;
+    --searchbar-fg: #334455;
+    --searchbar-shadow-color: #FFFFFF;
+    --searchresults-header-fg: #334455;
+    --searchresults-border-color: #CCDDEE;
+    --searchresults-li-bg: #F4F9FF;
+    --search-mark-bg: #5599EE;
+}
+
+.dark {
+    --bg: #112233;
+    --fg: #CCDDEE;
+
+    --sidebar-bg: #445566;
+    --sidebar-fg: #CCDDEE;
+    --sidebar-non-existant: #8899AA;
+    --sidebar-active: #5599EE;
+    --sidebar-spacer: #445566;
+
+    --scrollbar: #8899AA;
+
+    --icons: #CCDDEE;
+    --icons-hover: #5599EE;
+
+    --links: #5599EE;
+
+    --inline-code-color: #8899AA;
+
+    --theme-popup-bg: #334455;
+    --theme-popup-border: #445566;
+    --theme-hover: #445566;
+
+    --quote-bg: #334455;
+    --quote-border: #445566;
+
+    --table-border-color: #445566;
+    --table-header-bg: #334455;
+    --table-alternate-bg: #334455;
+
+    --searchbar-border-color: #445566;
+    --searchbar-bg: #334455;
+    --searchbar-fg: #CCDDEE;
+    --searchbar-shadow-color: #112233;
+    --searchresults-header-fg: #CCDDEE;
+    --searchresults-border-color: #445566;
+    --searchresults-li-bg: #334455;
+    --search-mark-bg: #5599EE;
+}
+
+@media (prefers-color-scheme: dark) {
+    .light.no-js {
+        --bg: #112233;
+        --fg: #CCDDEE;
+    
+        --sidebar-bg: #445566;
+        --sidebar-fg: #CCDDEE;
+        --sidebar-non-existant: #8899AA;
+        --sidebar-active: #5599EE;
+        --sidebar-spacer: #445566;
+    
+        --scrollbar: #8899AA;
+    
+        --icons: #CCDDEE;
+        --icons-hover: #5599EE;
+    
+        --links: #5599EE;
+    
+        --inline-code-color: #8899AA;
+    
+        --theme-popup-bg: #334455;
+        --theme-popup-border: #445566;
+        --theme-hover: #445566;
+    
+        --quote-bg: #334455;
+        --quote-border: #445566;
+    
+        --table-border-color: #445566;
+        --table-header-bg: #334455;
+        --table-alternate-bg: #334455;
+    
+        --searchbar-border-color: #445566;
+        --searchbar-bg: #334455;
+        --searchbar-fg: #CCDDEE;
+        --searchbar-shadow-color: #112233;
+        --searchresults-header-fg: #CCDDEE;
+        --searchresults-border-color: #445566;
+        --searchresults-li-bg: #334455;
+        --search-mark-bg: #5599EE;
+    }
+}
