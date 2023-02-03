@@ -44,8 +44,8 @@ JavaScript-Beispiel:
 
 ```javascript
 // Einen Button nach ID auswählen
-document.querySelector('#submit')
+document.querySelector("#submit");
 
 // Alle Listeneinträge nach Klasse auswählen
-document.querySelectorAll('.removable')
+document.querySelectorAll(".removable");
 ```

@@ -5,13 +5,13 @@ Arrays sind die einfachste Möglichkeit um Listen in JavaScript zu erstellen. Di
 Hier ein Beispiel für ein einfaches Array mit drei Namen:
 
 ```javascript
-const names = ['Philipp', 'Andrea', 'Sophie'];
+const names = ["Philipp", "Andrea", "Sophie"];
 ```
 
-Die einzelnen Einträge in einem Array kann man über ihren Stellenwert (*Index*) abfragen:
+Die einzelnen Einträge in einem Array kann man über ihren Stellenwert (_Index_) abfragen:
 
 ```javascript
-const names = ['Philipp', 'Andrea', 'Sophie'];
+const names = ["Philipp", "Andrea", "Sophie"];
 
 console.log(names[0]);
 // Philipp
@@ -21,14 +21,14 @@ console.log(names[2]);
 // Sophie
 ```
 
-💡 *In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays `array.length` ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und `array[array.length - 1]` schreiben.*
+💡 _In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays `array.length` ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und `array[array.length - 1]` schreiben._
 
 Um einem Array neue Elemente hinzuzufügen, kann man die Methode **Array.push()** verwenden:
 
 ```javascript
-const names = ['Philipp', 'Andrea', 'Sophie'];
+const names = ["Philipp", "Andrea", "Sophie"];
 
-names.push('Yusuf');
+names.push("Yusuf");
 console.log(names);
 // ['Philipp', 'Andrea', 'Sophie', 'Yusuf']
 ```
@@ -36,7 +36,7 @@ console.log(names);
 **Array.reverse()** dreht die Reihenfolge der Element in einem Arrays um:
 
 ```javascript
-const names = ['Philipp', 'Andrea', 'Sophie'];
+const names = ["Philipp", "Andrea", "Sophie"];
 
 names.reverse();
 console.log(names);
@@ -46,7 +46,7 @@ console.log(names);
 Mit der Methode **Array.sort()** ein Array sortieren:
 
 ```javascript
-const names = ['Philipp', 'Andrea', 'Sophie'];
+const names = ["Philipp", "Andrea", "Sophie"];
 
 names.sort();
 console.log(names);
@@ -60,7 +60,7 @@ const numbers = [5, 12, 8, 130, 11, 44];
 
 numbers.sort();
 console.log(numbers);
-// [11, 12, 130, 44, 5, 8] 
+// [11, 12, 130, 44, 5, 8]
 
 numbers.sort((a, b) => a - b);
 console.log(numbers);
@@ -71,7 +71,7 @@ Man kann Arrays mit **Array.find()** auch nach bestimmten Bedingungen durchsuche
 
 ```javascript
 const numbers = [5, 12, 8, 130, 11, 44];
-const found = numbers.find(n => n > 10);
+const found = numbers.find((n) => n > 10);
 
 console.log(found);
 // [12, 11]

@@ -8,7 +8,7 @@ Gerade für Journalisten sind dies die wohl wichtigten HTML-Elemente. Grundsätz
 Um innerhalb des Texts bestimmte Abschnitte oder Wörter hervorzuheben, gibt es folgenden Auszeichnungselemente:
 
 - `<strong>` Markiert besonders wichtigen (stark hervorgehobenen) Text und wird meistens fettgedruckt dargestellt.
-- `<em>` Steht für hervorgehobenen Text (*emphasis*) und wird standardmäßig kursiv dargestellt.
+- `<em>` Steht für hervorgehobenen Text (_emphasis_) und wird standardmäßig kursiv dargestellt.
 
 Ein Beispiel:
 
@@ -17,6 +17,6 @@ Ein Beispiel:
 <p>Paragraph mit normalem Fließtext und einer <strong>Hervorhebung<strong></p>
 ```
 
-💡 *Meistens sind drei Überschriftengrößen (`<h1>`, `<h2>`, `<h3>`) völlig ausreichend.*
+💡 _Meistens sind drei Überschriftengrößen (`<h1>`, `<h2>`, `<h3>`) völlig ausreichend._
 
-💡 *Von der Verwendung der alten Texthervorhebungen `<i>` (kursiv), `<b>` (fett) und `<u>` (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen.*
+💡 _Von der Verwendung der alten Texthervorhebungen `<i>` (kursiv), `<b>` (fett) und `<u>` (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen._

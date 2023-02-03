@@ -17,11 +17,11 @@ Ein einfaches Beispiel für Kommentarfeld:
 <form id="comment" name="comment" action="/save-comment" method="post">
   <div>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name">
+    <input type="text" id="name" name="user_name" />
   </div>
   <div>
     <label for="mail">E-mail:</label>
-    <input type="email" id="mail" name="user_mail">
+    <input type="email" id="mail" name="user_mail" />
   </div>
   <div>
     <label for="msg">Nachricht:</label>
@@ -38,14 +38,14 @@ In diesem Beispiel gehen wir davon aus, dass der Server einen Endpunkt `/save-co
 Dazu müssen die `action`- und `method`-Attribute des Formulars im HTML entfernt werden:
 
 ```html
-<form id="comment">
+<form id="comment"></form>
 ```
 
 Um eine Aktion auszulösen, wenn der Submit-Button geklickt wird, muss ein Event-Handler registriert werden:
 
 ```html
 <script>
-  document.querySelector('#comment').addEventListener('submit', handleSubmit)
+  document.querySelector("#comment").addEventListener("submit", handleSubmit);
 
   function handleSubmit(e) {
     var form = e.target;
@@ -65,7 +65,7 @@ Um eine Aktion auszulösen, wenn der Submit-Button geklickt wird, muss ein Event
 </script>
 ```
 
-💡 *Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io/) oder [UIKit](https://getuikit.com/) einzusetzen.*
+💡 _Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io/) oder [UIKit](https://getuikit.com/) einzusetzen._
 
 📖 **MDN**: [Form Guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)  
 📖 **FreeCodeCamp**: [A step-by-step guide to getting started with HTML forms](https://medium.freecodecamp.org/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5)  

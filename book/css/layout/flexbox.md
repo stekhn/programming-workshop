@@ -19,4 +19,5 @@ Diese Einstellungen zentrieren alle Elemente eines Containers sowohl horizontal 
 
 Flexbox ist gute Alternative zu CSS Floats und erleichtert das Ausrichten von Elementen im Seitenlayout enorm.
 
-📖 **MDN**: [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+📖 **MDN**: [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)  
+📖 **CSS-Tricks**: [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

@@ -6,7 +6,7 @@ Hier ein einfaches Beispiel für die Grundstruktur einer Seite mit Titel, Übers
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Titel der Webseite</title>
   </head>
 

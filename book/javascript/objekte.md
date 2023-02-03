@@ -1,22 +1,22 @@
 # Objekte
 
-Objekte sind ähnliche wie Arrays (Listen) eine weitere Methode um Daten in JavaScript zusammenzuhalten. Im Gegensatz zu Arrays können die einzelnen Eigenschaften (*properties* oder *keys*) eines Objekts aber benannt werden.
+Objekte sind ähnliche wie Arrays (Listen) eine weitere Methode um Daten in JavaScript zusammenzuhalten. Im Gegensatz zu Arrays können die einzelnen Eigenschaften (_properties_ oder _keys_) eines Objekts aber benannt werden.
 
 ```javascript
 const person = {
-  name: 'Philipp',
+  name: "Philipp",
   age: 23,
-  city: 'Hamburg'
+  city: "Hamburg",
 };
 ```
 
-Die einzelnen Werte in einem Objekt kann man über den jeweiligen Namen mit der sogenannten Punktnotation (*dot notation*) abfragen:
+Die einzelnen Werte in einem Objekt kann man über den jeweiligen Namen mit der sogenannten Punktnotation (_dot notation_) abfragen:
 
 ```javascript
 const person = {
-  name: 'Philipp',
+  name: "Philipp",
   age: 23,
-  city: 'Hamburg'
+  city: "Hamburg",
 };
 
 console.log(person.name);
@@ -43,18 +43,18 @@ console.log(person)
 // }
 ```
 
-Das funktioniert aber nur so lange der Name der Eigenschaft ein Wort ohne Sonderzeichen ist. Kommen Umlaute, Leerzeichen oder Bindestriche im Namen vor, funktioniert die Punktnotation nicht mehr. In diesem Fall benötigen wir die Klammernotation (*bracket notation*). Außerdem müssen wir die Eigenschaft in Anführunszeichen (`'` oder `"`) schreiben:
+Das funktioniert aber nur so lange der Name der Eigenschaft ein Wort ohne Sonderzeichen ist. Kommen Umlaute, Leerzeichen oder Bindestriche im Namen vor, funktioniert die Punktnotation nicht mehr. In diesem Fall benötigen wir die Klammernotation (_bracket notation_). Außerdem müssen wir die Eigenschaft in Anführunszeichen (`'` oder `"`) schreiben:
 
 ```javascript
 const person = {
-  name: 'Philipp',
+  name: "Philipp",
   age: 23,
-  city: 'Hamburg',
-  job: 'teacher',
-  'last-job': 'bike mechanic'
+  city: "Hamburg",
+  job: "teacher",
+  "last-job": "bike mechanic",
 };
 
-console.log(person['last-job']);
+console.log(person["last-job"]);
 // bike mechanic
 ```
 
@@ -62,13 +62,15 @@ Der Wert einer Eigenschaft ist nicht nur auf Texte oder Zahlen beschränkt und k
 
 ```javascript
 const person = {
-  name: 'Philipp',
+  name: "Philipp",
   age: 23,
-  city: 'Hamburg',
+  city: "Hamburg",
   married: false,
   partner: undefined,
-  hobbies: ['reading', 'climbing', 'travelling'],
-  sayHello: function () { console.log('Hi, my name is ' + this.name) } 
+  hobbies: ["reading", "climbing", "travelling"],
+  sayHello: function () {
+    console.log("Hi, my name is " + this.name);
+  },
 };
 
 console.log(person.hobbies);
@@ -78,7 +80,7 @@ console.log(person.sayHello());
 // Hi, my name is Philipp
 ```
 
-Relativ häufig sieht man die Verwendung in Verbindung mit Arrays. Um zum Beispiel die Daten eine Gruppe von Menschen zu speichern bietet sich ein sogenanntes *Object Array* an:
+Relativ häufig sieht man die Verwendung in Verbindung mit Arrays. Um zum Beispiel die Daten eine Gruppe von Menschen zu speichern bietet sich ein sogenanntes _Object Array_ an:
 
 ```javascript
 const persons = [
@@ -100,7 +102,7 @@ const persons = [
 ];
 ```
 
-Die Daten dieses *Object Array* lassen sich an einfachsten mit einer Schleife verarbeiten.
+Die Daten dieses _Object Array_ lassen sich an einfachsten mit einer Schleife verarbeiten.
 
 📖 **MDN**: [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)  
 📖 **MDN**: [Property accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)  

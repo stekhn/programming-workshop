@@ -5,17 +5,17 @@ JavaScript kann auf deiner eigene Seite auf zwei Wegen eingebunden werden. Für 
 ```html
 <!DOCTYPE html>
 <html lang="de">
-<head>
- <title>Titel der Webseite</title>
-</head>
-<body>
-  <button id="submit">Abschicken</button>
-  <script>
-    document.querySelector('button#submit').addEventHandler('click', () => {
-      console.log('Button wurde geklickt');
-    });
-  </script>
-</body>
+  <head>
+    <title>Titel der Webseite</title>
+  </head>
+  <body>
+    <button id="submit">Abschicken</button>
+    <script>
+      document.querySelector("button#submit").addEventHandler("click", () => {
+        console.log("Button wurde geklickt");
+      });
+    </script>
+  </body>
 </html>
 ```
 
@@ -24,13 +24,13 @@ Für größere Projekte empfiehlt es sich jedoch den JavaScript-Code in eine eig
 ```html
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <title>Titel der Webseite</title>
-</head>
-<body>
-  <button id="submit">Abschicken</button>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <title>Titel der Webseite</title>
+  </head>
+  <body>
+    <button id="submit">Abschicken</button>
+    <script src="script.js"></script>
+  </body>
 </html>
 ```
 
@@ -40,12 +40,12 @@ Alternativ kann man den JavaScript-Code so schreiben, dass er erst ausgeführt w
 
 ```javascript
 // Führe die Funktion init aus, wenn die Seite geladen wurde
-document.addEventListener('DOMContentLoaded', init, false);
+document.addEventListener("DOMContentLoaded", init, false);
 
 function init() {
   // Hier können wir sicher sein, dass der Button schon erstellt wurde
-  document.querySelector('button#submit').addEventHandler('click', () => {
-    console.log('Button wurde geklickt');
+  document.querySelector("button#submit").addEventHandler("click", () => {
+    console.log("Button wurde geklickt");
   });
 }
 ```

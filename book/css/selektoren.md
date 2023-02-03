@@ -13,13 +13,13 @@ Selektoren dienen dazu bestimmte Elemente oder Gruppen von Elementen auszuwähle
 Um das ganze noch ein bisschen komplizierter zu machen, kann man Selektoren auch miteinandern kombinieren:
 
 - `A, B`: Es wird A und B selektiert.
-- `A B`: Es wird B (*child*) selektiert, welches in der Hierarchie irgendwo unter A (*parent*) liegt
+- `A B`: Es wird B (_child_) selektiert, welches in der Hierarchie irgendwo unter A (_parent_) liegt
 
 Eher seltener zum Einsatz kommen diese Selektorkombinationen:
 
-- `A > B`: Es wird B (*direct child*)selektiert, welches in der Hierarche unmittelbar unter A (*parent*) liegt.
-- `A ~ B`: Es wird B (*sibling*) selektiert, welches in der Hierarchie neben A (*sibling*) liegt.
-- `A + B`: Es wird B (*direct sibling*) selektiert, welches in der Hierarchie direkt neben A (*sibling*) liegt.
+- `A > B`: Es wird B (_direct child_)selektiert, welches in der Hierarche unmittelbar unter A (_parent_) liegt.
+- `A ~ B`: Es wird B (_sibling_) selektiert, welches in der Hierarchie neben A (_sibling_) liegt.
+- `A + B`: Es wird B (_direct sibling_) selektiert, welches in der Hierarchie direkt neben A (_sibling_) liegt.
 
 Um die grundlegende Konzepte zu verdeutlichen, erstellen wir drei unterschiedliche Listen. Diese sollen gestylt werden.
 
@@ -94,7 +94,7 @@ Die Listeneinträge der ToDo-Liste bekommen eine blaue Textfarbe. Die ursprüngl
 }
 ```
 
-Einträge mit der in der ToDo-Liste mit der Klasse `done` werde grün eingefärbt. Der vorher gesetze Farbwert blau wird nochmals überschrieben. Auch hier könnte man auch `#todo-list li.done` schreiben.
+Einträge mit der in der ToDo-Liste mit der Klasse `done` werde grün eingefärbt. Der vorher gesetzte Farbwert blau wird nochmals überschrieben. Auch hier könnte man auch `#todo-list li.done` schreiben.
 
 ```css
 #todo-list .list-item.done {
@@ -102,7 +102,6 @@ Einträge mit der in der ToDo-Liste mit der Klasse `done` werde grün eingefärb
 }
 ```
 
-💡 *Man kann einzelne CSS-Regeln auch mit dem Attribut `!important` erzwingen `.error { color: red !important; }`. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen `!important` zu verwenden, deutet das auf schlecht strukturiertes HTML oder CSS hin.*
+💡 _Man kann einzelne CSS-Regeln auch mit dem Attribut `!important` erzwingen `.error { color: red !important; }`. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen `!important` zu verwenden, deutet das auf schlecht strukturiertes HTML oder CSS hin._
 
-📖 **MDN** [Combinators and selector lists
-](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)
+📖 **MDN** [Combinators and selector lists](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)

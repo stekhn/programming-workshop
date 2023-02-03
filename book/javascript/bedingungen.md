@@ -1,14 +1,14 @@
 # Bedingungen
 
-Mit Bedingungen (*conditionals*) kann man den Ablauf eines Programms steuern. Das Konzept ist relativ leicht zu verstehen, da es sich um eine einfache „Wenn, dann, ansonsten“-Logik handelt.
+Mit Bedingungen (_conditionals_) kann man den Ablauf eines Programms steuern. Das Konzept ist relativ leicht zu verstehen, da es sich um eine einfache „Wenn, dann, ansonsten“-Logik handelt.
 
 ```javascript
 const isHungry = true;
 
 if (isHungry) {
-  console.log('Geh was essen!');
+  console.log("Geh was essen!");
 } else {
-  console.log('Mach deine Hausaufgaben!');
+  console.log("Mach deine Hausaufgaben!");
 }
 
 // Geh was essen!
@@ -23,11 +23,11 @@ const isHungry = false;
 const isThirsty = true;
 
 if (isHungry) {
-  console.log('Geh was essen!');
+  console.log("Geh was essen!");
 } else if (isThirsty) {
-  console('Du solltest was trinken!')
+  console("Du solltest was trinken!");
 } else {
-  console.log('Mach deine Hausaufgaben!');
+  console.log("Mach deine Hausaufgaben!");
 }
 
 // Du solltest was trinken!
@@ -40,11 +40,11 @@ const isHungry = true;
 const isThirsty = true;
 
 if (isHungry) {
-  console.log('Geh was essen!');
+  console.log("Geh was essen!");
 } else if (isThirsty) {
-  console('Du solltest was trinken!')
+  console("Du solltest was trinken!");
 } else {
-  console.log('Mach deine Hausaufgaben!');
+  console.log("Mach deine Hausaufgaben!");
 }
 
 // Geh was essen!
@@ -57,11 +57,11 @@ const isHungry = false;
 const isThirsty = false;
 
 if (isHungry) {
-  console.log('Geh was essen!');
+  console.log("Geh was essen!");
 } else if (isThirsty) {
-  console('Du solltest was trinken!')
+  console("Du solltest was trinken!");
 } else {
-  console.log('Mach deine Hausaufgaben!');
+  console.log("Mach deine Hausaufgaben!");
 }
 
 // Mach deine Hausaufgaben!
@@ -77,51 +77,51 @@ In diesem Beispiel bauen wir einen Empfehlungsalgorithmus, der bestimmt wann ein
 const age = 15;
 
 if (age > 18) {
-  console.log('Sei bitte bis spätestens 2 Uhr zuhause!');
+  console.log("Sei bitte bis spätestens 2 Uhr zuhause!");
 } else if (age > 16) {
-  console.log('Sei bitte bis spätestens 24 Uhr zuhause!');
+  console.log("Sei bitte bis spätestens 24 Uhr zuhause!");
 } else if (age > 14) {
-  console.log('Sei bitte bis spätestens 22 Uhr zuhause!');
+  console.log("Sei bitte bis spätestens 22 Uhr zuhause!");
 } else if (age > 12) {
-  console.log('Sei bitte bis spätestens 20 Uhr zuhause!');
+  console.log("Sei bitte bis spätestens 20 Uhr zuhause!");
 } else {
-  console.log('Wenn du älter bist, darfst du auch mal aus dem Haus.');
+  console.log("Wenn du älter bist, darfst du auch mal aus dem Haus.");
 }
 
 // Sei bitte bis spätestens 22 Uhr zuhause!
 ```
 
-Außerdem kann man Bedingungen ineinander verschachteln. In diesem Fall darf ein Kind länger wegbleiben, wenn eine volljährige Aufsichtsperson mit dabei ist. Es sei denn, dass Kind ist 14 oder jünger, dann muss es um 22 Uhr zuhause sein.  
+Außerdem kann man Bedingungen ineinander verschachteln. In diesem Fall darf ein Kind länger wegbleiben, wenn eine volljährige Aufsichtsperson mit dabei ist. Es sei denn, dass Kind ist 14 oder jünger, dann muss es um 22 Uhr zuhause sein.
 
 ```javascript
 const hasChaperone = true;
 const age = 15;
 
 if (hasChaperone) {
-  if (age <= 14 ) {
-    console.log('Sei bitte bis spätestens 22 Uhr zuhause!')
+  if (age <= 14) {
+    console.log("Sei bitte bis spätestens 22 Uhr zuhause!");
   } else {
-    console.log('Egal wann du nach Hause kommst, aber benimm dich!')
+    console.log("Egal wann du nach Hause kommst, aber benimm dich!");
   }
 } else {
   if (age >= 18) {
-    console.log('Sei bitte bis spätestens 2 Uhr zuhause!');
+    console.log("Sei bitte bis spätestens 2 Uhr zuhause!");
   } else if (age >= 16) {
-    console.log('Sei bitte bis spätestens 24 Uhr zuhause!');
+    console.log("Sei bitte bis spätestens 24 Uhr zuhause!");
   } else if (age >= 14) {
-    console.log('Sei bitte bis spätestens 22 Uhr zuhause!');
+    console.log("Sei bitte bis spätestens 22 Uhr zuhause!");
   } else if (age >= 12) {
-    console.log('Sei bitte bis spätestens 20 Uhr zuhause!');
+    console.log("Sei bitte bis spätestens 20 Uhr zuhause!");
   } else {
-    console.log('Wenn du älter bist, darfst du auch mal aus dem Haus.');
+    console.log("Wenn du älter bist, darfst du auch mal aus dem Haus.");
   }
 }
 
 // Sei bitte bis spätestens 22 Uhr zuhause!
 ```
 
-💡 *Man sollte es mit dem Verschachteln von if-Bedingungen nicht übertreiben. Mehr als drei Logik-Ebenen sind schwer zu verstehen, führen zu endlosen Fehlersuchen und werden generell als schlechten Stil angesehen.*
+💡 _Man sollte es mit dem Verschachteln von if-Bedingungen nicht übertreiben. Mehr als drei Logik-Ebenen sind schwer zu verstehen, führen zu endlosen Fehlersuchen und werden generell als schlechten Stil angesehen._
 
-⚠️ *Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer `true`. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: `if (userName !== undefined)`*
+⚠️ _Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer `true`. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: `if (userName !== undefined)`_
 
 📖 **MDN**: [Conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)

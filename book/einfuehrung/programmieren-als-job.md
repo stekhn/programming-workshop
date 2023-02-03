@@ -2,7 +2,7 @@
 
 Programmieren ist ein Job der sich in den letzten Jahren stark spezialisiert hat. Hier ein kleiner Überblick wo Entwickler im Medienbereich arbeiten:
 
-- **Frontend-Entwickler und UI-Entwickler** entwickeln vor allem  Benutzeroberflächen von Webseiten und Web-Anwendungen. Für diesen Job ist ein grundsätzliches Verständnis von benutzerfreundlicher Gestaltung (Usability) erforderlich, oft geschieht die Entwicklung in enger Zusammenarbeit mit Designern.
+- **Frontend-Entwickler und UI-Entwickler** entwickeln vor allem Benutzeroberflächen von Webseiten und Web-Anwendungen. Für diesen Job ist ein grundsätzliches Verständnis von benutzerfreundlicher Gestaltung (Usability) erforderlich, oft geschieht die Entwicklung in enger Zusammenarbeit mit Designern.
 - **App-Entwickler (Mobile Developer)** entwickeln vor allem Apps für Smartphones (Android und Apples iOS). Dabei geht es vor allem um Usability und Leistungsoptimierung, da mobile Endgeräte meistens sehr beschränkte Ressourcen haben.
 - **Backend-Entwickler** kümmern sich um die Funktionalität einer Anwendung, welche meist durch Dienste die auf irgendwelchen Servern laufen bereitgestellte werden. Der Job erfordert meist eine enge Absprache mit den Frontend-, App- und gegebenfalls Datenbank-Entwicklern.
 - **Dev-Ops** (Developer Operations) verwalten die Server und teilweise auch die Netzwerkinfrastruktur eines Unternehmens. Meist sind sie eine Art Dienstleister für alle anderen Entwickler die auf funktionierende Server angewiesen sind.

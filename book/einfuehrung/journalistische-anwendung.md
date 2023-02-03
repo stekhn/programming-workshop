@@ -1,6 +1,6 @@
 # Journalistische Anwendung
 
-Journalisten verwenden Methoden der Programmierung für unterschiedliche Aufgaben. Meistens geht es jedoch  darum, entweder Werkzeuge für die Recherche zu entwickeln oder darum eine Geschichte online aufzubereiten.
+Journalisten verwenden Methoden der Programmierung für unterschiedliche Aufgaben. Meistens geht es jedoch darum, entweder Werkzeuge für die Recherche zu entwickeln oder darum eine Geschichte online aufzubereiten.
 
 - **Scraping**: Daten aus dem Internet einmalig oder regelmäßig herunterladen. Datenquellen können Webseiten, Datenbanken, APIs oder etwas RSS-Feeds sein.
 - **Datenanalyse**: Um Analysen nachvollziehbar und reproduzierbar zu gestalten, verwenden Datenjournalisten oft Skripte um (große) Daten zu analysieren.

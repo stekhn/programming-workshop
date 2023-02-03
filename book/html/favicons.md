@@ -7,9 +7,9 @@ Leider gibt es nicht den einen Standard, wie man Favicons auf einer Seite einbin
 Hier ein einfaches Beispiel für Favicons, welche in den meisten modernen Browsern funktionieren sollte. Die Meta-Tags werden im `<head>`-Bereich einer Webseite eingebunden:
 
 ```html
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 ```
 
 📖 **Favicon Generator**: [Create Favicons for different devices](https://realfavicongenerator.net/)  

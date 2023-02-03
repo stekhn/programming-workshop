@@ -36,4 +36,5 @@ In diesem Beispiel wird ein 3-spaltiges Raster mit zwei Zeilen erstellt. Das ers
 
 CSS Grid bietet auch fortgeschrittene Funktionen wie gleichmäßige oder ungleichmäßige Spaltenverteilung und automatisches Rasterlayouts. Es ist ein mächtiges Werkzeug für responsive Layouts und komplexe Designs.
 
-📖 **MDN**: [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
+📖 **MDN**: [Grids](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)  
+📖 **CSS-Tricks**: [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)

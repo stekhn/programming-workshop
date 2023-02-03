@@ -43,11 +43,11 @@ Ein Beispiel für eine dreispaltige Tabelle mit vier Zeilen:
 Daraus entsteht folgende Tabelle:
 
 | Vorname | Nachname | Alter |
-|---------|----------|-------|
+| ------- | -------- | ----- |
 | Philipp | Primus   | 25    |
 | Oskar   | Optimus  | 27    |
 | Marlene | Maximus  | 22    |
 
-💡 *HTML-Tabellen können auch mit dem praktischen [Tables Generator](https://www.tablesgenerator.com/html_tables) online erstellt werden.*
+💡 _HTML-Tabellen können auch mit dem praktischen [Tables Generator](https://www.tablesgenerator.com/html_tables) online erstellt werden._
 
 📖 **MDN**: [Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)

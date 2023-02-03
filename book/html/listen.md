@@ -16,4 +16,4 @@ Hier ein Beispiel für eine ungeordnete Liste:
 </ul>
 ```
 
-💡 *Listen werden auch gerne dafür eingesetzt, um eine Seitennavigation zu bauen. Das Aussehen einer Liste kann dabei durch CSS stark verändert werden.*
+💡 _Listen werden auch gerne dafür eingesetzt, um eine Seitennavigation zu bauen. Das Aussehen einer Liste kann dabei durch CSS stark verändert werden._
