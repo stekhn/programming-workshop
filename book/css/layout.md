@@ -8,3 +8,5 @@ Mit CSS kann man Elemente auf einer Webseite auf unterschiedliche Arten anordnen
 - **Grid:** Ermöglicht es, Elemente in einem Raster anzuordnen. Hierbei kann man Spalten und Zeilen definieren und die Elemente innerhalb dieses Gitters positionieren. CSS Grid bietet eine hohe Kontrolle über das Layout und ist besonders nützlich für die Anordnung von Elementen auf größeren Geräten wie Desktops.
 
 Jede dieser Methoden hat ihre Stärken und Schwächen und es hängt von den Anforderungen des Projekts ab, welche Methode am besten geeignet ist.
+
+Bücher, Webtexte, Wikipedia und Artikel

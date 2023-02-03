@@ -79,6 +79,6 @@ console.log(phrase.replace("Philipp", "Jana"));
 // Jana ist cool
 ```
 
-⚠️ \*Wenn man mit Strings arbeitet, ersetzt `Array.replace()` immer nur den ersten Treffer. Wenn man mehrer Vorkommen eines Strings ersetzen möchte, muss man dazu eine sogenannte [Regular Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) verwenden: `phrase.replace(/Philipp/g, 'Jana')`
+> ⚠️ \*Wenn man mit Strings arbeitet, ersetzt `Array.replace()` immer nur den ersten Treffer. Wenn man mehrer Vorkommen eines Strings ersetzen möchte, muss man dazu eine sogenannte [Regular Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) verwenden: `phrase.replace(/Philipp/g, 'Jana')`
 
 📖 **MDN**: [Useful string methods](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)

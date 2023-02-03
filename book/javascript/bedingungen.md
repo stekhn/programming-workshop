@@ -120,8 +120,8 @@ if (hasChaperone) {
 // Sei bitte bis spätestens 22 Uhr zuhause!
 ```
 
-💡 _Man sollte es mit dem Verschachteln von if-Bedingungen nicht übertreiben. Mehr als drei Logik-Ebenen sind schwer zu verstehen, führen zu endlosen Fehlersuchen und werden generell als schlechten Stil angesehen._
+> 💡 _Man sollte es mit dem Verschachteln von if-Bedingungen nicht übertreiben. Mehr als drei Logik-Ebenen sind schwer zu verstehen, führen zu endlosen Fehlersuchen und werden generell als schlechten Stil angesehen._
 
-⚠️ _Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer `true`. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: `if (userName !== undefined)`_
+> ⚠️ _Wenn man eine definierte Variable, Konstante oder Funktion als Bedingungen angibt, ist diese immer `true`. Die kann man dazu nutzen, um zu überprüfen ob Benutzereingaben stimmen. Allerdings ist diese Verhalten auch ein häufige Fehlerquelle. Am besten prüft man immer explizit, ob ein Wert definiert ist: `if (userName !== undefined)`_
 
 📖 **MDN**: [Conditionals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)

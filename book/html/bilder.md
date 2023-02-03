@@ -27,7 +27,7 @@ Bilder können jedoch auch direkt von anderen Webseiten geladen werden:
 
 Die Größe und Position eine Bildes lassen sich über CSS-Regeln definieren. Für Bilder ist das Thema Responsivität sehr wichtig. Dabei geht es darum, dass sich ein Bild an die verschiedenen Bildschirmgrößen (Smartphone, Tablet, Desktop-Computer) anpasst.
 
-💡 _Die Dateigröße von Bildern trägt maßgeblich zur Gesamtgröße und damit auch Ladezeit einer Webseite bei. Daher empfiehlt es sich die Bilder vorher auf die maximal notwendige Auflösung zu verkleinern und im JPEG-Format (85 bis 95 % Kompression) abzuspeichern._
+> 💡 _Die Dateigröße von Bildern trägt maßgeblich zur Gesamtgröße und damit auch Ladezeit einer Webseite bei. Daher empfiehlt es sich die Bilder vorher auf die maximal notwendige Auflösung zu verkleinern und im JPEG-Format (85 bis 95 % Kompression) abzuspeichern._
 
 📖 **MDN**: [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)  
 📖 **MDN**: [Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)

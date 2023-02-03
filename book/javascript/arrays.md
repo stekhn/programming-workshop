@@ -21,7 +21,7 @@ console.log(names[2]);
 // Sophie
 ```
 
-💡 _In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays `array.length` ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und `array[array.length - 1]` schreiben._
+> 💡 _In den meiste Programmiersprachen ist das erste Element eines Arrays immer das nullte Element. Das ist auch insofern verwirrend, da die Länge eines Elements normal gezählt wird. Hat ein Array fünf Elemente, ist das letzte Element das vierte Element, die Länge des Arrays `array.length` ist aber trotzdem Fünf. Um auf das letzte Element zuzugreifen, kann man sich das zunutze machen und `array[array.length - 1]` schreiben._
 
 Um einem Array neue Elemente hinzuzufügen, kann man die Methode **Array.push()** verwenden:
 

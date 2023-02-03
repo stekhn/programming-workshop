@@ -32,6 +32,6 @@ sayHello(names);
 
 Da noch nicht alle Browser das neue JavaScript perfekt beherrschen, braucht man so genannte _Transpiler_ die zwischen den unterschiedlichen JavaScript-Version hin und her übersetzen können. Der bekannteste Transpiler um neues JavaScript in altes JavaScript zu übersetzen ist [Babel](https://babeljs.io/repl). Um altes JavaScript in neues JavaScript zu übersetzen gibt es [Lebab](https://lebab.unibtc.me/editor) (Babel rückwärts geschrieben).
 
-💡 _Am einfachsten lässt sich neues JavaScript an den Variablennamen `let`, `const` und der Arrow-Funktionen `() => {}` erkennen._
+> 💡 _Am einfachsten lässt sich neues JavaScript an den Variablennamen `let`, `const` und der Arrow-Funktionen `() => {}` erkennen._
 
 📖 **Ralf S. Engelschall**: [ECMAScript 6 – New Features](http://es6-features.org/)

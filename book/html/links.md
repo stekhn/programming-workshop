@@ -28,6 +28,6 @@ Ein Beispiel für einen Anchor:
 
 Anker beziehen sich immer auf das `id`-Attribut eines Elements und beginnen mit einer Raute `#`.
 
-💡 _Oft sieht man auch das Attribut `target="_blank"`. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von `target="_blank"` angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut `rel="noopener"` setzen._
+> 💡 _Oft sieht man auch das Attribut `target="_blank"`. Dieses dient dazu einen Link in einem neuen Fenster oder Tab zu öffnen. Grundsätzlich wird aber von der Verwendung abgeraten, da der Benutzer selbst entscheiden soll, wo er einen Link öffnet. Ist man aber auf die Verwendung von `target="_blank"` angewiesen, sollte man aus Sicherheitsgründen auf jeden Fall zusätzlich das Attribut `rel="noopener"` setzen._
 
 📖 **CSS-Tricks**: [When to use target=”\_blank”](https://css-tricks.com/use-target_blank/)

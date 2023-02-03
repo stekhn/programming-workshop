@@ -39,4 +39,4 @@ Für größere Projekte empfiehlt es sich jedoch die CSS-Regel in einer eigenen 
 </html>
 ```
 
-💡 _Man kann `<style>` und `<link>`-Tags auch an anderer Stelle im HTML verwenden. Durch das Einbauen im `<head>`-Bereich wird jedoch sichergestellt, dass die Styles geladen sind, bevor die Seite dargestellt wird. Das ist oftmals wichtig, wenn man auf darauf angewiesen ist, dass ein Element eine bestimmte Höhe hat, bevor man damit arbeitet._
+> 💡 _Man kann `<style>` und `<link>`-Tags auch an anderer Stelle im HTML verwenden. Durch das Einbauen im `<head>`-Bereich wird jedoch sichergestellt, dass die Styles geladen sind, bevor die Seite dargestellt wird. Das ist oftmals wichtig, wenn man auf darauf angewiesen ist, dass ein Element eine bestimmte Höhe hat, bevor man damit arbeitet._

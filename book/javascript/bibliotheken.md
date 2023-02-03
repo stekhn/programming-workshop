@@ -2,7 +2,7 @@
 
 Durch Bibliotheken können Entwickler ihre Arbeit beschleunigen, indem sie auf bereits getestete und bewährte Lösungen zurückgreifen, statt jedes Mal eigenen Code schreiben zu müssen. Die meisten Bibliotheken sind für sehr bestimmte Aufgaben oder Probleme gemacht, wie zum Beispiel das Arbeiten mit Datumsangaben, Formularen oder bestimmten Datenschnittstellen. Die meisten Bibliotheken werden kostenlos und unter einen Open-Source-Lizenz angeboten.
 
-💡 _Häufig bezeichnet man Bibliotheken auch als Libraries, Packages, Dependencies oder auf Deutsch Abhängigkeiten._
+> 💡 _Häufig bezeichnet man Bibliotheken auch als Libraries, Packages, Dependencies oder auf Deutsch Abhängigkeiten._
 
 Bibliotheken in JavaScript können über den Paketmanager [NPM](https://www.npmjs.com/) oder über ein CDN (Content Delivery Network) eingebunden werden. NPM bietet auch einen Überblick über die verfügbaren Bibliotheken. Um npm verwenden zu können, muss jedoch zuerst [Node.js](https://nodejs.org/) installiert werden. Node.js ermöglicht es JavaScript in der Kommandozeile auszuführen. Nach erfolgreicher Installation, können Bibliotheken über folgenden Befehle installiert werden:
 

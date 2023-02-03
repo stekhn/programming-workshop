@@ -17,6 +17,6 @@ Ein Beispiel:
 <p>Paragraph mit normalem Fließtext und einer <strong>Hervorhebung<strong></p>
 ```
 
-💡 _Meistens sind drei Überschriftengrößen (`<h1>`, `<h2>`, `<h3>`) völlig ausreichend._
+> 💡 _Meistens sind drei Überschriftengrößen (`<h1>`, `<h2>`, `<h3>`) völlig ausreichend._
 
-💡 _Von der Verwendung der alten Texthervorhebungen `<i>` (kursiv), `<b>` (fett) und `<u>` (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen._
+> 💡 _Von der Verwendung der alten Texthervorhebungen `<i>` (kursiv), `<b>` (fett) und `<u>` (unterstrichen) wird abgeraten, da sie keine semantische Bedeutung haben und nur das Aussehen eine Textabschnitts beeinflussen._

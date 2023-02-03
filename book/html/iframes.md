@@ -24,7 +24,7 @@ Beispiel für ein YouTube-Embed:
 ></iframe>
 ```
 
-💡 _Meistens empfiehlt es sich die Breiten- und Höhenangaben in einem iFrame wegzulassen und die Größe über eine CSS-Regel zu definieren. Das ist deutlich flexibler und erlaubt auch prozentuale Größenangeben wie `width: 100%;`_
+> 💡 _Meistens empfiehlt es sich die Breiten- und Höhenangaben in einem iFrame wegzulassen und die Größe über eine CSS-Regel zu definieren. Das ist deutlich flexibler und erlaubt auch prozentuale Größenangeben wie `width: 100%;`_
 
 Mittlerweile verwenden viele Seiten andere Methoden um ihre Inhalte zum Einbetten anzubieten. Hier ein Beispiel für das Einbetten eines Posts von Twitter:
 

@@ -65,7 +65,7 @@ Um eine Aktion auszulösen, wenn der Submit-Button geklickt wird, muss ein Event
 </script>
 ```
 
-💡 _Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io/) oder [UIKit](https://getuikit.com/) einzusetzen._
+> 💡 _Sobald es um das Verabeiten von Benutzereingaben geht, kommt man fast nicht mehr darum herum JavaScript zu verwenden. Gute Formulare zu bauen ist sehr aufwendig, vor allem wenn es um darum geht das – standardmäßig sehr hässliche – Design der Eingabeelemente anzupassen. Hier empfiehlt es sich eine Front-End-Bibliothek wie [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io/) oder [UIKit](https://getuikit.com/) einzusetzen._
 
 📖 **MDN**: [Form Guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)  
 📖 **FreeCodeCamp**: [A step-by-step guide to getting started with HTML forms](https://medium.freecodecamp.org/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5)  

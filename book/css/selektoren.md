@@ -102,6 +102,6 @@ Einträge mit der in der ToDo-Liste mit der Klasse `done` werde grün eingefärb
 }
 ```
 
-💡 _Man kann einzelne CSS-Regeln auch mit dem Attribut `!important` erzwingen `.error { color: red !important; }`. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen `!important` zu verwenden, deutet das auf schlecht strukturiertes HTML oder CSS hin._
+> 💡 _Man kann einzelne CSS-Regeln auch mit dem Attribut `!important` erzwingen `.error { color: red !important; }`. Das ist aber in den wenigsten Fällen empfehlenswert. Ist man häufiger darauf angewiesen `!important` zu verwenden, deutet das auf schlecht strukturiertes HTML oder CSS hin._
 
 📖 **MDN** [Combinators and selector lists](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors)

@@ -50,6 +50,6 @@ Für die Eigenschaften `margin` und `padding` gibt es also vier verschieden Shor
 - `margin: top (right, left) bottom;`
 - `margin: top right left bottom;`
 
-💡 _Es gibt noch viele weitere CSS-Eigenschaften (`background`, `font`, `box-shadow`), welche bestimmte Shorthand-Properties unterstützen. Gerade am Anfang aber sollte man eher sparsam damit umgehen._
+> 💡 _Es gibt noch viele weitere CSS-Eigenschaften (`background`, `font`, `box-shadow`), welche bestimmte Shorthand-Properties unterstützen. Gerade am Anfang aber sollte man eher sparsam damit umgehen._
 
 📖 **MDN** [Shorthand Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)

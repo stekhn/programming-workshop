@@ -48,6 +48,6 @@ Daraus entsteht folgende Tabelle:
 | Oskar   | Optimus  | 27    |
 | Marlene | Maximus  | 22    |
 
-💡 _HTML-Tabellen können auch mit dem praktischen [Tables Generator](https://www.tablesgenerator.com/html_tables) online erstellt werden._
+> 💡 _HTML-Tabellen können auch mit dem praktischen [Tables Generator](https://www.tablesgenerator.com/html_tables) online erstellt werden._
 
 📖 **MDN**: [Table Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
